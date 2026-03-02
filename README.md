@@ -160,7 +160,6 @@ Software for law firms and legal departments to manage cases, clients, time, and
 - 🇺🇸 [Open Case Management (OCM)](https://github.com/aworley/ocm) - PHP-based case management system specifically designed for nonprofit legal services organizations.
 - [Law Firm Management System](https://github.com/leon019i/Law_Firm_Management_system_Django) - Django-powered practice management platform with client management, case tracking, and mobile-friendly design.
 - 🇺🇸 [DAWSON - U.S. Tax Court ef-cms](https://github.com/ustaxcourt/ef-cms) - TypeScript-based electronic filing and case management system used by the U.S. Tax Court.
-- [Iuris-Soft](https://github.com/iamgilwell/Iuris-Soft) - Open-source legal management system featuring litigation tracking, document management, time tracking, billing, and financial management.
 - 🇩🇪 [j-lawyer.org](https://github.com/jlawyerorg/j-lawyer-org) - Open-source Java-based legal case and document management system supporting case organization, document handling, invoicing, and fax integration for law offices on Windows, macOS, and Linux.
 
 ### Free Online Tools
