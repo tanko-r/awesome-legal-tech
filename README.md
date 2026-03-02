@@ -2,9 +2,7 @@
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A curated list of awesome legal technology tools, apps, AI models, and resources for legal professionals and technologists.
-
-The definitive, most rigorously curated starting point for anyone exploring legal technology — where quality of curation beats quantity of links.
+> A curated list of awesome legal technology tools, apps, AI models, and resources for legal professionals and technologists where quality of curation beats quantity of links.
 
 ## Contents
 
