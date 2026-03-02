@@ -1,0 +1,36 @@
+name: Auto-Update Legal Apps List
+
+on:
+  schedule:
+    - cron: "0 9 1 * *"   # 09:00 UTC on the 1st of each month
+  workflow_dispatch:        # Manual trigger for testing
+
+permissions:
+  contents: write
+
+jobs:
+  update-list:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GH_PAT }}
+
+      - name: Run update-list skill
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          github_token: ${{ secrets.GH_PAT }}
+          prompt: "/update-list"
+          claude_args: "--max-turns 20"
+
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: automated monthly update — new legal tech entries"
+          file_pattern: "README.md"
+          commit_user_name: "github-actions[bot]"
+          commit_user_email: "github-actions[bot]@users.noreply.github.com"
