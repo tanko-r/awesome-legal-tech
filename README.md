@@ -164,7 +164,6 @@ Software for law firms and legal departments to manage cases, clients, time, and
 
 ### Free Online Tools
 
-- 🇪🇸 [Signaturit](https://www.signaturit.com) - Cloud-based e-signature platform for securely signing and sending legal documents with audit trails.
 - [SignWell](https://www.signwell.com) - Simple, free e-signature tool designed for small businesses and legal professionals.
 - [Dropbox Sign](https://sign.dropbox.com) - Free document signing service integrating with Dropbox for contract management and legally enforceable document handling.
 - [PandaDoc](https://www.pandadoc.com) - Document management and e-signature platform with free tier offering templates for contracts and legal agreements.
@@ -188,7 +187,6 @@ Systems for storing, organizing, and retrieving legal documents securely.
 
 ### Free Online Tools
 
-- 🇪🇸 [Signaturit](https://www.signaturit.com) - Cloud-based e-signature platform for secure document signing with audit trails.
 - [PandaDoc](https://www.pandadoc.com) - Document management and e-signature platform with templates for legal agreements.
 - 🇺🇸 [LawDepot](https://www.lawdepot.com) - Provides free legal document templates and forms customizable for various needs.
 - [JotForm](https://www.jotform.com) - Free form builder with legal document templates and signature collection capabilities.
