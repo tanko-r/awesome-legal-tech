@@ -13,7 +13,7 @@ The definitive, most rigorously curated starting point for anyone exploring lega
 - [Contract Management](#contract-management)
 - [Practice Management](#practice-management)
 - [Document Management](#document-management)
-- [Open Source Legal Tools](#open-source-legal-tools)
+- [Backend Utilities & Libraries](#backend-utilities--libraries)
 - [Access to Justice](#access-to-justice)
 - [Legal NLP & Datasets](#legal-nlp--datasets)
 - [Legal Education & Communities](#legal-education--communities)
@@ -21,67 +21,224 @@ The definitive, most rigorously curated starting point for anyone exploring lega
 
 ## AI Tools
 
-Tools that use AI to assist with legal work, from contract analysis to legal research and document generation.
+Tools and models that use AI to assist with legal work, from contract analysis to legal research and document generation.
 
-- [OpenAI API](https://platform.openai.com) - Large language models accessible via API for building legal applications.
-- [Anthropic Claude](https://www.anthropic.com) - Conversational AI designed for safe, helpful legal analysis and document understanding.
+### GitHub Repositories
+
+- [Sara](https://github.com/tanko-r/AI-Associate) - A specialized Claude Code plugin that operates as a senior AI law associate capable of handling complex legal work across multiple practice areas including real estate, corporate law, and ERISA. Sara generates original legal documents and delegates research tasks to junior associate subagents, designed for solo practitioners and small law firms.
+- [Ambrose](https://github.com/tanko-r/Ambrose) - An AI-powered contract review and redlining platform combining Claude Opus for risk analysis with Gemini Flash for revision generation. Built with Flask backend and Next.js frontend, engineered for in-house counsel and deal teams managing high volumes of contracts rapidly.
+- [LexNLP](https://github.com/LexPredict/lexpredict-lexnlp) - Open source Python library for natural language processing and information extraction from legal and regulatory texts. Extracts structured data like dates, monetary amounts, regulations, and citations with pre-trained models for document and clause classification.
+- [LawBotics](https://github.com/hasnaintypes/lawbotics) - AI-powered legal contract analysis platform combining fine-tuned LLaMA models with modern web technologies to automate document review and clause extraction from PDFs and text. Identifies 41+ types of legal clauses and integrates with the CUAD dataset.
+- [LegalNLP](https://github.com/felipemaiapolo/legalnlp) - Natural language processing methods and pre-trained models (BERT, Word2Vec, Doc2Vec, FastText) specifically designed for the Brazilian legal language, enabling legal document classification and semantic analysis.
+- [MILDSum](https://github.com/Law-AI/mildsum) - Benchmark dataset and tools for multilingual legal document summarization, featuring 3,122 Indian court judgments with English and Hindi summaries drafted by legal practitioners, supporting legal NLP research.
+- [OLAW](https://github.com/harvard-lil/olaw) - Open Legal AI Workbench from Harvard Law School Library for building retrieval-augmented generation (RAG) applications in legal research. Provides customizable chatbot framework that integrates legal APIs and documents.
+- [LawGlance](https://github.com/lawglance/lawglance) - Free, open-source RAG-based AI legal assistant for document analysis and legal question answering, enabling users to query their legal documents using natural language.
+- [Legal ML Datasets](https://github.com/neelguha/legal-ml-datasets) - Curated collection of datasets and machine learning tasks for legal text processing, including contract understanding, clause classification, and legal document analysis benchmarks.
+- [Awesome LegalAI Resources](https://github.com/CSHaitao/Awesome-LegalAI-Resources) - Comprehensive collection of legal AI datasets, tools, websites, and resources to facilitate development of intelligent legal technology systems.
+- [Legal Document Analysis using NLP](https://github.com/Team-NLP-Legal-Document/Legal_Document_Analysis_and_Classification_Using_NLP_and_Deep_Learning) - Deep learning pipeline for legal document classification and analysis using BERT embeddings and neural networks to automate document categorization and information extraction.
+
+### Free Online Tools
+
+- [FreeLawChat.ai](https://freelawchat.ai/) - Free AI chatbot that answers legal questions across multiple jurisdictions with geographic-specific guidance. Users can ask unlimited questions on family law, employment, contracts, and other areas.
+- [LexiAI](https://lexiai.org/) - Free multilingual AI legal chatbot available 24/7 that provides legal information in your chosen language using GPT technology.
+- [CompareX Free Contract Analyser](https://compare-x.ai/free-contract-analyser) - Analyzes contracts in 60 seconds, identifying missing clauses, high-risk terms, and compliance gaps with plain-English explanations. Completely free with no credit card required.
+- [Legitt AI Contract Review](https://legittai.com/contract-review) - Provides instant contract summaries, clause-by-clause risk analysis, and obligation tracking for PDFs and Word documents.
+- [LogicBalls Legal Document Generator](https://logicballs.com/tools/legal-document-drafting-generator) - Free AI tool that generates NDAs, contracts, agreements, and legal memos in minutes without signup.
+- [Galaxy.ai Legal Letter Generator](https://galaxy.ai/ai-legal-letter-generator) - Free legal letter generator requiring no login that creates various types of legal correspondence using AI entirely in your browser.
+- [AI Lawyer](https://ailawyer.pro/) - Free AI legal assistant offering contract drafting, legal research, agreement comparison, translation, and summarization features.
 
 ## Legal Research
 
 Platforms and tools for legal research, case law discovery, and statutory information.
 
-- [Google Scholar](https://scholar.google.com/scolarcase) - Free access to case law, statutes, and legal opinions.
-- [Internet Archive Scholar](https://scholar.archive.org) - Open access legal research archive.
+### GitHub Repositories
+
+- [CourtListener](https://github.com/freelawproject/courtlistener) - Fully-searchable archive of US court opinions, orders, and judge data with coverage spanning decades of American case law. Used by legal professionals, researchers, and the general public for comprehensive case law research.
+- [Juriscraper](https://github.com/freelawproject/juriscraper) - Automated API for scraping American court websites to extract case metadata and opinions. Enables developers and legal research tools to collect court data programmatically from multiple jurisdictions.
+- [LawLens](https://github.com/Ranjith00005/LawLens) - AI-powered legal research assistant that provides legal advisory, case outcome prediction, and automated report generation by analyzing PDF documents. Designed for law firms and individual practitioners.
+- [Lex](https://github.com/i-dot-ai/lex) - UK legal API providing access to legislation and case law specifically designed for AI agents and legal researchers. Built by the UK government's AI lab.
+- [CC Legal Database](https://github.com/cc-archive/legaldb) - Curated repository of case law and legal scholarship from around the world housed in a Django-based platform.
+- [Law XML](https://github.com/DCCouncil/law-xml) - DC Law statutes and regulatory code published in structured XML format for programmatic access.
+- [Reporters DB](https://github.com/freelawproject/reporters-db) - Comprehensive database of court reporters with metadata and citation information for American courts.
+- [OpenArchiver](https://github.com/LogicLabs-OU/OpenArchiver) - Open-source platform for legally compliant email archiving and eDiscovery with GDPR-aware data retention.
+
+### Free Online Tools
+
+- [Google Scholar](https://scholar.google.com/scholar_courts) - Free case law search engine covering all 50 states and federal courts with opinions dating back to 1791, featuring customizable court selection and advanced search filters.
+- [CourtListener](https://www.courtlistener.com/) - Nonprofit-operated legal database with over 10 million case opinions from federal and state courts, plus 17.3 million PACER documents with advanced semantic search.
+- [Legal Information Institute (LII)](https://www.law.cornell.edu/) - Cornell Law School's nonprofit platform providing free access to U.S. Code, federal regulations, state statutes, court decisions, and legal encyclopedia.
+- [FindLaw](https://caselaw.findlaw.com/) - Comprehensive free resource for searching state and federal court opinions, statutes, regulations, and U.S. Code.
+- [GovInfo](https://www.govinfo.gov/help/cfr) - Official Government Publishing Office database offering authenticated federal regulations, Code of Federal Regulations, and federal register documents.
+- [Justia](https://law.justia.com/) - Free legal research platform featuring case law, statutes, regulations, and legal articles for federal and state resources.
 
 ## Contract Management
 
 Tools for drafting, reviewing, negotiating, and managing legal contracts.
 
-- [ContractPodAi](https://www.contractpodai.com) - AI-powered contract management and analytics platform.
+### GitHub Repositories
+
+- [OCA Contract](https://github.com/OCA/contract) - Odoo module that manages contract creation, recurring invoicing, and lifecycle workflows with portal visibility.
+- [Accord Project - Cicero](https://github.com/accordproject/cicero-template-library) - Open ecosystem for smart legal contracts providing a template library and execution engine. Allows drafting natural language templates bound to data models.
+- [Contract Analyzer](https://github.com/ahmetkumass/contract-analyzer) - Open-source RAG-based system for extracting and analyzing key information from legal contracts using advanced language models.
+- [OpenContracts](https://github.com/Open-Source-Legal/OpenContracts) - Enterprise-grade document analysis workspace combining LLM capabilities with annotation, collaboration, and structured data extraction.
+- [DocuSeal](https://github.com/docusealco/docuseal) - Open-source DocuSign alternative for creating, filling, and signing digital documents with mobile-optimized forms and SDKs.
+- [Contract Lifecycle Management Dashboard](https://github.com/cyberkunju/contract-management) - Frontend-based CLM platform built with React and TypeScript for designing reusable contract blueprints and managing workflows.
+- [Contract Builder](https://github.com/blopa/Contract-Builder) - Free, open-source tool for easily building and maintaining any type of contract using spreadsheet-style interface.
+- [Microsoft Agent for Contract Processing](https://github.com/microsoft/Agent-for-Contract-Processing-Solution-Accelerator) - Solution accelerator demonstrating AI agent deployment for streamlined NDA creation and management.
+
+### Free Online Tools
+
+- [CompareX Free Contract Analyser](https://compare-x.ai/free-contract-analyser) - Contract analyzer identifying missing clauses, high-risk terms, and compliance gaps in 60 seconds.
+- [Legitt AI Contract Review](https://legittai.com/contract-review) - Instant contract summaries, clause-by-clause risk analysis, and obligation tracking for PDFs and Word documents.
+- [LogicBalls Legal Document Generator](https://logicballs.com/tools/legal-document-drafting-generator) - Generates NDAs, contracts, agreements, and legal memos without signup.
 
 ## Practice Management
 
 Software for law firms and legal departments to manage cases, clients, time, and billing.
 
-- [LawLion](https://www.lawlion.com) - Cloud-based practice management for solo and small law firms.
+### GitHub Repositories
+
+- [Legal-Ease](https://github.com/sujal-pawar/Legal-Ease) - AI-driven legal case management platform enabling courts, law firms, and litigants to manage cases and schedule virtual hearings.
+- [CaseAce](https://github.com/derekgan08/CaseAce-law-firm-management-system-backend) - Node.js and Express-based case management system for law firms offering CRM, document storage, task tracking, and appointment scheduling.
+- [Kimai](https://github.com/kimai/kimai) - Leading open-source time-tracking application enabling lawyers to manage timesheets, generate invoices, and create reports with support for 30+ languages.
+- [IDURAR ERP CRM](https://github.com/idurar/idurar-erp-crm) - Comprehensive open-source ERP and CRM system on MERN stack handling invoicing, quotes, payments, and accounting.
+- [InvoiceShelf](https://github.com/InvoiceShelf/InvoiceShelf) - Laravel and Vue.js invoicing solution for tracking expenses, creating invoices and estimates, and managing recurring billing.
+- [SolidInvoice](https://github.com/SolidInvoice/SolidInvoice) - PHP-based invoicing platform with client management, quote generation, and online payment processing.
+- [Open Case Management (OCM)](https://github.com/aworley/ocm) - PHP-based case management system specifically designed for nonprofit legal services organizations.
+- [Law Firm Management System](https://github.com/leon019i/Law_Firm_Management_system_Django) - Django-powered practice management platform with client management, case tracking, and mobile-friendly design.
+- [DAWSON - U.S. Tax Court ef-cms](https://github.com/ustaxcourt/ef-cms) - TypeScript-based electronic filing and case management system used by the U.S. Tax Court.
+- [Iuris-Soft](https://github.com/iamgilwell/Iuris-Soft) - Open-source legal management system featuring litigation tracking, document management, time tracking, billing, and financial management.
+
+### Free Online Tools
+
+- [Signaturit](https://www.signaturit.com) - Cloud-based e-signature platform for securely signing and sending legal documents with audit trails.
+- [SignWell](https://www.signwell.com) - Simple, free e-signature tool designed for small businesses and legal professionals.
+- [Dropbox Sign](https://sign.dropbox.com) - Free document signing service integrating with Dropbox for contract management and legally enforceable document handling.
+- [PandaDoc](https://www.pandadoc.com) - Document management and e-signature platform with free tier offering templates for contracts and legal agreements.
+- [Nolo](https://www.nolo.com) - Offers free legal information, document templates, and self-help resources for common legal issues and agreements.
 
 ## Document Management
 
 Systems for storing, organizing, and retrieving legal documents securely.
 
-- [NetDocuments](https://www.netdocuments.com) - Enterprise document management for law firms.
+### GitHub Repositories
 
-## Open Source Legal Tools
+- [Docassemble](https://github.com/jhpyle/docassemble) - Open-source expert system for guided interviews and document assembly built on Python, YAML, and Markdown. Automates legal form completion and helps self-represented litigants.
+- [docassemble-AssemblyLine](https://github.com/SuffolkLITLab/docassemble-AssemblyLine) - Rapid deployment framework by Suffolk Legal Innovation & Technology Lab that converts paper court forms into interactive web applications.
+- [docassemble-ALWeaver](https://github.com/SuffolkLITLab/docassemble-ALWeaver) - Code generation tool that automatically generates draft docassemble interviews from existing legal documents (PDF or DOCX).
+- [DocuSeal](https://github.com/docusealco/docuseal) - Open-source alternative to DocuSign for creating, filling, and digitally signing documents.
+- [OpenSign](https://github.com/OpenSignLabs/OpenSign) - Free and open-source DocuSign alternative providing e-signature capabilities for legal documents.
+- [Paperless-ngx](https://github.com/paperless-ngx/paperless-ngx) - Document management system that scans, indexes, and archives physical documents with OCR and full-text search.
+- [Papermerge](https://github.com/ciur/papermerge) - Open-source document management system optimized for digital archives and scanned documents with OCR capabilities.
+- [Mayan EDMS](https://github.com/mayan-edms/Mayan-EDMS) - Free and open-source enterprise document management system supporting workflows, versioning, and audit trails.
+- [PyMuPDF](https://github.com/pymupdf/PyMuPDF) - High-performance Python library for extracting, analyzing, and manipulating PDF document data for automated legal document processing.
 
-Free and open source tools for legal professionals and technologists.
+### Free Online Tools
 
-- [Docassemble](https://docassemble.org) - Open source platform for generating legal documents through guided interviews.
-- [Legal Server](https://www.legaltechtools.com) - Open source legal case management system.
+- [Signaturit](https://www.signaturit.com) - Cloud-based e-signature platform for secure document signing with audit trails.
+- [PandaDoc](https://www.pandadoc.com) - Document management and e-signature platform with templates for legal agreements.
+- [LawDepot](https://www.lawdepot.com) - Provides free legal document templates and forms customizable for various needs.
+- [JotForm](https://www.jotform.com) - Free form builder with legal document templates and signature collection capabilities.
+- [Template.net](https://www.template.net) - Extensive library of free legal document templates including contracts, NDAs, and employment agreements.
+- [GetDoc](https://www.getdoc.com) - Free document collaboration and e-signature platform with secure version control.
+- [DocHub](https://www.dochub.com) - Free online document editor with e-signature capabilities for editing, signing, and managing documents directly in browser.
+
+## Backend Utilities & Libraries
+
+Programming libraries, SDKs, and utilities for building legal tech applications.
+
+### Document Processing Libraries
+
+- [python-docx](https://github.com/python-openxml/python-docx) - Python library for creating, reading, and modifying Microsoft Word documents programmatically with full support for paragraphs, tables, styles, and document structure.
+- [pdfplumber](https://github.com/jsvine/pdfplumber) - Specialized PDF extraction tool providing detailed access to text, characters, rectangles, and lines for precise coordinate-based data extraction and table identification.
+- [PyPDF](https://pypi.org/project/pypdf/) - Pure-Python library for splitting, merging, cropping, and transforming PDF pages while extracting text from electronically-generated documents.
+- [python-docx-template](https://github.com/elapouya/python-docx-template) - Document generation library that injects Jinja2 templating into .docx files for dynamic content insertion and automated legal document assembly.
+
+### Legal NLP & Text Processing
+
+- [LexNLP](https://github.com/LexPredict/lexpredict-lexnlp) - Specialized Python library for natural language processing and information extraction from legal and regulatory texts with pre-trained models.
+- [spaCy](https://spacy.io/) - Industrial-strength NLP library with pre-trained models for named entity recognition in contracts and legal documents.
+- [Blackstone](https://github.com/ICLRandD/Blackstone) - spaCy-based natural language processing model trained on English case law that detects legal entities and classifies sentences by legal purpose.
+
+### Document Services & Integration
+
+- [Apache Tika](https://tika.apache.org/) - Enterprise-grade content detection and analysis framework that extracts metadata and text from 1000+ file types including PDFs and Office documents.
+- [Office-Word-MCP-Server](https://github.com/GongRzhe/Office-Word-MCP-Server) - Model Context Protocol (MCP) server enabling AI assistants to create, read, and manipulate Word documents with rich formatting preservation.
+
+### Smart Contract & Templating
+
+- [Accord Project](https://accordproject.org/) - Open-source ecosystem for smart legal contracts with the Cicero templating system for creating structured, reusable contract templates.
+- [Docassemble](https://docassemble.org/) - Full-stack expert system for guided legal interviews and document automation built in Python/YAML/Markdown with support for complex workflows.
 
 ## Access to Justice
 
 Tools and platforms designed to improve access to legal services and justice.
 
-- [Upsolve](https://www.upsolve.org) - Free online bankruptcy filing tool for individuals.
+### GitHub Repositories
+
+- [Docassemble](https://github.com/jhpyle/docassemble) - Expert system for guided interviews and document assembly that helps self-represented litigants generate court documents and legal forms.
+- [docassemble-AssemblyLine](https://github.com/SuffolkLITLab/docassemble-AssemblyLine) - Rapid deployment framework converting paper court forms into interactive web applications for legal aid organizations.
+- [A2J Author](https://github.com/CCALI/a2j-author) - Open-source tool for creating guided interviews that help people complete legal forms and court documents.
+
+### Free Online Tools
+
+- [Upsolve](https://www.upsolve.org) - Free online bankruptcy filing tool designed to help individuals file Chapter 7 bankruptcy without expensive attorney fees.
+- [LawDepot](https://www.lawdepot.com) - Provides free legal document templates and forms for self-represented litigants and small business owners.
+- [Nolo](https://www.nolo.com) - Offers free legal information, document templates, and self-help resources for common legal issues and agreements accessible to non-lawyers.
 
 ## Legal NLP & Datasets
 
-Academic datasets, models, and tools for legal natural language processing.
+Academic datasets, models, and tools for legal natural language processing research.
 
-- [LegalBench](https://hazyresearch.stanford.edu/legalbench) - Benchmark for evaluating legal reasoning in language models.
+### GitHub Repositories
+
+- [Legal ML Datasets](https://github.com/neelguha/legal-ml-datasets) - Curated collection of datasets and machine learning tasks for legal text processing, including contract understanding and clause classification.
+- [Awesome Legal NLP](https://github.com/maastrichtlawtech/awesome-legal-nlp) - Curated collection aggregating 180+ legal NLP datasets, models, research papers, and implementation guidance.
+- [Blackstone](https://github.com/ICLRandD/Blackstone) - spaCy-based natural language processing model trained on English case law for detecting legal entities and clause classification.
+- [ChatLaw](https://github.com/PKU-YuanGroup/ChatLaw) - Large language model trained on Chinese legal documents and court data, achieving higher accuracy than GPT-4 on Chinese legal benchmarks.
+- [DISC-LawLLM](https://github.com/FudanDISC/DISC-LawLLM) - Intelligent legal system with LLM fine-tuned with 300K legal task examples, ranking highly on legal AI benchmarks.
+- [LawBench](https://github.com/open-compass/LawBench) - Comprehensive evaluation benchmark for assessing language models' legal knowledge across 20 tasks covering Chinese law.
+- [MILDSum](https://github.com/Law-AI/mildsum) - Benchmark dataset and tools for multilingual legal document summarization with Indian court judgments.
+
+### Free Online Tools
+
+- [Descrybe Legal Research](https://descrybe.ai/) - Free case law research tool with no login required that searches U.S. federal and state court decisions using plain English queries with AI-generated summaries.
 
 ## Legal Education & Communities
 
-Newsletters, courses, conferences, and communities for legal technology learning.
+Newsletters, courses, conferences, and communities for legal technology learning and professional development.
 
-- [Lawvable](https://lawvable.com) - Legal tech news and resources curated by industry experts.
+- [Lawvable](https://lawvable.com) - Legal tech news and resources curated by industry experts with regular updates on emerging legal technology trends.
+- [Maastricht Law & Tech Lab](https://www.maastrichtuniversity.nl/research/maastricht-law-and-tech-lab) - Academic research center focused on legal NLP and technology with publicly available datasets and resources.
+- [Stanford Legal AI Lab](https://hazyresearch.stanford.edu/) - Research lab producing legal benchmarks, datasets, and models for advancing legal AI research.
+- [Harvard Law School Library Innovation Lab](https://law.harvard.edu/library/innovation/) - Develops tools and resources for legal research innovation and open legal data access.
+
+## Advanced Legal Tools & Citation Systems
+
+Specialized tools for citation analysis, contract comparison, and legal research infrastructure.
+
+- [eyecite](https://github.com/freelawproject/eyecite) - Open-source Python library extracting legal citations from court documents and automatically linking them to free legal databases.
+- [eyecite-ts](https://github.com/medelman17/eyecite-ts) - TypeScript port of eyecite for client-side citation extraction and annotation with 7KB gzipped footprint.
+- [CiteURL](https://github.com/raindrum/citeurl) - Parses legal citations and generates hyperlinks to free online legal sources supporting 130+ sources of U.S. law.
+- [vibecode-law](https://github.com/vibecode-law/vibecode-law) - Open-source platform showcasing AI-built legal tech projects. Built with Laravel 12, React 19, TypeScript.
+- [Redlines](https://github.com/houfu/redlines) - Python library producing Track Changes-style text comparison output in multiple formats; featured in DeepLearning.AI with 170K+ monthly downloads.
+- [RedlineNow](https://github.com/jamietso/RedlineNow) - AI-powered document comparison tool providing side-by-side text editing with visual redline highlighting and AI-generated change summaries.
+- [Tabular_Review](https://github.com/jamietso/Tabular_Review) - AI-powered document analysis tool transforming unstructured PDFs and Word documents into searchable, structured datasets for bulk contract reviews.
+- [Contract Playbook AI](https://github.com/yuch85/contract-playbook-ai) - Generates contract review playbooks in minutes by extracting negotiation rules from reference contracts with rich-text editing and Track Changes compatibility.
+- [ChartAI](https://github.com/jamietso/ChartAI) - Automatically extracts and visualizes corporate structures from legal documents using computer vision and React Flow interactive diagrams.
+- [sgcite](https://github.com/yuch85/sgcite) - Command-line tool verifying Singapore case law citations and detecting hallucinated authorities by cross-referencing official eLitigation database.
+- [prompt-engineering-lawyers](https://github.com/houfu/prompt-engineering-lawyers) - Open-source Streamlit course teaching prompt engineering techniques for legal professionals with ChatGPT, Claude, and other LLMs.
 
 ## Meta-Resources
 
 Other awesome lists and curated collections in the legal technology space.
 
-- [Lawvable Awesome Legal Tech](https://github.com/Lawvable/awesome-legal-tech) - Peer awesome-list for legal technology resources.
-- [awesome-lawtech](https://github.com/roots-legal-tech/awesome-lawtech) - Community curated legal tech resources.
+- [awesome-legal](https://github.com/ankane/awesome-legal) - Curated collection of free legal documents, templates, and resources for companies and legal professionals.
+- [awesome-legal-nlp](https://github.com/maastrichtlawtech/awesome-legal-nlp) - Comprehensive curated list of natural language processing resources, research papers, and datasets specifically for the legal domain, maintained by Maastricht Law & Tech Lab.
+- [awesome-legal-data](https://github.com/openlegaldata/awesome-legal-data) - Collection of datasets, corpora, benchmarks, and tools for legal text processing and NLP research across multiple jurisdictions and languages.
+- [awesome-legal-skills](https://github.com/lawvable/awesome-legal-skills) - Curated list of AI agent skills and automation tools designed to streamline and assist with legal workflows and document analysis.
+- [Awesome-LegalAI-Resources](https://github.com/CSHaitao/Awesome-LegalAI-Resources) - Comprehensive collection of datasets, models, research papers, and tools focused on AI and machine learning applications in the legal domain.
+- [awesome-lawtech](https://github.com/officeanddragons/awesome-lawtech) - Community-curated list of legal technology software, tools, and learning resources for legal professionals, designers, and developers.
 
 ## Contributing
 
