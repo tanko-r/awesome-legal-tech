@@ -164,6 +164,7 @@ Software for law firms and legal departments to manage cases, clients, time, and
 
 ### Free Online Tools
 
+- [OpenSign](https://www.opensignlabs.com/) - Free, unlimited, open-source e-signature tool.
 - [SignWell](https://www.signwell.com) - Simple, free e-signature tool designed for small businesses and legal professionals.
 - [Dropbox Sign](https://sign.dropbox.com) - Free document signing service integrating with Dropbox for contract management and legally enforceable document handling.
 - [PandaDoc](https://www.pandadoc.com) - Document management and e-signature platform with free tier offering templates for contracts and legal agreements.
