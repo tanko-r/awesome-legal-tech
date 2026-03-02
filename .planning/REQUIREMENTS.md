@@ -47,9 +47,9 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Automated Update System
 
-- [ ] **UPDT-01**: Claude Code skill created that researches new legal tech projects and proposes additions to the list
-- [ ] **UPDT-02**: Cron job configured to run the update skill on a scheduled basis (e.g., monthly)
-- [ ] **UPDT-03**: Automated workflow pushes validated updates to GitHub (auto-commit and push new entries)
+- [x] **UPDT-01**: Claude Code skill created that researches new legal tech projects and proposes additions to the list
+- [x] **UPDT-02**: Cron job configured to run the update skill on a scheduled basis (e.g., monthly)
+- [x] **UPDT-03**: Automated workflow pushes validated updates to GitHub (auto-commit and push new entries)
 
 ### Index Submission
 
@@ -112,9 +112,9 @@ Which phases cover which requirements. Confirmed during roadmap creation.
 | QUAL-01 | Phase 3 | Pending |
 | QUAL-02 | Phase 4 | Pending |
 | QUAL-03 | Phase 3 | Pending |
-| UPDT-01 | Phase 5 | Pending |
-| UPDT-02 | Phase 5 | Pending |
-| UPDT-03 | Phase 5 | Pending |
+| UPDT-01 | Phase 5 | Complete ✅ 2026-03-02 |
+| UPDT-02 | Phase 5 | Complete ✅ 2026-03-02 |
+| UPDT-03 | Phase 5 | Complete ✅ 2026-03-02 |
 | SUBM-01 | Phase 6 | Pending |
 | SUBM-02 | Phase 6 | Pending |
 | SUBM-03 | Phase 6 | Pending |
@@ -126,4 +126,4 @@ Which phases cover which requirements. Confirmed during roadmap creation.
 
 ---
 *Requirements defined: 2026-03-02*
-*Last updated: 2026-03-02 after roadmap creation*
+*Last updated: 2026-03-02 — Phase 5 complete; UPDT-01, UPDT-02, UPDT-03 satisfied*

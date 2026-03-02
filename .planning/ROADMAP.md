@@ -16,7 +16,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [ ] **Phase 2: Automation & CI** - Wire up awesome-lint PR gating and lychee link checking so quality is enforced automatically from this point forward
 - [ ] **Phase 3: Core Content Population** - Populate all table-stakes sections with a minimum of 50 curated, verified entries
 - [ ] **Phase 4: Differentiator Content** - Add the sections no competing list covers: A2J, Legal NLP & Datasets, and Legal Education & Communities
-- [ ] **Phase 5: Automated Update System** - Build and schedule a Claude Code skill that researches new projects and auto-pushes validated additions
+- [x] **Phase 5: Automated Update System** - Build and schedule a Claude Code skill that researches new projects and auto-pushes validated additions — completed 2026-03-02
 - [ ] **Phase 6: Index Submission & Launch** - Pass final lint audit and submit the pull request to sindresorhus/awesome (requires 30-day repo age)
 
 ## Phase Details
@@ -74,7 +74,7 @@ Decimal phases appear between their surrounding integers in numeric order.
   1. A Claude Code skill exists that, when invoked, researches new legal tech projects and outputs a structured proposal of candidate entries in the correct `[Name](URL) - Description.` format
   2. A cron job is configured to run the update skill on a scheduled basis (monthly or more frequently) without manual intervention
   3. Validated additions are automatically committed and pushed to GitHub — the list receives new entries without requiring the maintainer to manually trigger or draft them
-**Plans**: TBD
+**Plans**: 2 (05-01: skill, 05-02: cron workflow)
 
 ### Phase 6: Index Submission & Launch
 **Goal**: The repository passes every automated check and the pull request to sindresorhus/awesome is submitted — the list enters the official awesome index
@@ -98,5 +98,5 @@ Note: Phase 5 depends on Phase 3 (not Phase 4), so Phases 4 and 5 can be worked 
 | 2. Automation & CI | 0/TBD | Not started | - |
 | 3. Core Content Population | 1/1 | **COMPLETE** | ✅ 2026-03-02 (117 entries) |
 | 4. Differentiator Content | 0/TBD | Not started | - |
-| 5. Automated Update System | 0/TBD | Not started | - |
+| 5. Automated Update System | 2/2 | **COMPLETE** | ✅ 2026-03-02 (skill + cron workflow) |
 | 6. Index Submission & Launch | 0/TBD | Not started | - |
