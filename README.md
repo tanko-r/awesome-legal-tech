@@ -108,6 +108,7 @@ Software for law firms and legal departments to manage cases, clients, time, and
 - [Law Firm Management System](https://github.com/leon019i/Law_Firm_Management_system_Django) - Django-powered practice management platform with client management, case tracking, and mobile-friendly design.
 - [DAWSON - U.S. Tax Court ef-cms](https://github.com/ustaxcourt/ef-cms) - TypeScript-based electronic filing and case management system used by the U.S. Tax Court.
 - [Iuris-Soft](https://github.com/iamgilwell/Iuris-Soft) - Open-source legal management system featuring litigation tracking, document management, time tracking, billing, and financial management.
+- [j-lawyer.org](https://github.com/jlawyerorg/j-lawyer-org) - Open-source Java-based legal case and document management system supporting case organization, document handling, invoicing, and fax integration for law offices on Windows, macOS, and Linux.
 
 ### Free Online Tools
 
@@ -153,6 +154,7 @@ Programming libraries, SDKs, and utilities for building legal tech applications.
 - [pdfplumber](https://github.com/jsvine/pdfplumber) - Specialized PDF extraction tool providing detailed access to text, characters, rectangles, and lines for precise coordinate-based data extraction and table identification.
 - [PyPDF](https://pypi.org/project/pypdf/) - Pure-Python library for splitting, merging, cropping, and transforming PDF pages while extracting text from electronically-generated documents.
 - [python-docx-template](https://github.com/elapouya/python-docx-template) - Document generation library that injects Jinja2 templating into .docx files for dynamic content insertion and automated legal document assembly.
+- [x-ray](https://github.com/freelawproject/x-ray) - Python library from the Free Law Project that detects improperly redacted text in PDF documents by scanning for text hidden beneath rectangles or solid shapes.
 
 ### Legal NLP & Text Processing
 
@@ -199,6 +201,8 @@ Academic datasets, models, and tools for legal natural language processing resea
 - [DISC-LawLLM](https://github.com/FudanDISC/DISC-LawLLM) - Intelligent legal system with LLM fine-tuned with 300K legal task examples, ranking highly on legal AI benchmarks.
 - [LawBench](https://github.com/open-compass/LawBench) - Comprehensive evaluation benchmark for assessing language models' legal knowledge across 20 tasks covering Chinese law.
 - [MILDSum](https://github.com/Law-AI/mildsum) - Benchmark dataset and tools for multilingual legal document summarization with Indian court judgments.
+- [LexGLUE](https://github.com/coastalcph/lex-glue) - Benchmark combining seven legal NLP datasets for evaluating language models on tasks spanning European Court of Human Rights cases, US Supreme Court decisions, EU legislation, and contract analysis.
+- [LegalBench-RAG](https://github.com/zeroentropy-ai/legalbenchrag) - Information retrieval benchmark for evaluating RAG systems on complex legal contract questions, aggregating ground-truth snippets from ContractNLI, CUAD, MAUD, and PrivacyQA datasets.
 
 ### Free Online Tools
 
@@ -228,6 +232,7 @@ Specialized tools for citation analysis, contract comparison, and legal research
 - [ChartAI](https://github.com/jamietso/ChartAI) - Automatically extracts and visualizes corporate structures from legal documents using computer vision and React Flow interactive diagrams.
 - [sgcite](https://github.com/yuch85/sgcite) - Command-line tool verifying Singapore case law citations and detecting hallucinated authorities by cross-referencing official eLitigation database.
 - [prompt-engineering-lawyers](https://github.com/houfu/prompt-engineering-lawyers) - Open-source Streamlit course teaching prompt engineering techniques for legal professionals with ChatGPT, Claude, and other LLMs.
+- [Adeu](https://github.com/dealfluence/adeu) - Agentic DOCX redlining engine that enables AI agents and LLMs to inject native Track Changes and comments into Word documents without corrupting formatting, with a Model Context Protocol server and Python SDK.
 
 ## Meta-Resources
 
