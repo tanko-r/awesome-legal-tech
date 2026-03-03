@@ -57,13 +57,15 @@ Tools and models that use AI to assist with legal work, from contract analysis t
 - [Lawvable](https://github.com/lawvable/awesome-legal-skills) - Curated AI skills for legal.
 - <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> [LexNLP](https://github.com/LexPredict/lexpredict-lexnlp) - Open source Python library for natural language processing and information extraction from legal and regulatory texts. Extracts structured data like dates, monetary amounts, regulations, and citations with pre-trained models for document and clause classification.
 - [LawBotics](https://github.com/hasnaintypes/lawbotics) - AI-powered legal contract analysis platform combining fine-tuned LLaMA models with modern web technologies to automate document review and clause extraction from PDFs and text. Identifies 41+ types of legal clauses and integrates with the CUAD dataset.
-- <img src="https://flagcdn.com/w20/br.png" width="20" height="15" alt="BR"> [LegalNLP](https://github.com/felipemaiapolo/legalnlp) - Natural language processing methods and pre-trained models (BERT, Word2Vec, Doc2Vec, FastText) specifically designed for the Brazilian legal language, enabling legal document classification and semantic analysis.
+- <img src="https://flagcdn.com/w20/br.png" width="20" height="15" alt="BR"> <sub><i>[LegalNLP](https://github.com/felipemaiapolo/legalnlp) - Natural language processing methods and pre-trained models (BERT, Word2Vec, Doc2Vec, FastText) specifically designed for the Brazilian legal language, enabling legal document classification and semantic analysis. (Last updated: 2023-06)</i></sub>
 - <img src="https://flagcdn.com/w20/in.png" width="20" height="15" alt="IN"> [MILDSum](https://github.com/Law-AI/mildsum) - Benchmark dataset and tools for multilingual legal document summarization, featuring 3,122 Indian court judgments with English and Hindi summaries drafted by legal practitioners, supporting legal NLP research.
 - <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> [OLAW](https://github.com/harvard-lil/olaw) - Open Legal AI Workbench from Harvard Law School Library for building retrieval-augmented generation (RAG) applications in legal research. Provides customizable chatbot framework that integrates legal APIs and documents.
 - <img src="https://flagcdn.com/w20/in.png" width="20" height="15" alt="IN"> [LawGlance](https://github.com/lawglance/lawglance) - Free, open-source RAG-based AI legal assistant for document analysis and legal question answering, enabling users to query their legal documents using natural language.
 - [Legal ML Datasets](https://github.com/neelguha/legal-ml-datasets) - Curated collection of datasets and machine learning tasks for legal text processing, including contract understanding, clause classification, and legal document analysis benchmarks.
-- [Awesome LegalAI Resources](https://github.com/CSHaitao/Awesome-LegalAI-Resources) - Comprehensive collection of legal AI datasets, tools, websites, and resources to facilitate development of intelligent legal technology systems.
-- [Legal Document Analysis using NLP](https://github.com/Team-NLP-Legal-Document/Legal_Document_Analysis_and_Classification_Using_NLP_and_Deep_Learning) - Deep learning pipeline for legal document classification and analysis using BERT embeddings and neural networks to automate document categorization and information extraction.
+- <sub><i>[Awesome LegalAI Resources](https://github.com/CSHaitao/Awesome-LegalAI-Resources) - Comprehensive collection of legal AI datasets, tools, websites, and resources to facilitate development of intelligent legal technology systems. (Last updated: 2023-07)</i></sub>
+- <sub><i>[Legal Document Analysis using NLP](https://github.com/Team-NLP-Legal-Document/Legal_Document_Analysis_and_Classification_Using_NLP_and_Deep_Learning) - Deep learning pipeline for legal document classification and analysis using BERT embeddings and neural networks to automate document categorization and information extraction. (Last updated: 2023-12)</i></sub>
+- [LexReviewer](https://github.com/LexStack-AI/LexReviewer) - AI legal document review engine that ingests PDFs, uses RAG with hybrid retrieval, and provides grounded chat with citations and bounding-box references for verifiable answers from source text.
+- [Ally Legal Assistant](https://github.com/Azure-Samples/ally-legal-assistant) - Microsoft Word plugin using Azure OpenAI for contract analysis, real-time Q&A, and auto-markup to help legal professionals save time during document reviews.
 
 ### Free Online Tools
 
@@ -87,19 +89,19 @@ Foundation models and fine-tunes purpose-built for the legal domain, from genera
 - <img src="https://flagcdn.com/w20/cn.png" width="20" height="15" alt="CN"> [Fuzi-Mingcha](https://github.com/irlab-sdu/fuzi.mingcha) - A Chinese judicial large language model jointly developed by Shandong University, Inspur Cloud, and China University of Political Science and Law, built on ChatGLM with capabilities for legal statute retrieval, case analysis, and judgment prediction.
 - <img src="https://flagcdn.com/w20/cn.png" width="20" height="15" alt="CN"> [LexiLaw](https://github.com/CSHaitao/LexiLaw) - A fine-tuned Chinese legal language model based on ChatGLM-6B that provides legal consultation services using LoRA, P-tuning-v2, and full fine-tuning approaches trained on legal Q&A, statutes, and court documents.
 - <img src="https://flagcdn.com/w20/cn.png" width="20" height="15" alt="CN"> [wisdomInterrogatory](https://github.com/zhihaiLLM/wisdomInterrogatory) - A legal-focused large language model developed by Zhejiang University and Alibaba DAMO Academy, built on Baichuan-7B with 40GB of legal domain data and six knowledge base types for intelligent legal consultation.
-- <img src="https://flagcdn.com/w20/cn.png" width="20" height="15" alt="CN"> [HanFei](https://github.com/siat-nlp/HanFei) - A 7-billion-parameter fully fine-tuned Chinese legal large language model trained on approximately 60GB of legal domain data, supporting legal Q&A, multi-turn conversations, and article writing.
+- <img src="https://flagcdn.com/w20/cn.png" width="20" height="15" alt="CN"> <sub><i>[HanFei](https://github.com/siat-nlp/HanFei) - A 7-billion-parameter fully fine-tuned Chinese legal large language model trained on approximately 60GB of legal domain data, supporting legal Q&A, multi-turn conversations, and article writing. (Last updated: 2023-10)</i></sub>
 - <img src="https://flagcdn.com/w20/cn.png" width="20" height="15" alt="CN"> [InternLM-Law](https://github.com/InternLM/InternLM-Law) - An open-source Chinese legal LLM with 7B parameters and 32K-token context length that outperforms GPT-4 on the LawBench evaluation benchmark, presented at COLING 2025.
 - <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> [Law_LLM](https://github.com/Tizzzzy/Law_LLM) - A multi-task legal LLM for the US legal system built on Gemma-7B, capable of similar case retrieval, precedent case recommendation, and legal judgment prediction.
 
 ### Legal BERT & Encoder Models
 
-- [legalBERT](https://github.com/nonameemnlp2020/legalBERT) - The official code repository for the LEGAL-BERT paper, providing multiple pre-trained BERT variants optimized for different legal sub-domains including US contracts, ECHR cases, and EU legislation.
-- <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> [CaseHOLD](https://github.com/reglab/casehold) - Stanford RegLab repository containing Legal-BERT and Custom Legal-BERT models pre-trained on 37GB of Harvard Law case corpus (3.4M+ legal decisions), plus the CaseHOLD benchmark of 53,000+ legal holdings.
-- <img src="https://flagcdn.com/w20/in.png" width="20" height="15" alt="IN"> [InLegalBERT](https://github.com/Law-AI/pretraining-bert) - Code from IIT Kharagpur for pre-training BERT models on Indian legal text using dynamic MLM and NSP, producing InLegalBERT and InCaseLawBERT models trained on 5.4 million Indian legal documents spanning 1950-2019.
+- <sub><i>[legalBERT](https://github.com/nonameemnlp2020/legalBERT) - The official code repository for the LEGAL-BERT paper, providing multiple pre-trained BERT variants optimized for different legal sub-domains including US contracts, ECHR cases, and EU legislation. (Last updated: 2020-06)</i></sub>
+- <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> <sub><i>[CaseHOLD](https://github.com/reglab/casehold) - Stanford RegLab repository containing Legal-BERT and Custom Legal-BERT models pre-trained on 37GB of Harvard Law case corpus (3.4M+ legal decisions), plus the CaseHOLD benchmark of 53,000+ legal holdings. (Last updated: 2023-03)</i></sub>
+- <img src="https://flagcdn.com/w20/in.png" width="20" height="15" alt="IN"> <sub><i>[InLegalBERT](https://github.com/Law-AI/pretraining-bert) - Code from IIT Kharagpur for pre-training BERT models on Indian legal text using dynamic MLM and NSP, producing InLegalBERT and InCaseLawBERT models trained on 5.4 million Indian legal documents spanning 1950-2019. (Last updated: 2023-06)</i></sub>
 
 ### Legal Embedding & Retrieval Models
 
-- <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> [fastlaw](https://github.com/jbesomi/fastlaw) - Law-specific word embeddings built with Apache Spark and FastText, trained on data from the Caselaw Access Project to replace generic word embeddings for supervised ML tasks on legal texts.
+- <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> <sub><i>[fastlaw](https://github.com/jbesomi/fastlaw) - Law-specific word embeddings built with Apache Spark and FastText, trained on data from the Caselaw Access Project to replace generic word embeddings for supervised ML tasks on legal texts. (Last updated: 2019-06)</i></sub>
 - [LRAGE](https://github.com/hoorangyee/LRAGE) - An open-source Legal Retrieval Augmented Generation Evaluation toolkit for assessing LLMs in RAG settings within the legal domain, with pre-compiled indexes and support for legal datasets.
 
 ## Legal Research
@@ -116,6 +118,7 @@ Platforms and tools for legal research, case law discovery, and statutory inform
 - <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> [Law XML](https://github.com/DCCouncil/law-xml) - DC Law statutes and regulatory code published in structured XML format for programmatic access.
 - <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> [Reporters DB](https://github.com/freelawproject/reporters-db) - Comprehensive database of court reporters with metadata and citation information for American courts.
 - <img src="https://flagcdn.com/w20/eu.png" width="20" height="15" alt="EU"> [OpenArchiver](https://github.com/LogicLabs-OU/OpenArchiver) - Open-source platform for legally compliant email archiving and eDiscovery with GDPR-aware data retention.
+- [AuthoritySpoke](https://github.com/mscarey/AuthoritySpoke) - Python library for modeling legal rules as structured data, enabling machine-readable representation and comparison of holdings from court opinions.
 
 ### Free Online Tools
 
@@ -138,7 +141,7 @@ Tools for drafting, reviewing, negotiating, and managing legal contracts.
 - [OpenContracts](https://github.com/Open-Source-Legal/OpenContracts) - Enterprise-grade document analysis workspace combining LLM capabilities with annotation, collaboration, and structured data extraction.
 - [DocuSeal](https://github.com/docusealco/docuseal) - Open-source DocuSign alternative for creating, filling, and signing digital documents with mobile-optimized forms and SDKs.
 - [Contract Lifecycle Management Dashboard](https://github.com/cyberkunju/contract-management) - Frontend-based CLM platform built with React and TypeScript for designing reusable contract blueprints and managing workflows.
-- [Contract Builder](https://github.com/blopa/Contract-Builder) - Free, open-source tool for easily building and maintaining any type of contract using spreadsheet-style interface.
+- <sub><i>[Contract Builder](https://github.com/blopa/Contract-Builder) - Free, open-source tool for easily building and maintaining any type of contract using spreadsheet-style interface. (Last updated: 2017-10)</i></sub>
 - [Microsoft Agent for Contract Processing](https://github.com/microsoft/Agent-for-Contract-Processing-Solution-Accelerator) - Solution accelerator demonstrating AI agent deployment for streamlined NDA creation and management.
 
 ### Free Online Tools
@@ -159,7 +162,7 @@ Software for law firms and legal departments to manage cases, clients, time, and
 - [IDURAR ERP CRM](https://github.com/idurar/idurar-erp-crm) - Comprehensive open-source ERP and CRM system on MERN stack handling invoicing, quotes, payments, and accounting.
 - [InvoiceShelf](https://github.com/InvoiceShelf/InvoiceShelf) - Laravel and Vue.js invoicing solution for tracking expenses, creating invoices and estimates, and managing recurring billing.
 - [SolidInvoice](https://github.com/SolidInvoice/SolidInvoice) - PHP-based invoicing platform with client management, quote generation, and online payment processing.
-- <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> [Open Case Management (OCM)](https://github.com/aworley/ocm) - PHP-based case management system specifically designed for nonprofit legal services organizations.
+- <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> <sub><i>[Open Case Management (OCM)](https://github.com/aworley/ocm) - PHP-based case management system specifically designed for nonprofit legal services organizations. (Last updated: 2022-08)</i></sub>
 - [Law Firm Management System](https://github.com/leon019i/Law_Firm_Management_system_Django) - Django-powered practice management platform with client management, case tracking, and mobile-friendly design.
 - <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> [DAWSON - U.S. Tax Court ef-cms](https://github.com/ustaxcourt/ef-cms) - TypeScript-based electronic filing and case management system used by the U.S. Tax Court.
 - <img src="https://flagcdn.com/w20/de.png" width="20" height="15" alt="DE"> [j-lawyer.org](https://github.com/jlawyerorg/j-lawyer-org) - Open-source Java-based legal case and document management system supporting case organization, document handling, invoicing, and fax integration for law offices on Windows, macOS, and Linux.
@@ -185,8 +188,9 @@ Systems for storing, organizing, and retrieving legal documents securely.
 - [OpenSign](https://github.com/OpenSignLabs/OpenSign) - Free and open-source DocuSign alternative providing e-signature capabilities for legal documents.
 - [Paperless-ngx](https://github.com/paperless-ngx/paperless-ngx) - Document management system that scans, indexes, and archives physical documents with OCR and full-text search.
 - [Papermerge](https://github.com/ciur/papermerge) - Open-source document management system optimized for digital archives and scanned documents with OCR capabilities.
-- [Mayan EDMS](https://github.com/mayan-edms/Mayan-EDMS) - Free and open-source enterprise document management system supporting workflows, versioning, and audit trails.
+- <sub><i>[Mayan EDMS](https://github.com/mayan-edms/Mayan-EDMS) - Free and open-source enterprise document management system supporting workflows, versioning, and audit trails. (Last updated: 2024-02)</i></sub>
 - [PyMuPDF](https://github.com/pymupdf/PyMuPDF) - High-performance Python library for extracting, analyzing, and manipulating PDF document data for automated legal document processing.
+- [Documenso](https://github.com/documenso/documenso) - Open-source DocuSign alternative built with Next.js and PostgreSQL, supporting self-hosting and PAdES-standard digital signatures for legally binding document workflows.
 
 ### Free Online Tools
 
@@ -226,6 +230,7 @@ Programming libraries, SDKs, and utilities for building legal tech applications.
 
 - [Accord Project](https://accordproject.org/) - Open-source ecosystem for smart legal contracts with the Cicero templating system for creating structured, reusable contract templates.
 - [Docassemble](https://docassemble.org/) - Full-stack expert system for guided legal interviews and document automation built in Python/YAML/Markdown with support for complex workflows.
+- [Legalis](https://github.com/cool-japan/legalis) - Rust framework for parsing, analyzing, and simulating legal statutes, transforming natural language legal documents into structured, machine-verifiable code.
 
 ## Access to Justice
 
@@ -235,7 +240,8 @@ Tools and platforms designed to improve access to legal services and justice.
 
 - [Docassemble](https://github.com/jhpyle/docassemble) - Expert system for guided interviews and document assembly that helps self-represented litigants generate court documents and legal forms.
 - <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> [docassemble-AssemblyLine](https://github.com/SuffolkLITLab/docassemble-AssemblyLine) - Rapid deployment framework converting paper court forms into interactive web applications for legal aid organizations.
-- <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> [A2J Author](https://github.com/CCALI/a2j-author) - Open-source tool for creating guided interviews that help people complete legal forms and court documents.
+- <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> <sub><i>[A2J Author](https://github.com/CCALI/a2j-author) - Open-source tool for creating guided interviews that help people complete legal forms and court documents. (Last updated: archived/removed)</i></sub>
+- <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> [Namesake](https://github.com/namesakefyi/namesake) - Web app guiding users through the legal name and gender marker change process in the United States, tracking requirements across jurisdictions.
 
 ### Free Online Tools
 
@@ -254,10 +260,11 @@ Academic datasets, models, and tools for legal natural language processing resea
 - <img src="https://flagcdn.com/w20/gb.png" width="20" height="15" alt="UK"> [Blackstone](https://github.com/ICLRandD/Blackstone) - spaCy-based natural language processing model trained on English case law for detecting legal entities and clause classification.
 - <img src="https://flagcdn.com/w20/cn.png" width="20" height="15" alt="CN"> [ChatLaw](https://github.com/PKU-YuanGroup/ChatLaw) - Large language model trained on Chinese legal documents and court data, achieving higher accuracy than GPT-4 on Chinese legal benchmarks.
 - <img src="https://flagcdn.com/w20/cn.png" width="20" height="15" alt="CN"> [DISC-LawLLM](https://github.com/FudanDISC/DISC-LawLLM) - Intelligent legal system with LLM fine-tuned with 300K legal task examples, ranking highly on legal AI benchmarks.
-- <img src="https://flagcdn.com/w20/cn.png" width="20" height="15" alt="CN"> [LawBench](https://github.com/open-compass/LawBench) - Comprehensive evaluation benchmark for assessing language models' legal knowledge across 20 tasks covering Chinese law.
+- <img src="https://flagcdn.com/w20/cn.png" width="20" height="15" alt="CN"> <sub><i>[LawBench](https://github.com/open-compass/LawBench) - Comprehensive evaluation benchmark for assessing language models' legal knowledge across 20 tasks covering Chinese law. (Last updated: 2023-11)</i></sub>
 - <img src="https://flagcdn.com/w20/in.png" width="20" height="15" alt="IN"> [MILDSum](https://github.com/Law-AI/mildsum) - Benchmark dataset and tools for multilingual legal document summarization with Indian court judgments.
 - <img src="https://flagcdn.com/w20/eu.png" width="20" height="15" alt="EU"> [LexGLUE](https://github.com/coastalcph/lex-glue) - Benchmark combining seven legal NLP datasets for evaluating language models on tasks spanning European Court of Human Rights cases, US Supreme Court decisions, EU legislation, and contract analysis.
 - <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> [LegalBench-RAG](https://github.com/zeroentropy-ai/legalbenchrag) - Information retrieval benchmark for evaluating RAG systems on complex legal contract questions, aggregating ground-truth snippets from ContractNLI, CUAD, MAUD, and PrivacyQA datasets.
+- [Canadian Legal Data](https://github.com/a2aj-ca/canadian-legal-data) - Repository for accessing bulk Canadian legal data maintained by Access to Artificial Justice, providing structured datasets for legal text processing and research.
 
 ### Free Online Tools
 
@@ -271,12 +278,14 @@ Tools for regulatory compliance, sanctions screening, policy monitoring, and aut
 
 - [OpenSanctions](https://github.com/opensanctions/opensanctions) - An open database of international sanctions data, persons of interest, and politically exposed persons (PEPs) for KYC/AML compliance screening.
 - [Watchman](https://github.com/moov-io/watchman) - A high-performance AML/CTF/KYC sanctions screening tool written in Go that searches against OFAC and other global watchlists via an HTTP API.
-- [Comply](https://github.com/strongdm/comply) - A compliance automation framework focused on SOC2 that generates auditor-friendly policy documents from Markdown and integrates with ticketing systems.
+- <sub><i>[Comply](https://github.com/strongdm/comply) - A compliance automation framework focused on SOC2 that generates auditor-friendly policy documents from Markdown and integrates with ticketing systems. (Last updated: 2022-07)</i></sub>
 - [Comp](https://github.com/trycompai/comp) - An AI-native open-source compliance platform covering SOC 2, ISO 27001, HIPAA, and GDPR frameworks as an alternative to Vanta and Drata.
 - [Marble](https://github.com/checkmarble/marble) - An open-source real-time decision engine for fraud detection and AML compliance, providing transaction monitoring, sanctions screening, and investigation case management.
 - <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> [GovReady-Q](https://github.com/GovReady/govready-q) - An open-source GRC (Governance, Risk, and Compliance) platform that automates security assessments and compliance documentation for DevSecOps workflows.
 - [FIRE Data Standard](https://github.com/SuadeLabs/fire) - The Financial Regulation Data Standard defining a common open specification for the transmission of granular data between regulatory systems in finance.
 - [Compliance-to-Policy](https://github.com/oscal-compass/compliance-to-policy) - A framework bridging compliance-as-code (OSCAL) and policy-as-code engines like Kyverno for automated compliance verification.
+- <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> [RegTech Data Validator](https://github.com/cfpb/regtech-data-validator) - Python-based tool by the Consumer Financial Protection Bureau for parsing and validating regulatory data submissions using Pandera schemas.
+- [Legal Guard](https://github.com/nathangtg/legal-guard-regtech) - AI-powered regulatory analysis tool that transforms complex documents into plain English, assesses risks, and checks against regulations like GDPR and PDPA.
 
 ## eDiscovery & Litigation Support
 
@@ -287,8 +296,9 @@ Software for electronically stored information (ESI) collection, processing, rev
 - [FreeEed](https://github.com/shmsoft/FreeEed) - An open-source, AI-enabled eDiscovery platform that processes over 1,400 file types including PST, MS Office, and images with OCR for document review, search, and production.
 - [Autopsy](https://github.com/sleuthkit/autopsy) - A widely-used digital forensics platform with a graphical interface to The Sleuth Kit, used by law enforcement, military, and corporate examiners to investigate computers and recover evidence for legal proceedings.
 - [Mattermost Legal Hold](https://github.com/mattermost/mattermost-plugin-legal-hold) - A Mattermost plugin enabling administrators to place users on legal hold for a defined time period, with daily data collection and export capabilities for litigation compliance.
-- [Open-Source-eDiscovery](https://github.com/dillonupgradeit/Open-Source-eDiscovery) - A Python-based eDiscovery application for creating and searching litigation productions from PDFs, emails, Office documents, images, and video files.
+- <sub><i>[Open-Source-eDiscovery](https://github.com/dillonupgradeit/Open-Source-eDiscovery) - A Python-based eDiscovery application for creating and searching litigation productions from PDFs, emails, Office documents, images, and video files. (Last updated: 2020-11)</i></sub>
 - [enigma](https://github.com/McFlip/enigma) - A Go-based eDiscovery tool for bulk decryption of emails in PST files and loose .eml files, designed for forensic and legal discovery workflows requiring legitimate certificate-based decryption.
+- [ICIJ Extract](https://github.com/ICIJ/extract) - Cross-platform command-line tool for parallelized content extraction and analysis of documents, used by the International Consortium of Investigative Journalists for large-scale document investigations.
 
 ## Legal Analytics & Prediction
 
@@ -296,12 +306,13 @@ Platforms for litigation outcome prediction, judge analytics, legal data visuali
 
 ### GitHub Repositories
 
-- <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> [scotus-predict-v2](https://github.com/mjbommar/scotus-predict-v2) - A random-forest-based model that predicts U.S. Supreme Court case outcomes and individual justice votes across nearly two centuries of decisions (1816-2014), achieving 70.2% case-level accuracy.
-- <img src="https://flagcdn.com/w20/eu.png" width="20" height="15" alt="EU"> [legal-case-prediction](https://github.com/conorosully/legal-case-prediction) - An MSc project using NLP and machine learning including custom word embeddings to predict judicial decisions of the European Court of Human Rights.
-- <img src="https://flagcdn.com/w20/eu.png" width="20" height="15" alt="EU"> [ECHR-OD_predictions](https://github.com/echr-od/ECHR-OD_predictions) - Implements a complete experimental framework for predicting European Court of Human Rights outcomes using binary, multiclass, and multilabel classification with multiple ML algorithms.
+- <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> <sub><i>[scotus-predict-v2](https://github.com/mjbommar/scotus-predict-v2) - A random-forest-based model that predicts U.S. Supreme Court case outcomes and individual justice votes across nearly two centuries of decisions (1816-2014), achieving 70.2% case-level accuracy. (Last updated: 2017-04)</i></sub>
+- <img src="https://flagcdn.com/w20/eu.png" width="20" height="15" alt="EU"> <sub><i>[legal-case-prediction](https://github.com/conorosully/legal-case-prediction) - An MSc project using NLP and machine learning including custom word embeddings to predict judicial decisions of the European Court of Human Rights. (Last updated: 2021-01)</i></sub>
+- <img src="https://flagcdn.com/w20/eu.png" width="20" height="15" alt="EU"> <sub><i>[ECHR-OD_predictions](https://github.com/echr-od/ECHR-OD_predictions) - Implements a complete experimental framework for predicting European Court of Human Rights outcomes using binary, multiclass, and multilabel classification with multiple ML algorithms. (Last updated: 2022-12)</i></sub>
 - <img src="https://flagcdn.com/w20/in.png" width="20" height="15" alt="IN"> [Realistic_LJP](https://github.com/ShubhamKumarNigam/Realistic_LJP) - Evaluates transformer models (InLegalBERT, BERT, XLNet) and LLMs for realistic legal judgment prediction on Indian court cases, presented at the NLLP Workshop at EMNLP 2024.
-- <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> [recidivism-predictions](https://github.com/stanford-policylab/recidivism-predictions) - Stanford Policy Lab replication code for the Science Advances paper comparing human vs. algorithmic accuracy in predicting criminal reoffending.
+- <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> <sub><i>[recidivism-predictions](https://github.com/stanford-policylab/recidivism-predictions) - Stanford Policy Lab replication code for the Science Advances paper comparing human vs. algorithmic accuracy in predicting criminal reoffending. (Last updated: 2020-05)</i></sub>
 - [Legal-Text-Analytics](https://github.com/Liquid-Legal-Institute/Legal-Text-Analytics) - A comprehensive curated list of resources, methods, and tools for legal text analytics covering NER, case outcome prediction, argument mining, summarization, and datasets from multiple jurisdictions.
+- <img src="https://flagcdn.com/w20/nl.png" width="20" height="15" alt="NL"> [Case Explorer](https://github.com/maastrichtlawtech/case-explorer-ui) - Network analysis platform for visualizing and exploring citation networks in Dutch and European court decisions, developed by Maastricht Law & Tech Lab.
 
 ## IP & Patent Technology
 
@@ -310,12 +321,13 @@ Tools for patent search, trademark monitoring, IP portfolio management, prior ar
 ### GitHub Repositories
 
 - [PatZilla](https://github.com/ip-tools/patzilla) - A modular patent information research platform and data integration toolkit with a modern UI and access to multiple data sources including the European Patent Office.
-- [PatentInspector](https://github.com/KonstantinosPetrakis/PatentInspector) - An open-source patent analyzing web application built with Django and Vue 3, allowing users to search, filter, and export patent data.
-- <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> [pypatent](https://github.com/daneads/pypatent) - A Python package for searching and scraping US Patent and Trademark Office patent data, outputting results as DataFrames or lists.
+- <sub><i>[PatentInspector](https://github.com/KonstantinosPetrakis/PatentInspector) - An open-source patent analyzing web application built with Django and Vue 3, allowing users to search, filter, and export patent data. (Last updated: 2023-12)</i></sub>
+- <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> <sub><i>[pypatent](https://github.com/daneads/pypatent) - A Python package for searching and scraping US Patent and Trademark Office patent data, outputting results as DataFrames or lists. (Last updated: 2020-06)</i></sub>
 - [patents-public-data](https://github.com/google/patents-public-data) - Google's official collection of BigQuery datasets and Jupyter notebooks for conducting large-scale statistical analysis of patent data.
 - [PatentSBERTa](https://github.com/AI-Growth-Lab/PatentSBERTa) - A deep NLP hybrid model combining Sentence-BERT and KNN for patent distance measurement and classification, trained on 1.5M+ patents.
-- <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> [hupd](https://github.com/suzgunmirac/hupd) - The Harvard USPTO Patent Dataset containing 4.5 million utility patent applications (2004-2018) with NLP models for patent acceptance prediction, classification, and summarization.
+- <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> <sub><i>[hupd](https://github.com/suzgunmirac/hupd) - The Harvard USPTO Patent Dataset containing 4.5 million utility patent applications (2004-2018) with NLP models for patent acceptance prediction, classification, and summarization. (Last updated: 2023-12)</i></sub>
 - [phpip](https://github.com/jjdejong/phpip) - A web-based patent and IP rights portfolio manager and docketing system built on Laravel/PHP with features for document merging, renewal management, and patent database integration.
+- <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> [Patent MCP Server](https://github.com/riemannzeta/patent_mcp_server) - FastMCP server providing AI assistants with access to USPTO patent data through multiple APIs including Patent Public Search, Open Data Portal, PTAB, PatentsView, and Office Action APIs.
 
 ## Privacy & Data Protection
 
@@ -336,7 +348,7 @@ Platforms and tools for automating legal processes, document lifecycles, and con
 
 ### GitHub Repositories
 
-- [ContraxSuite](https://github.com/LexPredict/lexpredict-contraxsuite) - An open-source contract analytics and legal document exploration platform using NLP and machine learning to extract clauses, entities, and structured data from unstructured legal text.
+- <sub><i>[ContraxSuite](https://github.com/LexPredict/lexpredict-contraxsuite) - An open-source contract analytics and legal document exploration platform using NLP and machine learning to extract clauses, entities, and structured data from unstructured legal text. (Last updated: 2023-02)</i></sub>
 - [Wraft](https://github.com/wraft/wraft) - An open-source Document Lifecycle Management platform built with Elixir and React that helps businesses create, manage, approve, and sign documents from official letters to contracts.
 - [CommonAccord](https://github.com/CommonAccord/Cmacc-Org) - An initiative to create global codes of legal transacting by codifying and automating legal documents as composable, interoperable objects.
 
@@ -349,7 +361,7 @@ E-filing platforms, court management systems, government legal portals, and lega
 - <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> [Open Case Filing System](https://github.com/federal-courts-software-factory/open-case-filing-system) - A public-domain platform by the Federal Courts Software Factory designed as a modern replacement for the federal CM/ECF system, built with Rust and PostgreSQL.
 - <img src="https://flagcdn.com/w20/za.png" width="20" height="15" alt="ZA"> [Indigo](https://github.com/laws-africa/indigo) - A Django-based legislation publishing platform by Laws.Africa for managing, consolidating, and publishing legislation in the Akoma Ntoso XML standard, with export to HTML, PDF, and ePUB.
 - <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> [Courts-DB](https://github.com/freelawproject/courts-db) - A comprehensive open-source database of current and historical courts maintained by Free Law Project, containing metadata from over 16 million data points.
-- <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> [LegalXML Court Filing 5.0](https://github.com/oasis-tcs/legalxml-courtfiling-5.0-spec) - The OASIS LegalXML Electronic Court Filing TC repository containing the ECF 5.0 specification, schemas, and examples for interoperable electronic court filing systems.
+- <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> <sub><i>[LegalXML Court Filing 5.0](https://github.com/oasis-tcs/legalxml-courtfiling-5.0-spec) - The OASIS LegalXML Electronic Court Filing TC repository containing the ECF 5.0 specification, schemas, and examples for interoperable electronic court filing systems. (Last updated: 2019-05)</i></sub>
 - <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> [NIEM Model](https://github.com/niemopen/niem-model) - The National Information Exchange Model reference data model, an OASIS Open Project providing a common vocabulary with domain namespaces including Justice for government information exchange.
 - <img src="https://flagcdn.com/w20/de.png" width="20" height="15" alt="DE"> [Open Legal Data Platform (OLDP)](https://github.com/openlegaldata/oldp) - A Django-based open data platform for processing and publishing legal documents with search and API access to court decisions and laws.
 
@@ -360,13 +372,13 @@ Structured legal knowledge representations, ontologies, and tools for building l
 ### GitHub Repositories
 
 - [LKIF Core](https://github.com/RinkeHoekstra/lkif-core) - The LKIF Core legal ontology library consisting of 15 OWL modules covering fundamental legal and commonsense concepts across abstract, basic, and legal layers.
-- [LegalRuleML](https://github.com/oasis-tcs/legalruleml) - The official OASIS LegalRuleML Technical Committee repository for developing examples and sharing knowledge about the correct application of the LegalRuleML standard for representing legal norms in markup.
-- [LegalDocML Akoma Ntoso](https://github.com/oasis-open/legaldocml-akomantoso) - The official OASIS TC Open Repository containing schema files, examples, implementations, and libraries for the Akoma Ntoso legal document XML standard.
+- <sub><i>[LegalRuleML](https://github.com/oasis-tcs/legalruleml) - The official OASIS LegalRuleML Technical Committee repository for developing examples and sharing knowledge about the correct application of the LegalRuleML standard for representing legal norms in markup. (Last updated: 2020-07)</i></sub>
+- <sub><i>[LegalDocML Akoma Ntoso](https://github.com/oasis-open/legaldocml-akomantoso) - The official OASIS TC Open Repository containing schema files, examples, implementations, and libraries for the Akoma Ntoso legal document XML standard. (Last updated: 2022-06)</i></sub>
 - <img src="https://flagcdn.com/w20/za.png" width="20" height="15" alt="ZA"> [Bluebell](https://github.com/laws-africa/bluebell) - A generic Akoma Ntoso 3 parser in Python supporting all hierarchical elements and multiple legal document types including acts, bills, debates, and judgments.
 - [FOLIO](https://github.com/alea-institute/FOLIO) - The Federated Open Legal Information Ontology providing over 18,000 standardized legal concepts with unique identifiers and multilingual support for data interoperability in the legal industry.
 - [Legal-Ontologies](https://github.com/Liquid-Legal-Institute/Legal-Ontologies) - A curated collection of resources, methods, and tools dedicated to legal ontologies, data schemes, and knowledge graphs maintained by the Liquid Legal Institute.
 - <img src="https://flagcdn.com/w20/eu.png" width="20" height="15" alt="EU"> [DaPreCo KB](https://github.com/dapreco/daprecokb) - The largest freely available LegalRuleML knowledge base containing deontic rules formalized in Input/Output logic for GDPR and ISO 27018 compliance mapping.
-- <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> [SEC Knowledge Graph](https://github.com/AnjaneyaTripathi/knowledge_graph) - A knowledge graph construction tool for SEC litigation releases that classifies legal documents into crime categories and extracts violators, violations, actions, and fines.
+- <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> <sub><i>[SEC Knowledge Graph](https://github.com/AnjaneyaTripathi/knowledge_graph) - A knowledge graph construction tool for SEC litigation releases that classifies legal documents into crime categories and extracts violators, violations, actions, and fines. (Last updated: 2022-02)</i></sub>
 
 ## MCP Servers & AI Agent Tools for Law
 
@@ -379,6 +391,9 @@ Model Context Protocol servers, AI agent frameworks, and tooling specifically de
 - [mcp-cerebra-legal-server](https://github.com/yoda-digital/mcp-cerebra-legal-server) - An enterprise-grade MCP server for structured legal reasoning and analysis with automatic legal domain detection and citation formatting.
 - <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> [us-legal-mcp](https://github.com/JamesANZ/us-legal-mcp) - An MCP server providing comprehensive US legislation access by searching Congress bills, Federal Register documents, court opinions, and committees from within AI coding environments.
 - [LegalBench](https://github.com/HazyResearch/legalbench) - An open science benchmark of 162 collaboratively curated tasks from 40 contributors for evaluating legal reasoning capabilities in large language models.
+- [Pasal](https://github.com/ilhamfp/pasal) - AI-native Indonesian legal platform combining an MCP server with a web app to give Claude grounded access to Indonesian laws and regulations.
+- <img src="https://flagcdn.com/w20/de.png" width="20" height="15" alt="DE"> [Ayunis Legal MCP](https://github.com/ayunis-core/ayunis-legal-mcp) - MCP server for German legal codes with vector-based semantic search, comprising a store API, CLI tool, web scraper, and XML parser for comprehensive legal text analysis.
+- <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> [Congress.gov MCP Server](https://github.com/bsmi021/mcp-congress_gov_server) - MCP server providing access to the official Congress.gov API for searching US bills, amendments, committee reports, and legislative data from within AI assistants.
 
 ## Legal Education & Communities
 
@@ -414,8 +429,10 @@ Other awesome lists and curated collections in the legal technology space.
 - [awesome-legal-nlp](https://github.com/maastrichtlawtech/awesome-legal-nlp) - Comprehensive curated list of natural language processing resources, research papers, and datasets specifically for the legal domain, maintained by Maastricht Law & Tech Lab.
 - [awesome-legal-data](https://github.com/openlegaldata/awesome-legal-data) - Collection of datasets, corpora, benchmarks, and tools for legal text processing and NLP research across multiple jurisdictions and languages.
 - [awesome-legal-skills](https://github.com/lawvable/awesome-legal-skills) - Curated list of AI agent skills and automation tools designed to streamline and assist with legal workflows and document analysis.
-- [Awesome-LegalAI-Resources](https://github.com/CSHaitao/Awesome-LegalAI-Resources) - Comprehensive collection of datasets, models, research papers, and tools focused on AI and machine learning applications in the legal domain.
-- [awesome-lawtech](https://github.com/officeanddragons/awesome-lawtech) - Community-curated list of legal technology software, tools, and learning resources for legal professionals, designers, and developers.
+- <sub><i>[Awesome-LegalAI-Resources](https://github.com/CSHaitao/Awesome-LegalAI-Resources) - Comprehensive collection of datasets, models, research papers, and tools focused on AI and machine learning applications in the legal domain. (Last updated: 2023-07)</i></sub>
+- <sub><i>[awesome-lawtech](https://github.com/officeanddragons/awesome-lawtech) - Community-curated list of legal technology software, tools, and learning resources for legal professionals, designers, and developers. (Last updated: 2019-10)</i></sub>
+- [legaltechlist](https://github.com/digitallawyer/legaltechlist) - Curated directory of legal technology tools and services organized by category for legal professionals and technologists.
+- [LawAgent](https://github.com/AI-Hub-Admin/LawAgent) - Catalog of law-related AI agent tools and resources providing a common interface for developing legal AI workflows, with references to major commercial and open-source legal AI tools.
 
 ## Contributing
 
