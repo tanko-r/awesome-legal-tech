@@ -54,6 +54,7 @@ Tools and models that use AI to assist with legal work, from contract analysis t
 
 - 🇺🇸 [Sara](https://github.com/tanko-r/AI-Associate) - A specialized Claude Code plugin that operates as a senior AI law associate capable of handling complex legal work.  Intended to work across multiple practice areas, but currently focused on US real estate transactions. Sara generates original legal documents and delegates research tasks to junior associate subagents, designed for solo practitioners and small law firms.
 - [Ambrose](https://github.com/tanko-r/Ambrose) - An AI-powered contract review and redlining platform combining Claude Opus for risk analysis with Gemini Flash for revision generation. Built with Flask backend and Next.js frontend, engineered for in-house counsel and deal teams managing high volumes of contracts rapidly.
+- [Lawvable](https://github.com/lawvable/awesome-legal-skills) - Curated AI skills for legal.
 - 🇺🇸 [LexNLP](https://github.com/LexPredict/lexpredict-lexnlp) - Open source Python library for natural language processing and information extraction from legal and regulatory texts. Extracts structured data like dates, monetary amounts, regulations, and citations with pre-trained models for document and clause classification.
 - [LawBotics](https://github.com/hasnaintypes/lawbotics) - AI-powered legal contract analysis platform combining fine-tuned LLaMA models with modern web technologies to automate document review and clause extraction from PDFs and text. Identifies 41+ types of legal clauses and integrates with the CUAD dataset.
 - 🇧🇷 [LegalNLP](https://github.com/felipemaiapolo/legalnlp) - Natural language processing methods and pre-trained models (BERT, Word2Vec, Doc2Vec, FastText) specifically designed for the Brazilian legal language, enabling legal document classification and semantic analysis.
@@ -66,6 +67,7 @@ Tools and models that use AI to assist with legal work, from contract analysis t
 
 ### Free Online Tools
 
+- [Lawvable](https://lawvable.com) - Curated legal AI skills.
 - [FreeLawChat.ai](https://freelawchat.ai/) - Free AI chatbot that answers legal questions across multiple jurisdictions with geographic-specific guidance. Users can ask unlimited questions on family law, employment, contracts, and other areas.
 - [LexiAI](https://lexiai.org/) - Free multilingual AI legal chatbot available 24/7 that provides legal information in your chosen language using GPT technology.
 - [CompareX Free Contract Analyser](https://compare-x.ai/free-contract-analyser) - Analyzes contracts in 60 seconds, identifying missing clauses, high-risk terms, and compliance gaps with plain-English explanations. Completely free with no credit card required.
@@ -380,7 +382,6 @@ Model Context Protocol servers, AI agent frameworks, and tooling specifically de
 
 Newsletters, courses, conferences, and communities for legal technology learning and professional development.
 
-- [Lawvable](https://lawvable.com) - Curated legal AI skills.
 - [Legal Quants](https://legalquants.com) - Community of lawyer-builders designing, building and implementing bleeding edge AI tools for lawyers. 
 - 🇳🇱 [Maastricht Law & Tech Lab](https://www.maastrichtuniversity.nl/research/maastricht-law-and-tech-lab) - Academic research center focused on legal NLP and technology with publicly available datasets and resources.
 - 🇺🇸 [Stanford Legal AI Lab](https://hazyresearch.stanford.edu/) - Research lab producing legal benchmarks, datasets, and models for advancing legal AI research.
