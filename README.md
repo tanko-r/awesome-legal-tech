@@ -380,7 +380,8 @@ Model Context Protocol servers, AI agent frameworks, and tooling specifically de
 
 Newsletters, courses, conferences, and communities for legal technology learning and professional development.
 
-- [Lawvable](https://lawvable.com) - Legal tech news and resources curated by industry experts with regular updates on emerging legal technology trends.
+- [Lawvable](https://lawvable.com) - Curated legal AI skills.
+- [Legal Quants](https://legalquants.com) - Community of lawyer-builders designing, building and implementing bleeding edge AI tools for lawyers. 
 - 🇳🇱 [Maastricht Law & Tech Lab](https://www.maastrichtuniversity.nl/research/maastricht-law-and-tech-lab) - Academic research center focused on legal NLP and technology with publicly available datasets and resources.
 - 🇺🇸 [Stanford Legal AI Lab](https://hazyresearch.stanford.edu/) - Research lab producing legal benchmarks, datasets, and models for advancing legal AI research.
 - 🇺🇸 [Harvard Law School Library Innovation Lab](https://law.harvard.edu/library/innovation/) - Develops tools and resources for legal research innovation and open legal data access.
