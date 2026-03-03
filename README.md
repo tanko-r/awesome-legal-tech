@@ -214,6 +214,8 @@ Programming libraries, SDKs, and utilities for building legal tech applications.
 - <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> [LexNLP](https://github.com/LexPredict/lexpredict-lexnlp) - Specialized Python library for natural language processing and information extraction from legal and regulatory texts with pre-trained models.
 - [spaCy](https://spacy.io/) - Industrial-strength NLP library with pre-trained models for named entity recognition in contracts and legal documents.
 - <img src="https://flagcdn.com/w20/gb.png" width="20" height="15" alt="UK"> [Blackstone](https://github.com/ICLRandD/Blackstone) - spaCy-based natural language processing model trained on English case law that detects legal entities and classifies sentences by legal purpose.
+- [ContextGem](https://github.com/shcherbak-ai/contextgem) - Open-source Python LLM framework for extracting structured data and insights from documents with minimal code. Supports multi-level extraction workflows with paragraph-level source references, reasoning justifications, and multilingual support across multiple LLM providers.
+
 
 ### Document Services & Integration
 
