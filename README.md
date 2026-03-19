@@ -266,6 +266,18 @@ Academic datasets, models, and tools for legal natural language processing resea
 - <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> [LegalBench-RAG](https://github.com/zeroentropy-ai/legalbenchrag) - Information retrieval benchmark for evaluating RAG systems on complex legal contract questions, aggregating ground-truth snippets from ContractNLI, CUAD, MAUD, and PrivacyQA datasets.
 - [Canadian Legal Data](https://github.com/a2aj-ca/canadian-legal-data) - Repository for accessing bulk Canadian legal data maintained by Access to Artificial Justice, providing structured datasets for legal text processing and research.
 
+### Public Datasets
+
+- <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> [The Atticus Project — CUAD & ACORD](https://www.atticusprojectai.org/datasets) - Two annotated contract datasets from the same non-profit: CUAD covers 500+ commercial contracts across 41 clause types; ACORD provides 126,000+ expert-rated query-clause pairs for complex clauses like indemnification and limitation of liability.
+- <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> [LEDGAR](https://huggingface.co/datasets/coastalcph/ledgar) - 80,000 contract provisions extracted from SEC filings, covering clause types including confidentiality, governing law, and indemnification. Available on HuggingFace.
+- <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> [ContractNLI](https://stanfordnlp.github.io/contract-nli/) - 607 annotated NDAs from Stanford NLP for natural language inference on legal contracts, released under Creative Commons.
+- <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> [Stanford Material Contracts Corpus (MCC)](https://mcc.law.stanford.edu) - 1M+ real agreements filed with the SEC between 2000–2023, fully searchable by contract type and party; the largest open contract dataset available.
+- <img src="https://flagcdn.com/w20/eu.png" width="20" height="15" alt="EU"> [LexGLUE](https://huggingface.co/datasets/coastalcph/lex_glue) - Bundle of multiple legal NLP datasets in one place on HuggingFace, including LEDGAR and UNFAIR-ToS (terms of service annotations), for benchmarking language models on legal tasks.
+- <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> [SEC EDGAR](https://www.sec.gov/cgi-bin/browse-edgar) - Primary public source of millions of contracts filed by U.S. public companies; free access to the raw filings behind many of the datasets above.
+- <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> [TREC Legal Track](https://trec-legal.umiacs.umd.edu/corpora/trec/legal10/) - Document corpora and relevance judgments from the TREC Legal Track competitions, designed for evaluating e-discovery and legal information retrieval systems.
+- <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> [Caselaw Access Project](https://case.law/) - Harvard Law School's digitized archive of all official U.S. court decisions published in books from the 1600s to 2020, covering 40+ million pages of legal text.
+- [ICC Case Transcripts](https://www.icc-cpi.int/case-transcripts) - Official transcripts of proceedings before the International Criminal Court, freely available for legal NLP research on international criminal law.
+
 ### Free Online Tools
 
 - <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> [Descrybe Legal Research](https://descrybe.ai/) - Free case law research tool with no login required that searches U.S. federal and state court decisions using plain English queries with AI-generated summaries.
