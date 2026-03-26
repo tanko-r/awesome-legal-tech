@@ -227,6 +227,7 @@ Programming libraries, SDKs, and utilities for building legal tech applications.
 - [PyPDF](https://pypi.org/project/pypdf/) - Pure-Python library for splitting, merging, cropping, and transforming PDF pages while extracting text from electronically-generated documents.
 - [python-docx-template](https://github.com/elapouya/python-docx-template) - Document generation library that injects Jinja2 templating into .docx files for dynamic content insertion and automated legal document assembly.
 - <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> [x-ray](https://github.com/freelawproject/x-ray) - Python library from the Free Law Project that detects improperly redacted text in PDF documents by scanning for text hidden beneath rectangles or solid shapes.
+- [EdgeParse](https://github.com/raphaelmansuy/edgeparse) - High-accuracy Rust-based PDF converter that deterministically transforms digital PDFs into Markdown, JSON with bounding boxes, HTML, or plain text without requiring a JVM or GPU.
 - [Python-Redlines](https://github.com/JSv4/Python-Redlines) - Python library for generating docx tracked-change redlines, enabling programmatic creation of legal document comparisons with native Word Track Changes formatting.
 - [office-word-diff](https://github.com/yuch85/office-word-diff) - Library for applying word-level text diffs to Microsoft Word via Office.js API, preserving formatting with cascading fallback strategies for AI text editing and grammar checking in Word add-ins.
 
