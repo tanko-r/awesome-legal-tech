@@ -1,6 +1,6 @@
 ---
 name: sync-and-update
-description: Pulls latest, researches new legal tech entries via web search and GitHub topic crawl, checks for link rot, updates README.md, commits, and pushes to remote — fully autonomous, no user input required.
+description: Pulls latest, researches new legal tech entries via web search and GitHub topic crawl, checks for link rot, updates README.md and CHANGELOG.md, commits, and pushes to remote — fully autonomous, no user input required.
 context: fork
 disable-model-invocation: true
 allowed-tools: Read, Write, Edit, Bash, WebSearch, WebFetch, Grep, Glob
@@ -9,7 +9,7 @@ argument-hint: "[optional: target section name]"
 
 # Skill: sync-and-update
 
-Fully autonomous end-to-end update cycle for the awesome-legal-apps list. Pulls latest from remote, dynamically discovers all categories from README.md, researches new entries via web search and GitHub topic crawl, checks all GitHub repos for link rot (marking stale entries), updates the file, commits, and pushes — all without user input.
+Fully autonomous end-to-end update cycle for the awesome-legal-apps list. Pulls latest from remote, dynamically discovers all categories from README.md, researches new entries via web search and GitHub topic crawl, checks all GitHub repos for link rot (marking stale entries), updates README.md and CHANGELOG.md, commits, and pushes — all without user input.
 
 ---
 
@@ -241,19 +241,57 @@ If an entry is currently wrapped in `<sub><i>` staleness tags but the repo has b
 
 ---
 
-## Step 6: Commit and Push
+## Step 6: Update Changelog
 
-After all edits are complete (new entries from Step 4 and staleness updates from Step 5), run the following shell commands:
+After all README.md edits are complete (new entries from Step 4 and staleness updates from Step 5), update `CHANGELOG.md`.
+
+### Procedure
+
+1. Read the current `CHANGELOG.md`.
+2. Under the `## [Unreleased]` heading (create it if missing), add a new dated section: `## [YYYY-MM-DD]` using today's date.
+3. Populate the section with:
+   - **`### Added`** — list new entries grouped by README section (e.g., `- **AI Tools:** Name1, Name2`). Use the same section names as the README headings.
+   - **`### Changed`** — list any staleness marking changes (e.g., `- Marked \`owner/repo\` as stale (last updated: YYYY-MM)`).
+   - **`### Removed`** — list any entries removed (if applicable).
+4. Omit empty sub-sections (e.g., skip `### Removed` if nothing was removed).
+5. Keep a blank `## [Unreleased]` heading above the new dated section for future changes.
+
+### Format Example
+
+```markdown
+## [Unreleased]
+
+## [2026-04-01]
+
+### Added
+- **AI Tools:** ToolA, ToolB (US)
+- **MCP Servers:** ServerX, ServerY (EU)
+
+### Changed
+- Marked `owner/repo` as stale (last updated: 2023-05)
+```
+
+### Rules
+
+- Do NOT rewrite or modify existing changelog entries — only prepend new ones.
+- Use the exact entry names as they appear in README.md (not the GitHub repo slug).
+- If zero entries were added and no staleness changes were made, do NOT touch the changelog.
+
+---
+
+## Step 7: Commit and Push
+
+After all edits are complete (README.md from Steps 4–5 and CHANGELOG.md from Step 6), run the following shell commands:
 
 ```bash
-# Stage only README.md
-git add README.md
+# Stage both files
+git add README.md CHANGELOG.md
 
 # Check if there are staged changes
 git diff --cached --quiet && echo "NO_CHANGES" || echo "HAS_CHANGES"
 ```
 
-**If NO_CHANGES:** Skip commit and push. Go directly to Step 7 and report that no new entries were found.
+**If NO_CHANGES:** Skip commit and push. Go directly to Step 8 and report that no new entries were found.
 
 **If HAS_CHANGES:** Commit and push:
 
@@ -279,7 +317,7 @@ Do NOT use `--force`. If the push fails, print the error and stop. Do NOT retry 
 
 ---
 
-## Step 7: Print Summary
+## Step 8: Print Summary
 
 After completion, print a summary:
 
@@ -319,7 +357,7 @@ No staleness changes detected.
 - Do NOT add GitHub repos with zero commits in the past 12 months
 - Do NOT add tools whose homepage redirects to an acquirer
 - Do NOT use `--force` or `--no-verify` with any git command
-- Do NOT modify any file other than README.md
+- Do NOT modify any file other than README.md and CHANGELOG.md
 - Do NOT prompt the user for input at any point — this skill is fully autonomous
 - Do NOT hardcode the list of categories — always read them dynamically from README.md
 - Do NOT remove stale entries — only format them with staleness markers
