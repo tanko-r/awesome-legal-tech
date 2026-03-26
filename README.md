@@ -473,7 +473,7 @@ Other awesome lists and curated collections in the legal technology space.
 - [awesome-legal-skills](https://github.com/lawvable/awesome-legal-skills) - Curated list of AI agent skills and automation tools designed to streamline and assist with legal workflows and document analysis.
 - <sub><i>[Awesome-LegalAI-Resources](https://github.com/CSHaitao/Awesome-LegalAI-Resources) - Comprehensive collection of datasets, models, research papers, and tools focused on AI and machine learning applications in the legal domain. (Last updated: 2023-07)</i></sub>
 - <sub><i>[awesome-lawtech](https://github.com/officeanddragons/awesome-lawtech) - Community-curated list of legal technology software, tools, and learning resources for legal professionals, designers, and developers. (Last updated: 2019-10)</i></sub>
-- [legaltechlist](https://github.com/digitallawyer/legaltechlist) - Curated directory of legal technology tools and services organized by category for legal professionals and technologists.
+- [legaltechlist](https://github.com/digitallawyer/legaltechlist) ([web](https://legaltech.herokuapp.com/)) - Curated directory of legal technology tools and services organized by category for legal professionals and technologists.
 - [LawAgent](https://github.com/AI-Hub-Admin/LawAgent) - Catalog of law-related AI agent tools and resources providing a common interface for developing legal AI workflows, with references to major commercial and open-source legal AI tools.
 - [Awesome-Legal (ishandutta2007)](https://github.com/ishandutta2007/Awesome-Legal) - Curated list of SaaS products and open-source projects focused on AI agents for legal workflows.
 
