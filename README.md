@@ -71,6 +71,7 @@ Tools and models that use AI to assist with legal work, from contract analysis t
 | **[Contract Review Agent](https://github.com/kipeum86/contract-review-agent)** | Local-first AI contract review agent that turns legal templates and counterparty drafts into clause-level analysis and tracked-change DOCX redlines. | Python | 2026-03-25 |
 | <img src="https://flagcdn.com/w20/in.png" width="20" height="15" alt="IN"> **[LegalOS](https://github.com/paidinesh7/LegalOS)** | AI-powered legal document analyzer designed for Indian startup founders to review and understand legal agreements. | Python | 2026-03-25 |
 | <img src="https://flagcdn.com/w20/br.png" width="20" height="15" alt="BR"> **[Lex Intelligentia Skills](https://github.com/fbmoulin/lex-intelligentia-skills)** | Agent skills ecosystem with 17 specialized skills for Brazilian law professionals including magistrates, lawyers, and legal researchers. | Python | 2026-03-25 |
+| **[AI Legal Claude](https://github.com/zubair-trabzada/ai-legal-claude)** | Claude Code skill suite providing 14 specialized legal AI skills including contract review, risk analysis, NDA generation, compliance auditing, and negotiation strategy, orchestrated by 5 parallel agents. | Python | 2026-04-06 |
 | **[Lawvable](https://lawvable.com)** | Curated legal AI skills platform. | | 2026-03-02 |
 | **[FreeLawChat.ai](https://freelawchat.ai/)** | Free AI chatbot that answers legal questions across multiple jurisdictions with geographic-specific guidance on family law, employment, contracts, and other areas. | | 2026-03-02 |
 | **[LexiAI](https://lexiai.org/)** | Free multilingual AI legal chatbot available 24/7 that provides legal information in your chosen language using GPT technology. | | 2026-03-02 |
@@ -99,6 +100,7 @@ Foundation models and fine-tunes purpose-built for the legal domain, from genera
 | <img src="https://flagcdn.com/w20/cn.png" width="20" height="15" alt="CN"> **[LegalOne](https://github.com/CSHaitao/LegalOne)** | A family of Chinese legal-domain foundation models (1.7B, 4B, 8B parameters) trained via a three-phase pipeline with agentic chain-of-thought distillation and curriculum reinforcement learning for reliable legal reasoning. | Python, PyTorch | 2026-03-25 |
 | <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[PrinzBench](https://github.com/prinz-ai/prinzbench)** | A benchmark ranking frontier LLMs on their ability to conduct legal research, analysis, and locate obscure publicly available legal information across US law. | | 2026-03-25 |
 | <img src="https://flagcdn.com/w20/eu.png" width="20" height="15" alt="EU"> **[LEXam](https://github.com/LEXam-Benchmark/LEXam)** | A comprehensive legal reasoning benchmark evaluating LLMs on 4,886 law exam questions from 340 exams spanning Swiss, EU, and international law, accepted at ICLR 2026. | | 2026-03-25 |
+| **[Legal-LLM (LawMate Romania)](https://github.com/DorobantuDiana/Legal-LLM)** | Romanian legal domain LLM built by fine-tuning Saul-7B-Instruct-v1 on the Romanian Constitution and Education Law, with the resulting model published on Hugging Face. | Python, PyTorch | 2026-04-06 |
 
 ### Legal BERT & Encoder Models
 
@@ -200,6 +202,7 @@ Systems for storing, organizing, and retrieving legal documents securely.
 | **[Word AI Redliner](https://github.com/yuch85/word-ai-redliner)** | Microsoft Word add-in that applies AI edits as tracked-change redlines with prompt management, connecting to Ollama or other LLMs for structure-aware legal document editing. | TypeScript, Office.js | 2026-03-25 |
 | **[SuperDoc Redlines](https://github.com/yuch85/superdoc-redlines)** | CLI tool for applying tracked changes and comments to DOCX files using SuperDoc headless mode, enabling automated document markup in legal workflows. | TypeScript | 2026-03-25 |
 | **[SignaturePacketIDE](https://github.com/jamietso/SignaturePacketIDE)** | AI-powered legal signature page extractor and packet generator that automates creation of wet-ink signature packs for M&A and financing transactions. | Python | 2026-03-25 |
+| **[open-agreements](https://github.com/open-agreements/open-agreements)** | CLI tool that fills 25 standard legal agreement templates (NDAs, cloud terms, SAFEs, employment agreements, NVCA financing documents) and produces signable DOCX files. | TypeScript | 2026-04-06 |
 | **[PandaDoc](https://www.pandadoc.com)** | Document management and e-signature platform with templates for legal agreements. | | 2026-03-02 |
 | <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[LawDepot](https://www.lawdepot.com)** | Provides free legal document templates and forms customizable for various needs. | | 2026-03-02 |
 | **[JotForm](https://www.jotform.com)** | Free form builder with legal document templates and signature collection capabilities. | | 2026-03-02 |
@@ -311,6 +314,7 @@ Tools for regulatory compliance, sanctions screening, policy monitoring, and aut
 | **[Compliance-to-Policy](https://github.com/oscal-compass/compliance-to-policy)** | A framework bridging compliance-as-code (OSCAL) and policy-as-code engines like Kyverno for automated compliance verification. | | 2026-03-02 |
 | <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[RegTech Data Validator](https://github.com/cfpb/regtech-data-validator)** | Python-based tool by the Consumer Financial Protection Bureau for parsing and validating regulatory data submissions using Pandera schemas. | Python | 2026-03-02 |
 | **[Legal Guard](https://github.com/nathangtg/legal-guard-regtech)** | AI-powered regulatory analysis tool that transforms complex documents into plain English, assesses risks, and checks against regulations like GDPR and PDPA. | Python | 2026-03-03 |
+| **[Probo](https://github.com/getprobo/probo)** | Open-source compliance platform for startups supporting SOC 2, GDPR, ISO 27001, HIPAA, ISO 27701, and ISO 42001 as a self-hosted alternative to Vanta and Drata. | TypeScript, Next.js | 2026-04-06 |
 
 ## eDiscovery & Litigation Support
 
@@ -367,6 +371,7 @@ Specialized tools for privacy impact assessments, consent management, DSAR autom
 | **[app-privacy-policy-generator](https://github.com/nisrulz/app-privacy-policy-generator)** | A free, open-source web app that generates customized, GDPR-compliant privacy policies and terms of use documents for mobile applications. | | 2026-03-02 |
 | **[CISO Assistant](https://github.com/intuitem/ciso-assistant-community)** | A comprehensive open-source GRC platform supporting 100+ frameworks including GDPR, HIPAA, ISO 27001, and NIS2, with built-in risk assessment and compliance auditing. | Python | 2026-03-02 |
 | **[ML Privacy Meter](https://github.com/privacytrustlab/ml_privacy_meter)** | An open-source Python library for auditing data privacy in machine learning models through membership inference attacks, supporting GDPR-mandated data protection impact assessments. | Python | 2026-03-02 |
+| **[Databunker](https://github.com/securitybunker/databunker)** | Self-hosted secure vault for storing and managing customer PII, PHI, PCI, and KYC records with built-in tokenization and encryption to support GDPR, HIPAA, and SOC 2 compliance. | Go | 2026-04-06 |
 
 ## Legal Workflow Automation
 
@@ -390,6 +395,8 @@ E-filing platforms, court management systems, government legal portals, and lega
 | *<img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[LegalXML Court Filing 5.0](https://github.com/oasis-tcs/legalxml-courtfiling-5.0-spec)*** | *The OASIS LegalXML Electronic Court Filing TC repository containing the ECF 5.0 specification, schemas, and examples for interoperable electronic court filing systems. ⚠️ Stale (2019-05)* | | *2026-03-02* |
 | <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[NIEM Model](https://github.com/niemopen/niem-model)** | The National Information Exchange Model reference data model, an OASIS Open Project providing a common vocabulary with domain namespaces including Justice for government information exchange. | | 2026-03-02 |
 | <img src="https://flagcdn.com/w20/de.png" width="20" height="15" alt="DE"> **[Open Legal Data Platform (OLDP)](https://github.com/openlegaldata/oldp)** | A Django-based open data platform for processing and publishing legal documents with search and API access to court decisions and laws. | Python, Django | 2026-03-02 |
+| <img src="https://flagcdn.com/w20/de.png" width="20" height="15" alt="DE"> **[RIS Caselaw](https://github.com/digitalservicebund/ris-backend-service)** | Backend service for the German federal caselaw platform that manages, stores, and provides API access to judicial decisions across German courts. | Java, TypeScript | 2026-04-06 |
+| <img src="https://flagcdn.com/w20/gb.png" width="20" height="15" alt="UK"> **[Find Case Law — Data Enrichment Service](https://github.com/nationalarchives/ds-caselaw-data-enrichment-service)** | Service used by The National Archives to automatically annotate UK judicial decisions with references to cited cases and relevant legislation for the Find Case Law platform. | Python | 2026-04-06 |
 
 ## Legal Ontologies & Knowledge Graphs
 
@@ -402,7 +409,7 @@ Structured legal knowledge representations, ontologies, and tools for building l
 | ***[LegalDocML Akoma Ntoso](https://github.com/oasis-open/legaldocml-akomantoso)*** | *The official OASIS TC Open Repository containing schema files, examples, implementations, and libraries for the Akoma Ntoso legal document XML standard. ⚠️ Stale (2022-06)* | | *2026-03-02* |
 | <img src="https://flagcdn.com/w20/za.png" width="20" height="15" alt="ZA"> **[Bluebell](https://github.com/laws-africa/bluebell)** | A generic Akoma Ntoso 3 parser in Python supporting all hierarchical elements and multiple legal document types including acts, bills, debates, and judgments. | Python | 2026-03-02 |
 | **[FOLIO](https://github.com/alea-institute/FOLIO)** | The Federated Open Legal Information Ontology providing over 18,000 standardized legal concepts with unique identifiers and multilingual support for data interoperability in the legal industry. | | 2026-03-02 |
-| **[Legal-Ontologies](https://github.com/Liquid-Legal-Institute/Legal-Ontologies)** | A curated collection of resources, methods, and tools dedicated to legal ontologies, data schemes, and knowledge graphs maintained by the Liquid Legal Institute. | | 2026-03-02 |
+| ***[Legal-Ontologies](https://github.com/Liquid-Legal-Institute/Legal-Ontologies)*** | *A curated collection of resources, methods, and tools dedicated to legal ontologies, data schemes, and knowledge graphs maintained by the Liquid Legal Institute. ⚠️ Stale (2024-03)* | | *2026-03-02* |
 | <img src="https://flagcdn.com/w20/eu.png" width="20" height="15" alt="EU"> **[DaPreCo KB](https://github.com/dapreco/daprecokb)** | The largest freely available LegalRuleML knowledge base containing deontic rules formalized in Input/Output logic for GDPR and ISO 27018 compliance mapping. | | 2026-03-02 |
 | *<img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[SEC Knowledge Graph](https://github.com/AnjaneyaTripathi/knowledge_graph)*** | *A knowledge graph construction tool for SEC litigation releases that classifies legal documents into crime categories and extracts violators, violations, actions, and fines. ⚠️ Stale (2022-02)* | *Python* | *2026-03-02* |
 
@@ -430,6 +437,10 @@ Model Context Protocol servers, AI agent frameworks, and tooling specifically de
 | <img src="https://flagcdn.com/w20/eu.png" width="20" height="15" alt="EU"> **[EU AI Act MCP](https://github.com/SonnyLabs/EU_AI_ACT_MCP)** | MCP server helping AI agents comply with the EU AI Act with tools for risk classification, prohibited practice checks, transparency disclosures, and deepfake labeling. | Python | 2026-03-25 |
 | **[DOCX Redline MCP](https://github.com/AnsonLai/docx-redline-mcp)** | MCP server for inspecting and editing .docx files with support for real Word tracked changes and comments, purpose-built for legal contract review pipelines. | Python | 2026-03-25 |
 | **[Law7 MCP](https://github.com/mikhashev/law7)** | Open up-to-date legal database for AI assistants via MCP server and core engine. | Python | 2026-03-25 |
+| **[Korean Law MCP](https://github.com/chrisryugj/korean-law-mcp)** | MCP server and CLI providing 89 tools for Korean law covering statutes, precedents, ordinances, and legal interpretations, installable via npm. | TypeScript | 2026-04-06 |
+| **[Greek Law MCP](https://github.com/Ansvar-Systems/Greek-law-mcp)** | MCP server providing a comprehensive Greek legal database with 21,119 statutes and 7,793 provisions for cybersecurity compliance queries, part of the Ansvar multi-jurisdiction suite. | Python | 2026-04-06 |
+| **[Danish Law MCP](https://github.com/Ansvar-Systems/Danish-law-mcp)** | MCP server providing access to 62,764 Danish laws sourced from Retsinformation for use in AI assistants and compliance workflows. | Python | 2026-04-06 |
+| **[FOLIO MCP](https://github.com/alea-institute/folio-mcp)** | MCP server exposing the FOLIO legal ontology (18,000+ standardized legal concepts) to AI assistants for semantic legal classification and knowledge retrieval. | Python | 2026-04-06 |
 
 ## Legal Education & Communities
 
@@ -476,6 +487,7 @@ Other awesome lists and curated collections in the legal technology space.
 | **[legaltechlist](https://github.com/digitallawyer/legaltechlist) ([web](https://legaltech.herokuapp.com/))** | Curated directory of legal technology tools and services organized by category for legal professionals and technologists. | | 2026-03-02 |
 | **[LawAgent](https://github.com/AI-Hub-Admin/LawAgent)** | Catalog of law-related AI agent tools and resources providing a common interface for developing legal AI workflows, with references to major commercial and open-source legal AI tools. | | 2026-03-02 |
 | **[Awesome-Legal (ishandutta2007)](https://github.com/ishandutta2007/Awesome-Legal)** | Curated list of SaaS products and open-source projects focused on AI agents for legal workflows. | | 2026-03-25 |
+| **[awesome-legaltech (Vaquill-AI)](https://github.com/Vaquill-AI/awesome-legaltech)** | Curated list of legaltech resources spanning open-source platforms, AI models, MCP servers, companies, datasets, and tools for the global legal ecosystem. | | 2026-04-06 |
 
 ## Contributing
 
