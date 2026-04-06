@@ -183,7 +183,6 @@ Software for law firms and legal departments to manage cases, clients, time, and
 | <img src="https://flagcdn.com/w20/de.png" width="20" height="15" alt="DE"> **[j-lawyer.org](https://github.com/jlawyerorg/j-lawyer-org)** | Open-source Java-based legal case and document management system supporting case organization, document handling, invoicing, and fax integration for law offices on Windows, macOS, and Linux. | Java | 2026-03-02 |
 | **[LPM Skills](https://github.com/legalopsconsulting/lpm-skills)** | AI skills encoding legal project management methodology for Claude, covering matter management, budgeting, task workflows, and deadline tracking. | Python | 2026-03-25 |
 | **[TimeBrief](https://github.com/jamescockburn47/voice-time)** | Voice-powered time tracking app for lawyers with fully local AI, enabling hands-free timesheet entry without sending data to external servers. | Python | 2026-04-06 |
-| **[EasyBoard](https://github.com/SaifAlYounan/EasyBoard)** | Open-source board portal for managing corporate board meetings, materials, and governance workflows. | TypeScript | 2026-04-06 |
 | **[CounselScope](https://github.com/Tucuxi-Inc/PublicCounselScope)** | AI-powered legal query optimization platform that transforms vague legal requests into precisely-scoped instructions by building on internal organizational legal knowledge. | Python | 2026-04-06 |
 | **[OpenSign](https://www.opensignlabs.com/)** | Free, unlimited, open-source e-signature tool. | | 2026-03-02 |
 | **[SignWell](https://www.signwell.com)** | Simple, free e-signature tool designed for small businesses and legal professionals. | | 2026-03-02 |
@@ -328,6 +327,8 @@ Tools for regulatory compliance, sanctions screening, policy monitoring, and aut
 | **[Probo](https://github.com/getprobo/probo)** | Open-source compliance platform for startups supporting SOC 2, GDPR, ISO 27001, HIPAA, ISO 27701, and ISO 42001 as a self-hosted alternative to Vanta and Drata. | TypeScript, Next.js | 2026-04-06 |
 | **[Regis](https://github.com/Flosters/Regis)** | AI-powered corporate ownership mapping and Ultimate Beneficial Owner (UBO) analysis tool that generates interactive ownership charts from natural language prompts or uploaded images, with a unified entity directory and automated syncing. | TypeScript | 2026-04-06 |
 | **[TaxStructuringTool LITE](https://github.com/tech-taitan/TaxStructuringTool_LITE)** | Lightweight entity charting tool for tax professionals that visualizes corporate structures and ownership chains for tax structuring analysis. | TypeScript | 2026-04-06 |
+| **[EasyBoard](https://github.com/SaifAlYounan/EasyBoard)** | Open-source board portal for managing corporate board meetings, materials, and governance workflows. | TypeScript | 2026-04-06 |
+
 
 ## eDiscovery & Litigation Support
 
