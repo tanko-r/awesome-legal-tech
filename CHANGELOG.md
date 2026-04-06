@@ -9,6 +9,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [2026-04-06]
 
 ### Added
+- **Legal Tech Developer Tools** *(new section)*: MinerU, Scriberr (Document Processing); Hugging Face Transformers, Stanza (NLP & NER)
 - **AI Tools:** BS Detector, Hallucination Auditor
 - **Legal Research:** US Code Tools (US)
 - **Contract Management:** Restated AI, Indemnification Architect

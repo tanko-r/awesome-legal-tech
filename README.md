@@ -31,6 +31,7 @@ Entries marked with a flag icon are designed for or specific to that jurisdictio
 - [Practice Management](#practice-management)
 - [Document Management](#document-management)
 - [Backend Utilities & Libraries](#backend-utilities--libraries)
+- [Legal Tech Developer Tools](#legal-tech-developer-tools)
 - [Access to Justice](#access-to-justice)
 - [Legal NLP & Datasets](#legal-nlp--datasets)
 - [Compliance & Regulatory Technology](#compliance--regulatory-technology)
@@ -260,6 +261,24 @@ Programming libraries, SDKs, and utilities for building legal tech applications.
 | **[Accord Project](https://accordproject.org/)** | Open-source ecosystem for smart legal contracts with the Cicero templating system for creating structured, reusable contract templates. | | 2026-03-02 |
 | **[Docassemble](https://docassemble.org/)** | Full-stack expert system for guided legal interviews and document automation built in Python/YAML/Markdown with support for complex workflows. | Python, YAML | 2026-03-02 |
 | **[Legalis](https://github.com/cool-japan/legalis)** | Rust framework for parsing, analyzing, and simulating legal statutes, transforming natural language legal documents into structured, machine-verifiable code. | Rust | 2026-03-03 |
+
+## Legal Tech Developer Tools
+
+General-purpose libraries and tools especially useful when building legal technology applications, from document ingestion pipelines to NLP workflows.
+
+### Document Processing & OCR
+
+| Name | Description | Tech Stack | Date Added |
+|------|-------------|------------|------------|
+| **[MinerU](https://github.com/opendatalab/MinerU)** | High-accuracy document parser that transforms PDFs and Office files into LLM-ready Markdown, JSON with bounding boxes, or plain text, with layout analysis, formula extraction, and multi-column support. | Python | 2026-04-06 |
+| **[Scriberr](https://github.com/rishikanthc/Scriberr)** | Self-hosted AI audio transcription service with fully local processing, suitable for transcribing depositions, hearings, and client meetings without sending audio to external servers. | Go | 2026-04-06 |
+
+### NLP & Named Entity Recognition
+
+| Name | Description | Tech Stack | Date Added |
+|------|-------------|------------|------------|
+| **[Hugging Face Transformers](https://github.com/huggingface/transformers)** | Leading open-source library for loading and fine-tuning transformer models; widely used to run legal BERT variants, clause classifiers, and contract information extractors. | Python | 2026-04-06 |
+| **[Stanza](https://github.com/stanfordnlp/stanza)** | Stanford NLP Python library with pre-trained pipelines for tokenization, POS tagging, NER, and dependency parsing across 60+ languages, applicable to multi-jurisdiction legal text processing. | Python | 2026-04-06 |
 
 ## Access to Justice
 
