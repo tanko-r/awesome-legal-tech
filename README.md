@@ -272,6 +272,8 @@ General-purpose libraries and tools especially useful when building legal techno
 |------|-------------|------------|------------|
 | **[MinerU](https://github.com/opendatalab/MinerU)** | High-accuracy document parser that transforms PDFs and Office files into LLM-ready Markdown, JSON with bounding boxes, or plain text, with layout analysis, formula extraction, and multi-column support. | Python | 2026-04-06 |
 | **[Scriberr](https://github.com/rishikanthc/Scriberr)** | Self-hosted AI audio transcription service with fully local processing, suitable for transcribing depositions, hearings, and client meetings without sending audio to external servers. | Go | 2026-04-06 |
+| **[Docling](https://github.com/docling-project/docling)** | IBM's document conversion toolkit that transforms PDFs, Word, PowerPoint, and HTML into structured Markdown or JSON with layout preservation, table extraction, and reading order detection, designed for LLM ingestion pipelines. | Python | 2026-04-06 |
+| **[Marker](https://github.com/datalab-to/marker)** | High-accuracy PDF to Markdown and JSON converter handling complex layouts including tables, equations, and multi-column text, optimized for speed in document ingestion pipelines. | Python | 2026-04-06 |
 
 ### NLP & Named Entity Recognition
 
@@ -279,6 +281,8 @@ General-purpose libraries and tools especially useful when building legal techno
 |------|-------------|------------|------------|
 | **[Hugging Face Transformers](https://github.com/huggingface/transformers)** | Leading open-source library for loading and fine-tuning transformer models; widely used to run legal BERT variants, clause classifiers, and contract information extractors. | Python | 2026-04-06 |
 | **[Stanza](https://github.com/stanfordnlp/stanza)** | Stanford NLP Python library with pre-trained pipelines for tokenization, POS tagging, NER, and dependency parsing across 60+ languages, applicable to multi-jurisdiction legal text processing. | Python | 2026-04-06 |
+| **[NLTK](https://github.com/nltk/nltk)** | Foundational Python toolkit for natural language processing providing tokenization, stemming, tagging, parsing, and corpus utilities; widely used as a baseline in legal text processing research. | Python | 2026-04-06 |
+| **[Flair](https://github.com/flairNLP/flair)** | NLP framework for sequence labeling, NER, and text classification with state-of-the-art contextual string embeddings; useful for training custom NER models on legal text corpora. | Python | 2026-04-06 |
 
 ## Access to Justice
 
