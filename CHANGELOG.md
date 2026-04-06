@@ -6,6 +6,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [2026-04-06]
+
+### Added
+- **AI Tools:** BS Detector, Hallucination Auditor
+- **Legal Research:** US Code Tools (US)
+- **Contract Management:** Restated AI, Indemnification Architect
+- **Practice Management:** TimeBrief, EasyBoard, CounselScope
+- **Document Management:** CoQuill, SuperDoc VS Code Extension
+- **Backend Utilities (Document Processing):** Docxodus
+- **Compliance & Regulatory Technology:** Regis, TaxStructuringTool LITE
+- **eDiscovery & Litigation Support:** ReelDiscovery
+
 ## [2026-03-25]
 
 ### Added
