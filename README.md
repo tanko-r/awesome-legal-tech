@@ -83,6 +83,7 @@ Tools and models that use AI to assist with legal work, from contract analysis t
 | **[LogicBalls Legal Document Generator](https://logicballs.com/tools/legal-document-drafting-generator)** | Free AI tool that generates NDAs, contracts, agreements, and legal memos in minutes without signup. | | 2026-03-02 |
 | **[Galaxy.ai Legal Letter Generator](https://galaxy.ai/ai-legal-letter-generator)** | Free legal letter generator requiring no login that creates various types of legal correspondence using AI entirely in your browser. | | 2026-03-02 |
 | **[AI Lawyer](https://ailawyer.pro/)** | Free AI legal assistant offering contract drafting, legal research, agreement comparison, translation, and summarization features. | | 2026-03-02 |
+| <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[Prest0](https://prest0.ai)** | Enterprise legal AI platform that deploys a dedicated bilingual (English/Spanish) AI agent per law firm on an isolated VM, with persistent memory, Twilio voice + SMS intake, deep legal research, and legal-grade document drafting. Vertical-specialized for immigration (I-589 asylum, U-visa), California workers' comp (WCAB Pre-Hearing Statements under Rule 10563), and plaintiff-side employment law. Patent-pending Context-Based Semantic TreeSearch memory architecture. | TypeScript, Python, Node.js | 2026-04-22 |
 
 ## Law-Focused LLMs & Fine-Tuned Models
 
