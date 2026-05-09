@@ -219,6 +219,7 @@ Systems for storing, organizing, and retrieving legal documents securely.
 | **[Template.net](https://www.template.net)** | Extensive library of free legal document templates including contracts, NDAs, and employment agreements. | | 2026-03-02 |
 | **[GetDoc](https://www.getdoc.com)** | Free document collaboration and e-signature platform with secure version control. | | 2026-03-02 |
 | **[DocHub](https://www.dochub.com)** | Free online document editor with e-signature capabilities for editing, signing, and managing documents directly in browser. | | 2026-03-02 |
+| **[PDF Mavericks](https://www.pdfmavericks.com)** | Browser-local PDF toolkit covering compress, merge, split, sign, watermark, and redact for contracts and case files. Files never leave the device — processing runs in JavaScript via PDF.js. No upload, no account, no tracking. | TypeScript, Next.js, PDF.js | 2026-05-09 |
 
 ## Backend Utilities & Libraries
 
