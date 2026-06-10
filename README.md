@@ -191,6 +191,10 @@ Software for law firms and legal departments to manage cases, clients, time, and
 | **[PandaDoc](https://www.pandadoc.com)** | Document management and e-signature platform with free tier offering templates for contracts and legal agreements. | | 2026-03-02 |
 | <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[Nolo](https://www.nolo.com)** | Offers free legal information, document templates, and self-help resources for common legal issues and agreements. | | 2026-03-02 |
 
+## Business Formation & Entity Management
+
+- [LLC Class](https://llcclass.com) — Wyoming LLC formation service for non-US founders: state filing, registered agent, EIN application, BOI compliance, and annual reports. No US address required.
+
 ## Document Management
 
 Systems for storing, organizing, and retrieving legal documents securely.
