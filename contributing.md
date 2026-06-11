@@ -37,13 +37,24 @@ All entries follow this exact format:
   - ✓ "Docassemble is an open source platform for generating legal documents through automated interviews, used by legal aid organizations and solo practitioners."
   - ✗ "Docassemble is the leading document automation platform for law firms" (marketing language)
 
-### Open Source & Free Markers
+### License Column
 
-Tools marked as open source or free-to-use are labeled:
+Entries are maintained as rows in the section tables, with these columns:
 
-- Add `- Open Source` at the end for projects with public source code
-- Add `- Free` at the end for tools with free tiers or fully free offerings
-- Example: `- [Docassemble](https://docassemble.org) - An open source platform for document automation. - Open Source`
+```
+| Name | Description | Tech Stack | License | Date Added |
+```
+
+The **License** column records how each tool is licensed. It enforces inclusion criterion #4 (FOSS or development-targeted) and tells readers whether they can freely reuse the tool. Fill it as follows:
+
+- **FOSS tools** — the SPDX identifier from the project's `LICENSE` file (e.g., `MIT`, `Apache-2.0`, `AGPL-3.0`, `GPL-3.0`, `BSD-3-Clause`, `CC0-1.0`). For GitHub repos, this is the license shown on the repo page.
+- **`Other`** — the project has a license file, but it is non-standard or cannot be matched to an SPDX identifier.
+- **`No license`** — a public repository with no `LICENSE` file. The code is visible but grants no reuse rights, so treat it as all-rights-reserved.
+- **`Not FOSS`** — proprietary or commercial software that is *not* open source but still qualifies under criterion #4 (a private tool that facilitates legal tech development, or an already-accepted public-good resource).
+- **`Public domain`** — government sources and works dedicated to the public domain (e.g., U.S. federal data).
+- **`—`** — not applicable (a community, newsletter, or research lab rather than a software artifact).
+
+A `Not FOSS` label is only valid if the tool independently satisfies criterion #4 — a general commercial legal product that does not facilitate development does not qualify.
 
 ## How to Suggest a Tool
 

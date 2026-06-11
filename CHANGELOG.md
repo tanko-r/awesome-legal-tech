@@ -22,8 +22,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - **MCP Servers & AI Agent Tools:** Vaquill MCP (US), CourtListener MCP Server, Legal Skills Open, German Legal MCP (DE), EU AI Act MCP (EU)
 - **Advanced Legal Tools & Citation Systems:** CiteBench (US)
 - **Meta-Resources:** Awesome EU AI Act (EU)
+- **AI Tools:** LQ.AI, Donna, Mike local desktop edition (all LegalQuants)
+- **Privacy & Data Protection:** PrivacyQuant (LegalQuants, US)
+- **Legal Tech Developer Tools:** noroboto (LegalQuants)
+- **MCP Servers & AI Agent Tools:** LQ Skills, LegalQuants Plugin
 
 ### Changed
+- Added a **License** column to every section table, populated from each tool's SPDX license (FOSS) or labeled `Not FOSS`, `No license`, `Other`, `Public domain`, or `—`
+- Documented inclusion criterion #4 (FOSS or development-targeted) and the License column in `contributing.md` and the `sync-and-update` skill
 - Marked `tanko-r/AI-Associate` (Sara) as stale (archived/removed)
 - Marked `fbmoulin/lex-intelligentia-skills` (Lex Intelligentia Skills) as stale (archived/removed)
 - Marked `Ansvar-Systems/US_Compliance_MCP` (US Compliance MCP) as stale (archived/removed)

@@ -226,16 +226,40 @@ For each candidate URL, apply ALL of these checks. Discard on ANY failure:
 
 ## Step 4: Write Entries
 
-For each candidate that passes all filters:
+Entries are rows in the Markdown tables under each section. Every table uses these columns:
 
+```
+| Name | Description | Tech Stack | License | Date Added |
+```
+
+For each candidate that passes all filters, build a row:
+
+- **Name:** `**[Name](URL)**`, optionally preceded by a jurisdiction flag image (see below).
 - **Compose description:** One sentence explaining what the tool does and who it is for. No marketing copy. Sentence case. Ends with a period.
-- **Determine correct section:** Match to the README.md section whose `## Heading` best fits. Use the categories discovered in Step 1b.
-- **Place correctly:** GitHub repos go under `### GitHub Repositories` subsections when they exist. Free web tools go under `### Free Online Tools` subsections when they exist. Other entries go at the end of their section.
-- **Jurisdiction flags:** If the tool is designed for a specific jurisdiction's legal system, add the appropriate flag emoji before the link (e.g., `- 🇺🇸 [Name](URL) - Description.`). If the tool is globally applicable, do not add a flag. Refer to the Jurisdiction Flags table in README.md for valid flags.
-- **Use exact format:** `- [Name](URL) - Description.` or `- FLAG [Name](URL) - Description.`
+- **Tech Stack:** Primary language(s)/framework(s), or leave the cell blank if not applicable.
+- **License:** Determine and record how the tool is licensed — see **License Determination** below. This column is mandatory for every entry.
+- **Date Added:** Today's date as `YYYY-MM-DD`.
+- **Determine correct section:** Match to the README.md section whose `## Heading` best fits. Use the categories discovered in Step 1b. When a section has both a GitHub-repo table and a free-tools table, place each entry in the right one.
+- **Jurisdiction flags:** If the tool is designed for a specific jurisdiction's legal system, prepend the matching flag image `<img src="https://flagcdn.com/w20/{cc}.png" width="20" height="15" alt="{CC}">` before the bold link. If globally applicable, omit the flag. Refer to the Jurisdiction Flags table in README.md for valid flags.
 - If `$ARGUMENTS` is not empty, only append to the specified section.
 
-Use the Edit tool to insert entries at the correct location in README.md. Do NOT rewrite the entire file — only insert new lines.
+### License Determination
+
+Fill the **License** column for every new entry:
+
+1. **GitHub repos** — query the SPDX id with Bash:
+   `gh api repos/{owner}/{repo} --jq '.license.spdx_id'`
+   - A real SPDX id (e.g., `MIT`, `Apache-2.0`, `AGPL-3.0`, `GPL-3.0`, `BSD-3-Clause`, `CC0-1.0`) → use it verbatim.
+   - `NOASSERTION` → `Other` (has a license file that is non-standard or unrecognized).
+   - `null` / empty → `No license` (public repo with no LICENSE file — treat as all-rights-reserved).
+2. **Non-GitHub tools** — check the homepage/docs for a license:
+   - Open source → its SPDX id.
+   - Public datasets / government sources → `Public domain`, `CC0-1.0`, or the stated CC license.
+   - Proprietary commercial or free-to-use closed software/services → `Not FOSS`.
+   - Communities, newsletters, research labs (non-software) → `—`.
+3. A `Not FOSS` entry MUST independently satisfy inclusion criterion #4 (FOSS or development-targeted) from contributing.md — it is eligible only if it is a private tool that facilitates legal tech development, or an already-accepted public-good resource. A general commercial legal product that does not facilitate development fails the Step 3 Compliance check and is DISCARDED.
+
+Use the Edit tool to insert each row at the correct location in README.md. Do NOT rewrite the entire file — only insert new rows, matching the exact column order and pipe formatting of existing rows in that table.
 
 ---
 
