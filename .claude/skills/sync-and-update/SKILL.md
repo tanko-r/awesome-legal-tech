@@ -1,6 +1,6 @@
 ---
 name: sync-and-update
-description: Pulls latest, researches new legal tech entries via web search and GitHub topic crawl, checks for link rot, updates README.md and CHANGELOG.md, commits, and pushes to remote — fully autonomous, no user input required.
+description: Pulls latest, researches new legal tech entries via web search, GitHub topic crawl, and trusted-org/member repo crawl, checks for link rot, updates README.md and CHANGELOG.md, commits, and pushes to remote — fully autonomous, no user input required.
 context: fork
 disable-model-invocation: true
 allowed-tools: Read, Write, Edit, Bash, WebSearch, WebFetch, Grep, Glob
@@ -167,6 +167,50 @@ These are heuristics — always verify by reading the repository description and
 
 ---
 
+## Step 2c: Trusted Organization & Member Repo Crawl
+
+Crawl repositories owned by curated legal-tech organizations **and the personal repos of their public members**. These are high-signal sources because they are maintained by known lawyer-builders.
+
+### Trusted Organizations
+
+| Org slug | People page |
+|---|---|
+| `LegalQuants` | https://github.com/orgs/LegalQuants/people |
+
+To add more trusted orgs later, append rows to this table — the crawl procedure below is generic.
+
+### Crawl Procedure
+
+For each org in the table, use Bash with the `gh` CLI (authenticated via `GITHUB_TOKEN` in CI). Each command emits `url<TAB>pushed_at<TAB>description` lines:
+
+1. **Org-owned repos:**
+   ```bash
+   gh api "orgs/{ORG}/repos?per_page=100&sort=updated" \
+     --jq '.[] | select(.fork==false) | [.html_url, .pushed_at, (.description // "")] | @tsv'
+   ```
+2. **Public members:**
+   ```bash
+   gh api "orgs/{ORG}/public_members" --jq '.[].login'
+   ```
+3. **Each member's owned (non-fork) public repos:**
+   ```bash
+   gh api "users/{LOGIN}/repos?per_page=100&sort=updated" \
+     --jq '.[] | select(.fork==false) | [.html_url, .pushed_at, (.description // "")] | @tsv'
+   ```
+
+Add every discovered repo URL to the candidate pool alongside the candidates from Step 2 and Step 2b. Deduplicate against the set from Step 1a.
+
+If `gh` is unavailable or an API call fails (rate limit, private org, removed user), fall back to WebFetch on `https://github.com/orgs/{ORG}/people` and each member's `https://github.com/{LOGIN}?tab=repositories` page, then continue. If a source returns nothing, skip it silently.
+
+### Scope & Filtering Note
+
+- These candidates are **NOT** auto-included. They still pass ALL Step 3 filters — in particular the legal-domain-specificity check (a member's unrelated personal projects are excluded) and the active-maintenance check.
+- Because members are vetted lawyer-builders, lean toward inclusion when a repo is borderline but clearly built for legal work.
+- Section mapping: use each repo's description and topics with the same heuristics table from Step 2b to choose the README section.
+- If `$ARGUMENTS` is set (targeted update), only keep org/member repos whose description matches the target section.
+
+---
+
 ## Step 3: Filter Candidates
 
 For each candidate URL, apply ALL of these checks. Discard on ANY failure:
@@ -327,7 +371,8 @@ After completion, print a summary:
 - Categories discovered: [number]
 - Search queries run: [number]
 - GitHub topics crawled: [number]
-- Total candidates found (search + topics): [number]
+- Trusted orgs crawled: [number] (orgs + members)
+- Total candidates found (search + topics + trusted orgs): [number]
 - Candidates after filtering: [number]
 - New entries added: [number]
   - [Entry Name] → [Section]
