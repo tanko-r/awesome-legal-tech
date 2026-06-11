@@ -13,10 +13,11 @@ Tools must meet **all** of these criteria to be included:
 1. **Maintained**: The tool is actively developed or maintained. No abandonware, no projects abandoned for >2 years without updates.
 2. **Active Resource**: The tool is publicly accessible, working, and available for legal use. No dead links, no paywalls without public tier.
 3. **Legal Focus**: The tool serves a clear legal use case — legal professionals, law students, or legal technologists are the primary audience.
-4. **Quality**: The tool has clear documentation or public information explaining what it does, who uses it, and how to access it.
-5. **Not Marketing Copy**: Descriptions must be written independently and accurately, not copied from vendor marketing materials.
-6. **No Conflicts Disqualified**: Conflict of interest does not automatically disqualify an entry — but must be fully disclosed.
-7. **Verifiable**: At time of inclusion, the tool must be verified to exist, be active, and meet the above criteria.
+4. **FOSS or Development Targeted**: The tool is either free and open source software or it is private commercial software that is intended to be used to facilitate legal tech development.  Otherwise, the list would grow out of control to include all commercial legal tech.
+5. **Quality**: The tool has clear documentation or public information explaining what it does, who uses it, and how to access it.
+6. **Not Marketing Copy**: Descriptions must be written independently and accurately, not copied from vendor marketing materials.
+7. **No Conflicts Disqualified**: Conflict of interest does not automatically disqualify an entry — but must be fully disclosed.
+8. **Verifiable**: At time of inclusion, the tool must be verified to exist, be active, and meet the above criteria.
 
 ### Entry Format
 
