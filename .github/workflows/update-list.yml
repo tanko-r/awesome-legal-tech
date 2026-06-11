@@ -2,11 +2,15 @@ name: Auto-Update Legal Apps List
 
 on:
   schedule:
-    - cron: "0 9 1 * *"   # 09:00 UTC on the 1st of each month
-  workflow_dispatch:        # Manual trigger for testing
+    - cron: "0 9 * * 1"     # 09:00 UTC every Monday
+  workflow_dispatch:          # Manual trigger for testing
 
 permissions:
-  contents: write
+  contents: write             # Allows the built-in GITHUB_TOKEN to push commits
+
+concurrency:
+  group: auto-update-list     # Never run two updates at once
+  cancel-in-progress: false
 
 jobs:
   update-list:
@@ -17,20 +21,25 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          token: ${{ secrets.GH_PAT }}
+          # persist-credentials defaults to true, so the in-skill `git push`
+          # authenticates with the built-in GITHUB_TOKEN — no PAT required.
 
-      - name: Run update-list skill
+      - name: Run sync-and-update skill
         uses: anthropics/claude-code-action@v1
         with:
-          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
-          github_token: ${{ secrets.GH_PAT }}
-          prompt: "/update-list"
-          claude_args: "--max-turns 20"
+          # Auth via a Claude Code subscription OAuth token (no per-run API billing).
+          # Generate with `claude setup-token` and store as the CLAUDE_CODE_OAUTH_TOKEN secret.
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          prompt: "/sync-and-update"
+          claude_args: "--max-turns 40"
 
-      - name: Commit and push changes
+      - name: Commit and push fallback
+        # Safety net: the skill commits and pushes itself, but if for any reason
+        # it edited files without committing, this captures them. No-op when clean.
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore: automated monthly update — new legal tech entries"
-          file_pattern: "README.md"
+          commit_message: "chore: automated weekly update — new legal tech entries"
+          file_pattern: "README.md CHANGELOG.md"
           commit_user_name: "github-actions[bot]"
           commit_user_email: "github-actions[bot]@users.noreply.github.com"
