@@ -216,10 +216,11 @@ If `gh` is unavailable or an API call fails (rate limit, private org, removed us
 For each candidate URL, apply ALL of these checks. Discard on ANY failure:
 
 1. **Deduplication:** URL is NOT already in the deduplication set from Step 1a
-2. **Liveness:** URL resolves and returns content (not 404, not parked domain). Verify via WebFetch or WebSearch.
-3. **Domain specificity:** Tool is legal-domain-specific or has clear legal-specific features. General-purpose tools (e.g., generic note-taking apps) are excluded.
-4. **Active maintenance:** For GitHub repos, last commit within 12 months. For commercial tools, homepage resolves and is not a redirect to an acquirer.
-5. **Quality bar:** Project has meaningful documentation or a clear public description. Empty/placeholder repos are excluded.
+3. **Liveness:** URL resolves and returns content (not 404, not parked domain). Verify via WebFetch or WebSearch.
+4. **Domain specificity:** Tool is legal-domain-specific or has clear legal-specific features. General-purpose tools (e.g., generic note-taking apps) are excluded.
+5. **Compliance**: Tool complies with `~./contributing.md` criteria.
+6. **Active maintenance:** For GitHub repos, last commit within 12 months. For commercial tools, homepage resolves and is not a redirect to an acquirer.
+7. **Quality bar:** Project has meaningful documentation or a clear public description. Empty/placeholder repos are excluded.
 
 ---
 
