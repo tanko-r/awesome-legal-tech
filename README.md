@@ -3,6 +3,7 @@
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 > A curated list of awesome legal technology tools, apps, AI models, and resources for legal professionals and technologists where quality of curation beats quantity of links.
+> This repo is automatically updated weekly based on /sync-and-update skill in ~/.claude/skills/.
 
 ## Jurisdiction Flags
 
