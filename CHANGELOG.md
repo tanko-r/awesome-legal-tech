@@ -6,6 +6,29 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [2026-06-11]
+
+### Added
+- **AI Tools:** claude-for-legal (Anthropic), Lavern, Claude für deutsches Recht (DE), Due Diligence Agents, Master Claude for Legal
+- **Law-Focused LLMs:** Lawma (US)
+- **Legal Research:** MENA Legal Atlas
+- **Contract Management:** Whereas, Vaulytica
+- **Backend Utilities (Legal NLP):** bundesrecht (DE)
+- **Legal NLP & Datasets:** AALawyer (ACL 2026)
+- **Compliance & Regulatory Technology:** GRCX
+- **IP & Patent Technology:** PQAI, OPS Patent Search MCP
+- **Legal Workflow Automation:** Open Cap Format (OCF)
+- **Court & Government Filing Systems:** NYC Charter Laws & Rules MCP (US), StateDecoded, Tezca (Mexico)
+- **MCP Servers & AI Agent Tools:** Vaquill MCP (US), CourtListener MCP Server, Legal Skills Open, German Legal MCP (DE), EU AI Act MCP (EU)
+- **Advanced Legal Tools & Citation Systems:** CiteBench (US)
+- **Meta-Resources:** Awesome EU AI Act (EU)
+
+### Changed
+- Marked `tanko-r/AI-Associate` (Sara) as stale (archived/removed)
+- Marked `fbmoulin/lex-intelligentia-skills` (Lex Intelligentia Skills) as stale (archived/removed)
+- Marked `Ansvar-Systems/US_Compliance_MCP` (US Compliance MCP) as stale (archived/removed)
+- Recovered `mayan-edms/Mayan-EDMS` (Mayan EDMS) from stale — repo updated 2026-05
+
 ## [2026-04-06]
 
 ### Added
