@@ -30,7 +30,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Changed
 - Added a **License** column to every section table, populated from each tool's SPDX license (FOSS) or labeled `Not FOSS`, `No license`, `Other`, `Public domain`, or `—`
 - Documented inclusion criterion #4 (FOSS or development-targeted) and the License column in `contributing.md` and the `sync-and-update` skill
+- New **Notable Proprietary Legal AI Tools** section (manually curated, not FOSS, not endorsed, excluded from automated updates): moved Prest0, PDF Mavericks, Legitt AI, Lawvable, AI Lawyer, LexiAI, FreeLawChat.ai, CompareX, LogicBalls, and Galaxy.ai here
 - Marked `tanko-r/AI-Associate` (Sara) as stale (archived/removed)
+
+### Removed
+- Deleted proprietary consumer/lawyer apps that do not meet criterion #4: Dropbox Sign, SignWell, JotForm, PandaDoc, Template.net, GetDoc, DocHub, LawDepot, Nolo
 - Marked `fbmoulin/lex-intelligentia-skills` (Lex Intelligentia Skills) as stale (archived/removed)
 - Marked `Ansvar-Systems/US_Compliance_MCP` (US Compliance MCP) as stale (archived/removed)
 - Recovered `mayan-edms/Mayan-EDMS` (Mayan EDMS) from stale — repo updated 2026-05

@@ -46,6 +46,7 @@ Entries marked with a flag icon are designed for or specific to that jurisdictio
 - [MCP Servers & AI Agent Tools for Law](#mcp-servers--ai-agent-tools-for-law)
 - [Legal Education & Communities](#legal-education--communities)
 - [Advanced Legal Tools & Citation Systems](#advanced-legal-tools--citation-systems)
+- [Notable Proprietary Legal AI Tools](#notable-proprietary-legal-ai-tools)
 - [Meta-Resources](#meta-resources)
 
 ## AI Tools
@@ -84,15 +85,6 @@ Tools and models that use AI to assist with legal work, from contract analysis t
 | **[LQ.AI](https://github.com/LegalQuants/lq-ai)** | Self-hosted, open-source AI platform for legal teams with character-verifiable citations, a privacy-preserving anonymization layer for cloud inference, and reusable workflow skills, running against Anthropic, OpenAI, Azure, or local Ollama models with bring-your-own keys. | Python | Apache-2.0 | 2026-06-11 |
 | **[Donna](https://github.com/LegalQuants/Donna)** | Document-forward SvelteKit frontend for the LQ.AI legal backend providing conversational legal work with character-verified citation pills, matter-scoped projects, knowledge bases, playbook redlines, and autonomous background runs with transparency receipts. | TypeScript, SvelteKit | Apache-2.0 | 2026-06-11 |
 | **[Mike (local desktop edition)](https://github.com/LegalQuants/LQmikelocal)** | Local-first Electron desktop edition of the Mike AI legal platform that runs documents, database, and model calls entirely on your computer with no cloud dependencies, storing data in a local SQLite workspace. | TypeScript, Electron | AGPL-3.0 | 2026-06-11 |
-| **[Lawvable](https://lawvable.com)** | Curated legal AI skills platform. | | Not FOSS | 2026-03-02 |
-| **[FreeLawChat.ai](https://freelawchat.ai/)** | Free AI chatbot that answers legal questions across multiple jurisdictions with geographic-specific guidance on family law, employment, contracts, and other areas. | | Not FOSS | 2026-03-02 |
-| **[LexiAI](https://lexiai.org/)** | Free multilingual AI legal chatbot available 24/7 that provides legal information in your chosen language using GPT technology. | | Not FOSS | 2026-03-02 |
-| **[CompareX Free Contract Analyser](https://compare-x.ai/free-contract-analyser)** | Analyzes contracts in 60 seconds, identifying missing clauses, high-risk terms, and compliance gaps with plain-English explanations, completely free with no credit card required. | | Not FOSS | 2026-03-02 |
-| **[Legitt AI Contract Review](https://legittai.com/contract-review)** | Provides instant contract summaries, clause-by-clause risk analysis, and obligation tracking for PDFs and Word documents. | | Not FOSS | 2026-03-02 |
-| **[LogicBalls Legal Document Generator](https://logicballs.com/tools/legal-document-drafting-generator)** | Free AI tool that generates NDAs, contracts, agreements, and legal memos in minutes without signup. | | Not FOSS | 2026-03-02 |
-| **[Galaxy.ai Legal Letter Generator](https://galaxy.ai/ai-legal-letter-generator)** | Free legal letter generator requiring no login that creates various types of legal correspondence using AI entirely in your browser. | | Not FOSS | 2026-03-02 |
-| **[AI Lawyer](https://ailawyer.pro/)** | Free AI legal assistant offering contract drafting, legal research, agreement comparison, translation, and summarization features. | | Not FOSS | 2026-03-02 |
-| <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[Prest0](https://prest0.ai)** | Enterprise legal AI platform that deploys a dedicated bilingual (English/Spanish) AI agent per law firm on an isolated VM, with persistent memory, Twilio voice + SMS intake, deep legal research, and legal-grade document drafting. Vertical-specialized for immigration (I-589 asylum, U-visa), California workers' comp (WCAB Pre-Hearing Statements under Rule 10563), and plaintiff-side employment law. Patent-pending Context-Based Semantic TreeSearch memory architecture. | TypeScript, Python, Node.js | Not FOSS | 2026-04-22 |
 
 ## Law-Focused LLMs & Fine-Tuned Models
 
@@ -176,9 +168,6 @@ Tools for drafting, reviewing, negotiating, and managing legal contracts.
 | **[Indemnification Architect](https://github.com/Tucuxi-Inc/IndemnificationArchitect)** | Parametric drafting and analysis tool for indemnification clauses that uses visual sliders to adjust clause components and generates production-quality legal text from each configuration. | TypeScript | MIT | 2026-04-06 |
 | **[Whereas](https://github.com/zgbrenner/whereas)** | Open-source contract repository with built-in clause extraction, playbook deviation analysis, and embedded e-signature via DocuSeal integration. | TypeScript | GPL-3.0 | 2026-06-11 |
 | **[Vaulytica](https://github.com/clay-good/vaulytica)** | Free deterministic linter for legal documents that flags structural issues, inconsistencies, and common drafting errors without relying on an LLM. | | MIT | 2026-06-11 |
-| **[CompareX Free Contract Analyser](https://compare-x.ai/free-contract-analyser)** | Contract analyzer identifying missing clauses, high-risk terms, and compliance gaps in 60 seconds. | | Not FOSS | 2026-03-02 |
-| **[Legitt AI Contract Review](https://legittai.com/contract-review)** | Instant contract summaries, clause-by-clause risk analysis, and obligation tracking for PDFs and Word documents. | | Not FOSS | 2026-03-02 |
-| **[LogicBalls Legal Document Generator](https://logicballs.com/tools/legal-document-drafting-generator)** | Generates NDAs, contracts, agreements, and legal memos without signup. | | Not FOSS | 2026-03-02 |
 
 ## Practice Management
 
@@ -201,10 +190,6 @@ Software for law firms and legal departments to manage cases, clients, time, and
 | **[CounselScope](https://github.com/Tucuxi-Inc/PublicCounselScope)** | AI-powered legal query optimization platform that transforms vague legal requests into precisely-scoped instructions by building on internal organizational legal knowledge. | Python | Other | 2026-04-06 |
 | **[stella](https://github.com/stella/stella)** | Open-source self-hostable legal workspace for law firms with matter and document management, AI-assisted drafting, a DOCX editor, citation and case-law tools, business-registry lookup, and multilingual anonymisation. | TypeScript | Apache-2.0 | 2026-05-31 |
 | **[OpenSign](https://www.opensignlabs.com/)** | Free, unlimited, open-source e-signature tool. | | AGPL-3.0 | 2026-03-02 |
-| **[SignWell](https://www.signwell.com)** | Simple, free e-signature tool designed for small businesses and legal professionals. | | Not FOSS | 2026-03-02 |
-| **[Dropbox Sign](https://sign.dropbox.com)** | Free document signing service integrating with Dropbox for contract management and legally enforceable document handling. | | Not FOSS | 2026-03-02 |
-| **[PandaDoc](https://www.pandadoc.com)** | Document management and e-signature platform with free tier offering templates for contracts and legal agreements. | | Not FOSS | 2026-03-02 |
-| <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[Nolo](https://www.nolo.com)** | Offers free legal information, document templates, and self-help resources for common legal issues and agreements. | | Not FOSS | 2026-03-02 |
 
 ## Document Management
 
@@ -228,13 +213,6 @@ Systems for storing, organizing, and retrieving legal documents securely.
 | **[open-agreements](https://github.com/open-agreements/open-agreements)** | CLI tool that fills 25 standard legal agreement templates (NDAs, cloud terms, SAFEs, employment agreements, NVCA financing documents) and produces signable DOCX files. | TypeScript | Apache-2.0 | 2026-04-06 |
 | **[CoQuill](https://github.com/houfu/coquill)** | Conversational document assembly tool for Claude that fills DOCX templates through natural-language interview, supporting Jinja2 conditionals and loops without a server or scripting language. | Python | MIT | 2026-04-06 |
 | **[SuperDoc VS Code Extension](https://github.com/mattConnHarbour/superdoc-vscode-extension)** | VS Code extension for editing and viewing DOCX files via SuperDoc, with live reload for AI-modified documents and auto-save for side-by-side code and document workflows. | JavaScript | AGPL-3.0 | 2026-04-06 |
-| **[PandaDoc](https://www.pandadoc.com)** | Document management and e-signature platform with templates for legal agreements. | | Not FOSS | 2026-03-02 |
-| <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[LawDepot](https://www.lawdepot.com)** | Provides free legal document templates and forms customizable for various needs. | | Not FOSS | 2026-03-02 |
-| **[JotForm](https://www.jotform.com)** | Free form builder with legal document templates and signature collection capabilities. | | Not FOSS | 2026-03-02 |
-| **[Template.net](https://www.template.net)** | Extensive library of free legal document templates including contracts, NDAs, and employment agreements. | | Not FOSS | 2026-03-02 |
-| **[GetDoc](https://www.getdoc.com)** | Free document collaboration and e-signature platform with secure version control. | | Not FOSS | 2026-03-02 |
-| **[DocHub](https://www.dochub.com)** | Free online document editor with e-signature capabilities for editing, signing, and managing documents directly in browser. | | Not FOSS | 2026-03-02 |
-| **[PDF Mavericks](https://www.pdfmavericks.com)** | Browser-local PDF toolkit covering compress, merge, split, sign, watermark, and redact for contracts and case files. Files never leave the device — processing runs in JavaScript via PDF.js. No upload, no account, no tracking. | TypeScript, Next.js, PDF.js | Not FOSS | 2026-05-09 |
 
 ## Backend Utilities & Libraries
 
@@ -313,8 +291,6 @@ Tools and platforms designed to improve access to legal services and justice.
 | *<img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[A2J Author](https://github.com/CCALI/a2j-author)*** | *Open-source tool for creating guided interviews that help people complete legal forms and court documents. ⚠️ Stale (archived/removed)* | | — | *2026-03-02* |
 | <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[Namesake](https://github.com/namesakefyi/namesake)** | Web app guiding users through the legal name and gender marker change process in the United States, tracking requirements across jurisdictions. | TypeScript, React | GPL-3.0 | 2026-03-02 |
 | <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[Upsolve](https://www.upsolve.org)** | Free online bankruptcy filing tool designed to help individuals file Chapter 7 bankruptcy without expensive attorney fees. | | Not FOSS | 2026-03-02 |
-| <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[LawDepot](https://www.lawdepot.com)** | Provides free legal document templates and forms for self-represented litigants and small business owners. | | Not FOSS | 2026-03-02 |
-| <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[Nolo](https://www.nolo.com)** | Offers free legal information, document templates, and self-help resources for common legal issues and agreements accessible to non-lawyers. | | Not FOSS | 2026-03-02 |
 
 ## Legal NLP & Datasets
 
@@ -544,6 +520,23 @@ Specialized tools for citation analysis, contract comparison, and legal research
 | **[prompt-engineering-lawyers](https://github.com/houfu/prompt-engineering-lawyers)** | Open-source Streamlit course teaching prompt engineering techniques for legal professionals with ChatGPT, Claude, and other LLMs. | Python | Other | 2026-03-03 |
 | **[Adeu](https://github.com/dealfluence/adeu)** | Agentic DOCX redlining engine that enables AI agents and LLMs to inject native Track Changes and comments into Word documents without corrupting formatting, with a Model Context Protocol server and Python SDK. | Python | MIT | 2026-03-25 |
 | <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[CiteBench](https://github.com/LawEngine/cite-bench)** | Blind benchmark for legal citation verification using four-label classification over Illinois and federal primary law, designed to evaluate AI systems for citation accuracy and hallucination detection. | Python | Apache-2.0 | 2026-06-11 |
+
+## Notable Proprietary Legal AI Tools
+
+> ⚠️ **Not FOSS, not endorsed.** The tools below are proprietary (closed-source) — some paid, some free-to-use — and are **not** open source. They are listed not as endorsements but because they are interesting or notable examples of legal AI that are not widely publicized. This section is curated **manually** and is **excluded from automated updates**.
+
+| Name | Description | Tech Stack | License | Date Added |
+|------|-------------|------------|---------|------------|
+| <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[Prest0](https://prest0.ai)** | Enterprise legal AI platform that deploys a dedicated bilingual (English/Spanish) AI agent per law firm on an isolated VM, with persistent memory, Twilio voice + SMS intake, deep legal research, and legal-grade document drafting. Vertical-specialized for immigration (I-589 asylum, U-visa), California workers' comp (WCAB Pre-Hearing Statements under Rule 10563), and plaintiff-side employment law. Patent-pending Context-Based Semantic TreeSearch memory architecture. | TypeScript, Python, Node.js | Not FOSS | 2026-04-22 |
+| **[PDF Mavericks](https://www.pdfmavericks.com)** | Browser-local PDF toolkit covering compress, merge, split, sign, watermark, and redact for contracts and case files. Files never leave the device — processing runs in JavaScript via PDF.js. No upload, no account, no tracking. | TypeScript, Next.js, PDF.js | Not FOSS | 2026-05-09 |
+| **[Legitt AI Contract Review](https://legittai.com/contract-review)** | Provides instant contract summaries, clause-by-clause risk analysis, and obligation tracking for PDFs and Word documents. | | Not FOSS | 2026-03-02 |
+| **[Lawvable](https://lawvable.com)** | Curated legal AI skills platform. | | Not FOSS | 2026-03-02 |
+| **[AI Lawyer](https://ailawyer.pro/)** | Free AI legal assistant offering contract drafting, legal research, agreement comparison, translation, and summarization features. | | Not FOSS | 2026-03-02 |
+| **[LexiAI](https://lexiai.org/)** | Free multilingual AI legal chatbot available 24/7 that provides legal information in your chosen language using GPT technology. | | Not FOSS | 2026-03-02 |
+| **[FreeLawChat.ai](https://freelawchat.ai/)** | Free AI chatbot that answers legal questions across multiple jurisdictions with geographic-specific guidance on family law, employment, contracts, and other areas. | | Not FOSS | 2026-03-02 |
+| **[CompareX Free Contract Analyser](https://compare-x.ai/free-contract-analyser)** | Analyzes contracts in 60 seconds, identifying missing clauses, high-risk terms, and compliance gaps with plain-English explanations, completely free with no credit card required. | | Not FOSS | 2026-03-02 |
+| **[LogicBalls Legal Document Generator](https://logicballs.com/tools/legal-document-drafting-generator)** | Free AI tool that generates NDAs, contracts, agreements, and legal memos in minutes without signup. | | Not FOSS | 2026-03-02 |
+| **[Galaxy.ai Legal Letter Generator](https://galaxy.ai/ai-legal-letter-generator)** | Free legal letter generator requiring no login that creates various types of legal correspondence using AI entirely in your browser. | | Not FOSS | 2026-03-02 |
 
 ## Meta-Resources
 

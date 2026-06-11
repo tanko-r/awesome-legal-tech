@@ -35,6 +35,8 @@ Parse every line matching the pattern `- [Name](URL)` or `- FLAG [Name](URL)`. E
 ### 1b. Dynamic Category Discovery
 Parse all `## Level-2 Headings` from README.md. These are the categories to search for. Skip non-content headings: `Contents`, `Jurisdiction Flags`, `Contributing`, `Code of Conduct`, `License`.
 
+**Also skip the `Notable Proprietary Legal AI Tools` section entirely.** It is a manually curated section of proprietary, non-endorsed tools and must NOT be searched, added to, modified, stale-checked, or removed by this skill.
+
 Store each category name for use in Step 2. Example categories that may be discovered:
 - AI Tools
 - Law-Focused LLMs & Fine-Tuned Models
@@ -433,3 +435,5 @@ No staleness changes detected.
 - Do NOT remove stale entries — only format them with staleness markers
 - Do NOT mark non-GitHub URLs as stale (commercial tools, web apps are exempt from link rot checks)
 - Do NOT paginate GitHub topic pages beyond the first page
+- Do NOT touch the `Notable Proprietary Legal AI Tools` section — never add, modify, stale-check, or remove its entries (manually curated, excluded from automation)
+- Do NOT add a tool that fails inclusion criterion #4 (FOSS or development-targeted) from contributing.md — discard proprietary commercial products that do not facilitate legal tech development
