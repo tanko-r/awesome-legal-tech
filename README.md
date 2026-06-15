@@ -22,6 +22,11 @@ Entries marked with a flag icon are designed for or specific to that jurisdictio
 | <img src="https://flagcdn.com/w20/za.png" width="20" height="15" alt="ZA"> | South Africa |
 | <img src="https://flagcdn.com/w20/nl.png" width="20" height="15" alt="NL"> | Netherlands |
 | <img src="https://flagcdn.com/w20/es.png" width="20" height="15" alt="ES"> | Spain |
+| <img src="https://flagcdn.com/w20/kr.png" width="20" height="15" alt="KR"> | South Korea |
+| <img src="https://flagcdn.com/w20/ch.png" width="20" height="15" alt="CH"> | Switzerland |
+| <img src="https://flagcdn.com/w20/ar.png" width="20" height="15" alt="AR"> | Argentina |
+| <img src="https://flagcdn.com/w20/at.png" width="20" height="15" alt="AT"> | Austria |
+| <img src="https://flagcdn.com/w20/tw.png" width="20" height="15" alt="TW"> | Taiwan |
 
 ## Contents
 
@@ -58,7 +63,7 @@ Tools and models that use AI to assist with legal work, from contract analysis t
 | *<img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[Sara](https://github.com/tanko-r/AI-Associate)*** | *A specialized Claude Code plugin that operates as a senior AI law associate capable of handling complex legal work across multiple practice areas, currently focused on US real estate transactions, generating original legal documents and delegating research tasks to junior associate subagents. ⚠️ Stale (archived/removed)* | *Python* | No license | *2026-03-02* |
 | **[Ambrose](https://github.com/tanko-r/Ambrose)** | An AI-powered contract review and redlining platform combining Claude Opus for risk analysis with Gemini Flash for revision generation, engineered for in-house counsel and deal teams managing high volumes of contracts. | Python, Flask, TypeScript, Next.js | Other | 2026-03-02 |
 | **[Lawvable](https://github.com/lawvable/awesome-legal-skills)** | Curated AI skills for legal workflows and document analysis. | | Other | 2026-03-02 |
-| <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[LexNLP](https://github.com/LexPredict/lexpredict-lexnlp)** | Open source Python library for natural language processing and information extraction from legal and regulatory texts, extracting structured data like dates, monetary amounts, regulations, and citations with pre-trained models. | Python | AGPL-3.0 | 2026-03-02 |
+| *<img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[LexNLP](https://github.com/LexPredict/lexpredict-lexnlp)*** | *Open source Python library for natural language processing and information extraction from legal and regulatory texts, extracting structured data like dates, monetary amounts, regulations, and citations with pre-trained models. ⚠️ Stale (2024-05)* | *Python* | AGPL-3.0 | *2026-03-02* |
 | **[LawBotics](https://github.com/hasnaintypes/lawbotics)** | AI-powered legal contract analysis platform combining fine-tuned LLaMA models with modern web technologies to automate document review and clause extraction, identifying 41+ types of legal clauses and integrating with the CUAD dataset. | Python, PyTorch | No license | 2026-03-02 |
 | *<img src="https://flagcdn.com/w20/br.png" width="20" height="15" alt="BR"> **[LegalNLP](https://github.com/felipemaiapolo/legalnlp)*** | *Natural language processing methods and pre-trained models (BERT, Word2Vec, Doc2Vec, FastText) specifically designed for the Brazilian legal language, enabling legal document classification and semantic analysis. ⚠️ Stale (2023-06)* | *Python, PyTorch* | MIT | *2026-03-02* |
 | <img src="https://flagcdn.com/w20/in.png" width="20" height="15" alt="IN"> **[MILDSum](https://github.com/Law-AI/mildsum)** | Benchmark dataset and tools for multilingual legal document summarization, featuring 3,122 Indian court judgments with English and Hindi summaries drafted by legal practitioners. | Python | No license | 2026-03-02 |
@@ -85,6 +90,12 @@ Tools and models that use AI to assist with legal work, from contract analysis t
 | **[LQ.AI](https://github.com/LegalQuants/lq-ai)** | Self-hosted, open-source AI platform for legal teams with character-verifiable citations, a privacy-preserving anonymization layer for cloud inference, and reusable workflow skills, running against Anthropic, OpenAI, Azure, or local Ollama models with bring-your-own keys. | Python | Apache-2.0 | 2026-06-11 |
 | **[Donna](https://github.com/LegalQuants/Donna)** | Document-forward SvelteKit frontend for the LQ.AI legal backend providing conversational legal work with character-verified citation pills, matter-scoped projects, knowledge bases, playbook redlines, and autonomous background runs with transparency receipts. | TypeScript, SvelteKit | Apache-2.0 | 2026-06-11 |
 | **[Mike (local desktop edition)](https://github.com/LegalQuants/LQmikelocal)** | Local-first Electron desktop edition of the Mike AI legal platform that runs documents, database, and model calls entirely on your computer with no cloud dependencies, storing data in a local SQLite workspace. | TypeScript, Electron | AGPL-3.0 | 2026-06-11 |
+| **[BigLaw](https://github.com/discover-legal/BigLaw)** | Open-source legal AI platform consolidating research, drafting, redlining, e-signatures, briefing, docketing, billing, and collaboration in a single stack, registering as an MCP server for agent integration. | Python | AGPL-3.0 | 2026-06-15 |
+| <img src="https://flagcdn.com/w20/cn.png" width="20" height="15" alt="CN"> **[Claude for Legal — ZH](https://github.com/CSlawyer1985/claude-for-legal-ZH)** | Chinese law adaptation of Anthropic's claude-for-legal, providing legal agents, skills, and MCP data connectors for Chinese legal practice scenarios including litigation, corporate, and regulatory work. | Python | Apache-2.0 | 2026-06-15 |
+| <img src="https://flagcdn.com/w20/de.png" width="20" height="15" alt="DE"> **[AI Skills German Law](https://github.com/borghei/AI-Skills-German-Law)** | Collection of 48 plugins and 103 skills for German legal practice and EU compliance covering general law, specialist practice areas, regulated industries, IP, and frameworks including KI-VO, NIS2, HinSchG, LkSG, DORA, DSA/DMA, and CSRD, with citations linked to official sources. | | Other | 2026-06-15 |
+| **[AiWorkdeck](https://github.com/zeweihan/aiworkdeck)** | AI-native IDE workspace for legal and document-heavy workflows providing file management, agent plugins, WPS document editing, OCR, and evidence chain tracking, positioned as VS Code for lawyers. | | AGPL-3.0 | 2026-06-15 |
+| **[Judicex](https://github.com/JustVugg/judicex)** | Open-source legal AI workspace for evidence-grounded legal drafting, matter analysis, and verifiable answers with citation transparency. | | Apache-2.0 | 2026-06-15 |
+| **[doc-haus](https://github.com/sure-scale/doc-haus)** | Open-source local-first legal AI agent that processes documents on your machine and delivers redlines directly into Word, forked from OpenCode with legal-specific document handling. | | Other | 2026-06-15 |
 
 ## Law-Focused LLMs & Fine-Tuned Models
 
@@ -168,6 +179,10 @@ Tools for drafting, reviewing, negotiating, and managing legal contracts.
 | **[Indemnification Architect](https://github.com/Tucuxi-Inc/IndemnificationArchitect)** | Parametric drafting and analysis tool for indemnification clauses that uses visual sliders to adjust clause components and generates production-quality legal text from each configuration. | TypeScript | MIT | 2026-04-06 |
 | **[Whereas](https://github.com/zgbrenner/whereas)** | Open-source contract repository with built-in clause extraction, playbook deviation analysis, and embedded e-signature via DocuSeal integration. | TypeScript | GPL-3.0 | 2026-06-11 |
 | **[Vaulytica](https://github.com/clay-good/vaulytica)** | Free deterministic linter for legal documents that flags structural issues, inconsistencies, and common drafting errors without relying on an LLM. | | MIT | 2026-06-11 |
+| **[SignCraft](https://github.com/Steviewonders99/signcraft)** | Open-source AI contract review and e-signature platform providing a free alternative to DocuSign, Adobe Sign, and PandaDoc, with AI-powered clause analysis for drafting, reviewing, and signing legal contracts. | TypeScript | MIT | 2026-06-15 |
+| **[draft-legal](https://github.com/AniketTati/draft-legal)** | Self-hosted, AI-native contract lifecycle management platform designed as an open-source alternative to Ironclad and Harvey, keeping contracts on your own servers. | | Other | 2026-06-15 |
+| **[Hermes Legal](https://github.com/Lethe044/hermes-legal)** | Autonomous contract risk analysis tool that scores clauses, suggests negotiation language, issues SIGN/NEGOTIATE/REJECT verdicts, compares document versions, and watches folders for new contracts, supporting English and Turkish. | Python | MIT | 2026-06-15 |
+| <img src="https://flagcdn.com/w20/kr.png" width="20" height="15" alt="KR"> **[Korean Contracts](https://github.com/kimlawtech/korean-contracts)** | Claude Code skill for automatically generating nine types of Korean employment and business contracts (employment, part-time, flexible, daily, freelance, outsourcing, amendment, and salary agreements) updated for 2026 minimum wage and Supreme Court precedents. | | Other | 2026-06-15 |
 
 ## Practice Management
 
@@ -190,6 +205,7 @@ Software for law firms and legal departments to manage cases, clients, time, and
 | **[CounselScope](https://github.com/Tucuxi-Inc/PublicCounselScope)** | AI-powered legal query optimization platform that transforms vague legal requests into precisely-scoped instructions by building on internal organizational legal knowledge. | Python | Other | 2026-04-06 |
 | **[stella](https://github.com/stella/stella)** | Open-source self-hostable legal workspace for law firms with matter and document management, AI-assisted drafting, a DOCX editor, citation and case-law tools, business-registry lookup, and multilingual anonymisation. | TypeScript | Apache-2.0 | 2026-05-31 |
 | **[OpenSign](https://www.opensignlabs.com/)** | Free, unlimited, open-source e-signature tool. | | AGPL-3.0 | 2026-03-02 |
+| **[OpenSpecter](https://github.com/akashshrx/OpenSpecter)** | Enterprise-grade self-hostable AI workspace for legal teams with matter management, document organization, and AI-assisted workflows. | | AGPL-3.0 | 2026-06-15 |
 
 ## Document Management
 
@@ -236,7 +252,7 @@ Programming libraries, SDKs, and utilities for building legal tech applications.
 
 | Name | Description | Tech Stack | License | Date Added |
 |------|-------------|------------|---------|------------|
-| <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[LexNLP](https://github.com/LexPredict/lexpredict-lexnlp)** | Specialized Python library for natural language processing and information extraction from legal and regulatory texts with pre-trained models. | Python | AGPL-3.0 | 2026-03-02 |
+| *<img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[LexNLP](https://github.com/LexPredict/lexpredict-lexnlp)*** | *Specialized Python library for natural language processing and information extraction from legal and regulatory texts with pre-trained models. ⚠️ Stale (2024-05)* | *Python* | AGPL-3.0 | *2026-03-02* |
 | **[spaCy](https://spacy.io/)** | Industrial-strength NLP library with pre-trained models for named entity recognition in contracts and legal documents. | Python, spaCy | MIT | 2026-03-02 |
 | <img src="https://flagcdn.com/w20/gb.png" width="20" height="15" alt="UK"> **[Blackstone](https://github.com/ICLRandD/Blackstone)** | spaCy-based natural language processing model trained on English case law that detects legal entities and classifies sentences by legal purpose. | Python, spaCy | Apache-2.0 | 2026-03-02 |
 | **[ContextGem](https://github.com/shcherbak-ai/contextgem)** | Open-source Python LLM framework for extracting structured data and insights from documents with minimal code, supporting multi-level extraction workflows with paragraph-level source references, reasoning justifications, and multilingual support across multiple LLM providers. | Python | Apache-2.0 | 2026-03-03 |
@@ -310,6 +326,8 @@ Academic datasets, models, and tools for legal natural language processing resea
 | **[Canadian Legal Data](https://github.com/a2aj-ca/canadian-legal-data)** | Repository for accessing bulk Canadian legal data maintained by Access to Artificial Justice, providing structured datasets for legal text processing and research. | | No license | 2026-03-03 |
 | **[LLM-and-Law](https://github.com/Jeryi-Sun/LLM-and-Law)** | Actively maintained curated paper list summarizing large language models applied to legal tasks including judgment prediction, document analysis, and legal reasoning research. | | No license | 2026-03-25 |
 | **[AALawyer](https://github.com/theSleepyPig/AALawyer)** | ACL 2026 research system that mitigates legal hallucinations via symbolic constraints and analogical precedent retrieval, providing a framework for legally grounded LLM responses. | Python | No license | 2026-06-11 |
+| <img src="https://flagcdn.com/w20/gb.png" width="20" height="15" alt="UK"> **[UK Statute Retrieval](https://github.com/alshehriamal1994/uk-statute-retrieval)** | Provision-level retrieval and neural reranking model for UK legislation with an open distilled ModernBERT reranker, from the Artificial Intelligence and Law (2026) paper, supporting precise statutory search at the provision level. | Python | MIT | 2026-06-15 |
+| **[Urdu Legal NER Corpora](https://github.com/scheema286/-Urdu-Legal_ner_corpora)** | 117,500 annotated Urdu legal documents for named entity recognition research, presented at RANLP 2025, the first large-scale NER corpus for Urdu legal text. | | MIT | 2026-06-15 |
 
 ### Public Datasets
 
@@ -347,6 +365,7 @@ Tools for regulatory compliance, sanctions screening, policy monitoring, and aut
 | **[TaxStructuringTool LITE](https://github.com/tech-taitan/TaxStructuringTool_LITE)** | Lightweight entity charting tool for tax professionals that visualizes corporate structures and ownership chains for tax structuring analysis. | TypeScript | No license | 2026-04-06 |
 | **[EasyBoard](https://github.com/SaifAlYounan/EasyBoard)** | Open-source board portal for managing corporate board meetings, materials, and governance workflows. | TypeScript | No license | 2026-04-06 |
 | **[GRCX](https://github.com/grcx-dev/grcx)** | Open-source regulatory radar for financial services compliance teams that monitors publications from BoE, FCA, MAS, SEC, and ESMA, mapping them to six control frameworks with a cryptographic audit trail. | TypeScript | MIT | 2026-06-11 |
+| <img src="https://flagcdn.com/w20/eu.png" width="20" height="15" alt="EU"> **[getregdata](https://github.com/Nolpak14/getregdata)** | Claude Code skills for querying European government registry data across multiple jurisdictions to support KYC, credit risk, property verification, compliance, and lead generation workflows. | | MIT | 2026-06-15 |
 
 
 ## eDiscovery & Litigation Support
@@ -362,6 +381,7 @@ Software for electronically stored information (ESI) collection, processing, rev
 | **[enigma](https://github.com/McFlip/enigma)** | A Go-based eDiscovery tool for bulk decryption of emails in PST files and loose .eml files, designed for forensic and legal discovery workflows requiring legitimate certificate-based decryption. | Go | MIT | 2026-03-02 |
 | **[ICIJ Extract](https://github.com/ICIJ/extract)** | Cross-platform command-line tool for parallelized content extraction and analysis of documents, used by the International Consortium of Investigative Journalists for large-scale document investigations. | Java | MIT | 2026-03-02 |
 | **[ReelDiscovery](https://github.com/ghanderson77-ops/ReelDiscovery)** | AI-powered e-discovery email dataset generator from QuikData that creates realistic corporate email threads with authentic headers, attachments, and storyline-driven content for training, testing, and demonstration of e-discovery systems. | C# | GPL-3.0 | 2026-04-06 |
+| **[Bates Labeler](https://github.com/safnjnf/Bates-Labeler)** | Python tool for adding Bates numbers to PDF documents, simplifying document management and organization for legal discovery and production workflows. | Python | MIT | 2026-06-15 |
 
 ## Legal Analytics & Prediction
 
@@ -394,6 +414,7 @@ Tools for patent search, trademark monitoring, IP portfolio management, prior ar
 | **[Patent Prompts](https://github.com/arcprime-ip/patent-prompts)** | Curated AI prompts for patent workflows including claim drafting, prior art analysis, and continuation strategy based on real USPTO practice, installable as agent skills. | | MIT | 2026-03-25 |
 | **[PQAI](https://github.com/pqaidevteam/pqai)** | AI-powered prior-art search server that accepts plain-language invention descriptions and retrieves semantically similar patents and technical literature from global patent databases. | Python | MIT | 2026-06-11 |
 | **[OPS Patent Search MCP](https://github.com/navisbio/OPS-patent-search-mcp)** | MCP server for searching and retrieving patents via the EPO Open Patent Services API, providing AI assistants with access to the full global patent corpus including EP, US, WO, JP, and CN filings. | Python | MIT | 2026-06-11 |
+| **[iPatent](https://github.com/TIBHannover/iPatent)** | Interactive web-based patent search and analysis prototype supporting prior art search, cross-domain search, infringement detection, and freedom-to-operate analysis using multimodal patent image retrieval. | | MIT | 2026-06-15 |
 
 ## Privacy & Data Protection
 
@@ -409,6 +430,8 @@ Specialized tools for privacy impact assessments, consent management, DSAR autom
 | **[ML Privacy Meter](https://github.com/privacytrustlab/ml_privacy_meter)** | An open-source Python library for auditing data privacy in machine learning models through membership inference attacks, supporting GDPR-mandated data protection impact assessments. | Python | MIT | 2026-03-02 |
 | **[Databunker](https://github.com/securitybunker/databunker)** | Self-hosted secure vault for storing and managing customer PII, PHI, PCI, and KYC records with built-in tokenization and encryption to support GDPR, HIPAA, and SOC 2 compliance. | Go | MIT | 2026-04-06 |
 | <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[PrivacyQuant](https://github.com/LegalQuants/privacyquant)** | Versioned statutory knowledge graph and MCP workflow layer for US state consumer privacy law, enabling applicability triage, gap analysis, DSAR routing, and conflict-of-laws synthesis across state privacy statutes. | TypeScript | MIT | 2026-06-11 |
+| **[Pinpoint](https://github.com/zgbrenner/pinpoint)** | Privacy-first, no-account AI policy builder that runs entirely in the browser without retaining user data, generating and exporting a complete AI governance policy pack. | | MIT | 2026-06-15 |
+| <img src="https://flagcdn.com/w20/kr.png" width="20" height="15" alt="KR"> **[Korean Privacy Terms](https://github.com/kimlawtech/korean-privacy-terms)** | Claude Code skill for auto-generating Korean privacy policies and terms of service compliant with the 2025.4.21 drafting guidelines and 2026 revised Korean privacy law. | | Apache-2.0 | 2026-06-15 |
 
 ## Legal Workflow Automation
 
@@ -489,6 +512,11 @@ Model Context Protocol servers, AI agent frameworks, and tooling specifically de
 | <img src="https://flagcdn.com/w20/eu.png" width="20" height="15" alt="EU"> **[EU AI Act MCP](https://github.com/lexbeam-software/eu-ai-act-mcp)** | Open-source MCP server giving AI agents nine deterministic tools for EU AI Act (Regulation 2024/1689) compliance, including risk classification, prohibited practice checks, and transparency requirement lookups. | Python | MIT | 2026-06-11 |
 | **[LQ Skills](https://github.com/LegalQuants/lq-skills)** | Curated, harness-agnostic collection of legal agent skills built by ~100 lawyer-builders across 17+ jurisdictions, installable across Claude Code, Codex, Gemini CLI, Cursor, and other tools. | Python | Apache-2.0 | 2026-06-11 |
 | **[LegalQuants Plugin](https://github.com/LegalQuants/lq-plugin)** | Official LegalQuants Claude Code plugin providing terminal access to the community knowledge archive and curated synthesis vault via an MCP chat server, with member sign-in for a personalized experience. | Shell | No license | 2026-06-11 |
+| <img src="https://flagcdn.com/w20/at.png" width="20" height="15" alt="AT"> **[Austria RIS MCP](https://github.com/mburgler/ris-marketplace-dev_version)** | Claude plugin and MCP connector for the Austrian Rechtsinformationssystem (RIS) providing search and citation over federal, state, and municipal law, gazettes, and case law from VfGH, VwGH, OGH, BVwG, LVwG, and DSB. | | Apache-2.0 | 2026-06-15 |
+| <img src="https://flagcdn.com/w20/ch.png" width="20" height="15" alt="CH"> **[Fedlex MCP](https://github.com/malkreide/fedlex-mcp)** | MCP server for Swiss federal law (Fedlex) providing search over the SR (systematic compilation), legal change monitoring, and BBl/treaties queries for use in Claude Desktop and Claude.ai. | | MIT | 2026-06-15 |
+| <img src="https://flagcdn.com/w20/ar.png" width="20" height="15" alt="AR"> **[Argentina Law MCP](https://github.com/guidobonomini/argentina-law-mcp-server)** | MCP server for Argentine law providing AI agents with document processing, case analysis, legal research, and practice management capabilities for Argentine legal professionals. | | MIT | 2026-06-15 |
+| <img src="https://flagcdn.com/w20/tw.png" width="20" height="15" alt="TW"> **[Taiwan Legal DB MCP](https://github.com/lawchat-oss/mcp-taiwan-legal-db)** | MCP server providing AI agents with access to Taiwan Judicial Yuan court decisions and the National Laws and Regulations Database for legal research and analysis. | | MIT | 2026-06-15 |
+| **[AgentCounsel](https://github.com/zgbrenner/agentcounsel)** | Open library of legal skills for AI-assisted legal teams, providing reusable skills across practice areas for use in MCP-compatible AI agents. | | MIT | 2026-06-15 |
 
 ## Legal Education & Communities
 
@@ -520,6 +548,7 @@ Specialized tools for citation analysis, contract comparison, and legal research
 | **[prompt-engineering-lawyers](https://github.com/houfu/prompt-engineering-lawyers)** | Open-source Streamlit course teaching prompt engineering techniques for legal professionals with ChatGPT, Claude, and other LLMs. | Python | Other | 2026-03-03 |
 | **[Adeu](https://github.com/dealfluence/adeu)** | Agentic DOCX redlining engine that enables AI agents and LLMs to inject native Track Changes and comments into Word documents without corrupting formatting, with a Model Context Protocol server and Python SDK. | Python | MIT | 2026-03-25 |
 | <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[CiteBench](https://github.com/LawEngine/cite-bench)** | Blind benchmark for legal citation verification using four-label classification over Illinois and federal primary law, designed to evaluate AI systems for citation accuracy and hallucination detection. | Python | Apache-2.0 | 2026-06-11 |
+| **[Circuitus](https://github.com/zgbrenner/circuitus)** | Browser-based legal research environment with a document reader, annotation system, and practice library using legal-grade typography, running entirely client-side with no server dependency. | | GPL-3.0 | 2026-06-15 |
 
 ## Notable Proprietary Legal AI Tools
 

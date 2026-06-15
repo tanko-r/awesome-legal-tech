@@ -6,6 +6,24 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [2026-06-15]
+
+### Added
+- **AI Tools:** BigLaw, Claude for Legal — ZH (CN), AI Skills German Law (DE), AiWorkdeck, Judicex, doc-haus
+- **Contract Management:** SignCraft, draft-legal, Hermes Legal, Korean Contracts (KR)
+- **Practice Management:** OpenSpecter
+- **Legal NLP & Datasets:** UK Statute Retrieval (UK), Urdu Legal NER Corpora
+- **Compliance & Regulatory Technology:** getregdata (EU)
+- **eDiscovery & Litigation Support:** Bates Labeler
+- **IP & Patent Technology:** iPatent
+- **Privacy & Data Protection:** Pinpoint, Korean Privacy Terms (KR)
+- **MCP Servers & AI Agent Tools:** Austria RIS MCP (AT), Fedlex MCP (CH), Argentina Law MCP (AR), Taiwan Legal DB MCP (TW), AgentCounsel
+- **Advanced Legal Tools & Citation Systems:** Circuitus
+
+### Changed
+- Marked `LexPredict/lexpredict-lexnlp` (LexNLP) as stale (last updated: 2024-05) — appears in both AI Tools and Backend Utilities sections
+- Added South Korea, Switzerland, Argentina, Austria, and Taiwan to the Jurisdiction Flags table
+
 ## [2026-06-11]
 
 ### Added
