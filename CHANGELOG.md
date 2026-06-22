@@ -6,6 +6,26 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [2026-06-22]
+
+### Added
+- **AI Tools:** Vera EB Suite (US), Commercial Legal PL (PL)
+- **Law-Focused LLMs & Fine-Tuned Models:** 2N-Guardian (CN)
+- **Contract Management:** ContractGuard, ContractSpark
+- **Document Management:** Legal Doc Redactor (CN)
+- **Legal NLP & Datasets:** EU AI Act Dataset (EU)
+- **Compliance & Regulatory Technology:** GEPA Compliance Optimizer
+- **IP & Patent Technology:** USPTO ODP Go Client (US)
+- **Court & Government Filing Systems:** gitlaw-jp (JP)
+- **MCP Servers & AI Agent Tools for Law:** French Law MCP (FR), Norwegian Law MCP (NO)
+- **Jurisdiction Flags table:** Added France (FR), Norway (NO), Poland (PL), Japan (JP)
+
+### Changed
+- Marked `InternLM/InternLM-Law` as stale (last updated: 2024-05)
+- Marked `google/patents-public-data` as stale (last updated: 2024-06)
+- Marked `federal-courts-software-factory/open-case-filing-system` as stale (last updated: 2024-05)
+- Marked `safnjnf/Bates-Labeler` as stale (archived/removed)
+
 ## [2026-06-15]
 
 ### Added
