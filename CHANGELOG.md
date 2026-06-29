@@ -6,6 +6,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [2026-06-29]
+
+### Added
+- **AI Tools:** Contract Review Pro (CN)
+- **Access to Justice:** LawSage (US)
+- **Compliance & Regulatory Technology:** Regulus (EU/UK)
+- **IP & Patent Technology:** OpenPatent, PatentAI (US), Claude-Patent-Creator (US)
+- **Meta-Resources:** Awesome Legal AI ZH (CN)
+
+### Changed
+- Marked `pengxiao-song/LaWGPT` as stale (last updated: 2024-06)
+
 ## [2026-06-22]
 
 ### Added
