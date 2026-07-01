@@ -591,6 +591,7 @@ Specialized tools for citation analysis, contract comparison, and legal research
 | **[CompareX Free Contract Analyser](https://compare-x.ai/free-contract-analyser)** | Analyzes contracts in 60 seconds, identifying missing clauses, high-risk terms, and compliance gaps with plain-English explanations, completely free with no credit card required. | | Not FOSS | 2026-03-02 |
 | **[LogicBalls Legal Document Generator](https://logicballs.com/tools/legal-document-drafting-generator)** | Free AI tool that generates NDAs, contracts, agreements, and legal memos in minutes without signup. | | Not FOSS | 2026-03-02 |
 | **[Galaxy.ai Legal Letter Generator](https://galaxy.ai/ai-legal-letter-generator)** | Free legal letter generator requiring no login that creates various types of legal correspondence using AI entirely in your browser. | | Not FOSS | 2026-03-02 |
+| **[Responsible AI Studio](https://app.responsibleaistudio.com/)** | Free tools that generate jurisdiction-aware AI governance documents — usage policies, risk registers, DPAs, incident-response playbooks, and EU AI Act / NIST gap analyses — across 14 industries and 14 jurisdictions. | TypeScript, Next.js | Not FOSS | 2026-06-28 |
 
 ## Meta-Resources
 
