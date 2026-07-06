@@ -170,6 +170,7 @@ Platforms and tools for legal research, case law discovery, and statutory inform
 | <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[FindLaw](https://caselaw.findlaw.com/)** | Comprehensive free resource for searching state and federal court opinions, statutes, regulations, and U.S. Code. | | Not FOSS | 2026-03-02 |
 | <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[GovInfo](https://www.govinfo.gov/help/cfr)** | Official Government Publishing Office database offering authenticated federal regulations, Code of Federal Regulations, and federal register documents. | | Public domain | 2026-03-02 |
 | <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[Justia](https://law.justia.com/)** | Free legal research platform featuring case law, statutes, regulations, and legal articles for federal and state resources. | | Not FOSS | 2026-03-02 |
+| **[AgentCounsel Hub](https://github.com/zgbrenner/agentcounselhub)** | Open-source legal research platform combining open case law, citation graphs, and topic tagging into a free, AI-readable layer intended as an alternative to closed legal research systems. | TypeScript | No license | 2026-07-06 |
 
 ## Contract Management
 
@@ -243,6 +244,7 @@ Systems for storing, organizing, and retrieving legal documents securely.
 | **[CoQuill](https://github.com/houfu/coquill)** | Conversational document assembly tool for Claude that fills DOCX templates through natural-language interview, supporting Jinja2 conditionals and loops without a server or scripting language. | Python | MIT | 2026-04-06 |
 | **[SuperDoc VS Code Extension](https://github.com/mattConnHarbour/superdoc-vscode-extension)** | VS Code extension for editing and viewing DOCX files via SuperDoc, with live reload for AI-modified documents and auto-save for side-by-side code and document workflows. | JavaScript | AGPL-3.0 | 2026-04-06 |
 | <img src="https://flagcdn.com/w20/cn.png" width="20" height="15" alt="CN"> **[Legal Doc Redactor](https://github.com/moyupeng0422/legal-doc-redactor)** | Fully offline browser-based legal document redaction tool that identifies and masks 15 categories of sensitive information (names, IDs, financial data, addresses) with a paired restoration workflow for external review cycles, supporting batch processing and Windows/macOS context-menu integration. | | MIT | 2026-06-22 |
+| **[Glyph](https://github.com/zgbrenner/Glyph)** | Chrome extension that inserts legal and typographic symbols (section, pilcrow, dagger marks) directly into any text field, designed for drafting in Word, Google Docs, and legal CRMs. | JavaScript | MIT | 2026-07-06 |
 
 ## Backend Utilities & Libraries
 
@@ -384,6 +386,9 @@ Tools for regulatory compliance, sanctions screening, policy monitoring, and aut
 | <img src="https://flagcdn.com/w20/eu.png" width="20" height="15" alt="EU"> **[getregdata](https://github.com/Nolpak14/getregdata)** | Claude Code skills for querying European government registry data across multiple jurisdictions to support KYC, credit risk, property verification, compliance, and lead generation workflows. | | MIT | 2026-06-15 |
 | **[GEPA Compliance Optimizer](https://github.com/anastasiosyal/dspy-gepa-optimizer)** | DSPy-based prompt optimization tool that mines compliance rubrics from labelled regulatory decisions using the GEPA algorithm, achieving 30% more violation detections starting from a single-line prompt. | Python | MIT | 2026-06-22 |
 | <img src="https://flagcdn.com/w20/eu.png" width="20" height="15" alt="EU"> **[Regulus](https://github.com/neul-labs/regulus)** | Open-source compliance plane for Google ADK adding six BasePlugin extensions — policy enforcement, privacy controls, audit trails, kill switches, model risk assessment, and data residency — with ten regulation profiles including EU AI Act, GDPR, UK GDPR, DORA, NIS2, and FCA rules. | Java | MIT | 2026-06-29 |
+| <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[Zwiad](https://github.com/rafal-fryc/Zwiad)** | Multi-agent regulatory monitoring pipeline built on Claude Code that scans sources for US privacy, cybersecurity, and AI law developments, producing verified markdown reports with legal citations. | Python | No license | 2026-07-06 |
+| <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[NIST AI RMF Skill](https://github.com/rafal-fryc/NIST-AI-RMF-Skill)** | Claude skill that applies the NIST AI Risk Management Framework to a specific AI system or governance question, quoting official Subcategories and Generative AI Profile actions verbatim. | | Other | 2026-07-06 |
+| **[TechRegParser](https://github.com/rafal-fryc/TechRegParser)** | Multi-agent system built on the Anthropic Agent SDK that extracts and citation-verifies requirements from data privacy and technology regulation statutes, with an interactive viewer for browsing results. | Python | MIT | 2026-07-06 |
 
 
 ## eDiscovery & Litigation Support
@@ -455,6 +460,7 @@ Specialized tools for privacy impact assessments, consent management, DSAR autom
 | <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[PrivacyQuant](https://github.com/LegalQuants/privacyquant)** | Versioned statutory knowledge graph and MCP workflow layer for US state consumer privacy law, enabling applicability triage, gap analysis, DSAR routing, and conflict-of-laws synthesis across state privacy statutes. | TypeScript | MIT | 2026-06-11 |
 | **[Pinpoint](https://github.com/zgbrenner/pinpoint)** | Privacy-first, no-account AI policy builder that runs entirely in the browser without retaining user data, generating and exporting a complete AI governance policy pack. | | MIT | 2026-06-15 |
 | <img src="https://flagcdn.com/w20/kr.png" width="20" height="15" alt="KR"> **[Korean Privacy Terms](https://github.com/kimlawtech/korean-privacy-terms)** | Claude Code skill for auto-generating Korean privacy policies and terms of service compliant with the 2025.4.21 drafting guidelines and 2026 revised Korean privacy law. | | Apache-2.0 | 2026-06-15 |
+| **[Privacy Skill](https://github.com/rafal-fryc/Privacy-Skill)** | Claude skill for privacy professionals providing structured reference material and routing logic covering GDPR, CCPA, HIPAA, COPPA, FERPA, and the EU AI Act. | | No license | 2026-07-06 |
 
 ## Legal Workflow Automation
 
@@ -543,6 +549,7 @@ Model Context Protocol servers, AI agent frameworks, and tooling specifically de
 | **[AgentCounsel](https://github.com/zgbrenner/agentcounsel)** | Open library of legal skills for AI-assisted legal teams, providing reusable skills across practice areas for use in MCP-compatible AI agents. | | MIT | 2026-06-15 |
 | <img src="https://flagcdn.com/w20/fr.png" width="20" height="15" alt="FR"> **[French Law MCP](https://github.com/Ansvar-Systems/French-law-mcp)** | MCP server for French legislation providing AI assistants with access to 3,958 statutes and 193,793 articles (Code civil, Code pénal, Code du travail, and more) with EU directive cross-references and daily freshness checks from Légifrance. | Python | Apache-2.0 | 2026-06-22 |
 | <img src="https://flagcdn.com/w20/no.png" width="20" height="15" alt="NO"> **[Norwegian Law MCP](https://github.com/ngu-tek/Norwegian-law-mcp)** | MCP server for Norwegian legislation providing 3,400 statutes, 33,521 provisions, and 25,301 legislative preparatory works (forarbeider) from Lovdata with EEA/EU cross-references and zero LLM-generated content. | | Apache-2.0 | 2026-06-22 |
+| **[Agnostic Skills for Legal](https://github.com/zgbrenner/agnostic-skills-for-legal)** | Open-source library repackaging legal AI workflow skills into ready-to-use bundles for Claude, ChatGPT, and Gemini across nine practice areas, requiring no command line or API keys. | JavaScript, TypeScript | Apache-2.0 | 2026-07-06 |
 
 ## Legal Education & Communities
 
