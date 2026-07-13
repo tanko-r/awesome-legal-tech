@@ -607,7 +607,7 @@ Other awesome lists and curated collections in the legal technology space.
 
 | Name | Description | Tech Stack | License | Date Added |
 |------|-------------|------------|---------|------------|
-| ***[awesome-legal](https://github.com/ankane/awesome-legal)*** | *Curated collection of free legal documents, templates, and resources for companies and legal professionals. ⚠️ Stale (2024-03)* | | CC0-1.0 | *2026-03-02* |
+| **[awesome-legal](https://github.com/ankane/awesome-legal)** | Curated collection of free legal documents, templates, and resources for companies and legal professionals. | | CC0-1.0 | 2026-03-02 |
 | **[awesome-legal-nlp](https://github.com/maastrichtlawtech/awesome-legal-nlp)** | Comprehensive curated list of natural language processing resources, research papers, and datasets specifically for the legal domain, maintained by Maastricht Law & Tech Lab. | | MIT | 2026-03-02 |
 | **[awesome-legal-data](https://github.com/openlegaldata/awesome-legal-data)** | Collection of datasets, corpora, benchmarks, and tools for legal text processing and NLP research across multiple jurisdictions and languages. | | No license | 2026-03-02 |
 | **[awesome-legal-skills](https://github.com/lawvable/awesome-legal-skills)** | Curated list of AI agent skills and automation tools designed to streamline and assist with legal workflows and document analysis. | | Other | 2026-03-02 |
