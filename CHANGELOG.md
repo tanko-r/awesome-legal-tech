@@ -6,6 +6,23 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [2026-07-20]
+
+### Added
+- **AI Tools:** lawyer-knowledge-graph (CN), FachuanHybridSystem (CN), legal-ai-agent (Paparusi), case-type-guide (CN), china-lawyer-analyst (CN), foreign-law-research-skill (CN), Legal-AI_Project
+- **Legal Research:** ExploreSingapore (SG), lacuna-db (SG), arabic-legal-research-skill
+- **Practice Management:** LawyerCaseTool-Local-Offline (CN)
+- **Legal NLP & Datasets:** uzbek-legal-corpus
+- **Compliance & Regulatory Technology:** LQGovernance-OpenBoard, LQGovernance-DDAS, ballerine, ai-legislation-tracker
+- **Privacy & Data Protection:** cloakpii
+- **Court & Government Filing Systems:** gemma-zaken (NL)
+- **MCP Servers & AI Agent Tools for Law:** MCP-CENDOJ (ES), legal-mcp (Mahender22) (US)
+- **Access to Justice:** legal-aid-plugin (US)
+- **Meta-Resources:** awesome-legaltech (chen-friedman), awesome-legal-skills (lawve-ai)
+
+### Changed
+- Marked `ICLRandD/Blackstone` as stale (last updated: 2024-07)
+
 ## [2026-07-03]
 
 ### Added
