@@ -6,6 +6,27 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [2026-07-27]
+
+### Added
+- **AI Tools:** Mike, Suzie Law, Claude for Legal Launcher
+- **Law-Focused LLMs & Fine-Tuned Models:** redline-llm
+- **Legal Research:** OpenCaseLaw (CH)
+- **Contract Management:** Vaquill AI for Word (US)
+- **Practice Management:** Iuris-Soft
+- **Backend Utilities & Libraries:** Lifted Sign (US), Attestto Verify (EU), legal-ner, diarios (BR)
+- **Access to Justice:** VoiceFIR (IN)
+- **Compliance & Regulatory Technology:** Regula, Regixo (EU), EU AI Act Legal RAG (EU), eu-reg-feed (EU), MiCAR Register Observatory (EU), Open-Source Regulatory Reporting, Lex Radar, Parsed Tech Statutes
+- **eDiscovery & Litigation Support:** Catalyst, Legal Discovery Intelligence Graph
+- **IP & Patent Technology:** EUIPO EU Trademark Search (EU)
+- **Privacy & Data Protection:** c15t, DSAR
+- **Legal Workflow Automation:** legal-markdown-js
+- **Court & Government Filing Systems:** Find Case Law — Public UI (UK)
+- **Legal Ontologies & Knowledge Graphs:** SALI LMSS
+- **MCP Servers & AI Agent Tools for Law:** Clio MCP Server, lahend-mcp, VeniAI Hukuk EmsalKarar MCP Server, jp-eli-mcp (JP), br-eli-mcp (BR), sg-eli-mcp (SG), se-eli-mcp, gleif-mcp-server
+- **Advanced Legal Tools & Citation Systems:** citation-verifier, ALR-Verifier, molao
+- **Meta-Resources:** Awesome In-House Legal, Awesome Open Legal Switzerland (CH)
+
 ## [2026-07-20]
 
 ### Added
