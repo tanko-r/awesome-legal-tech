@@ -6,6 +6,32 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [2026-08-03]
+
+### Added
+- **AI Tools:** legal-ai-architect-toolkit, minius_codex_lab (UA), yapay-zeka-turkce-dilekce-skilleri (TR)
+- **Legal Research:** CourtGPT us-code (US), Lexagent, legal-case-research (CN), legal-research-assistant, LitigatAI (IN)
+- **Contract Management:** openreview-cli, ContractIQ
+- **Practice Management:** LawLink
+- **Document Management:** docuchat.app, mattermark
+- **Backend Utilities & Libraries:** Doctor (US), citation-report (PH)
+- **Legal Tech Developer Tools:** OpenDataLoader PDF, Chandra OCR
+- **Access to Justice:** Redo.io — Resentencing Data Initiative (US), Law Bridge Application (IN)
+- **Legal NLP & Datasets:** imljd (IN), JuDDges-HITL-Tool (UK), cocolex, LegalArgumentsLLM, ALEA Legal Benchmark, italia-corpus (IT), Open US Law (US)
+- **Compliance & Regulatory Technology:** EuConform (EU), mon-entreprise (FR), DU (PL), kakunin-core (EU), EvoAML (US)
+- **eDiscovery & Litigation Support:** mailarium, ediscovery-export
+- **Privacy & Data Protection:** GdprApi-Open (EU), PIA (FR)
+- **Legal Workflow Automation:** awesome-legal-agent-templates, n8n NDA Generator
+- **Court & Government Filing Systems:** ECFiler (US), TPT Court
+- **Legal Ontologies & Knowledge Graphs:** Nomos
+- **MCP Servers & AI Agent Tools for Law:** Lawbster MCP (DE), mcp-legal-ar (AR), Legal AI Model Router, LegalContext, awesome-matematic-skills-pl (PL)
+- **Legal Education & Communities:** LIL Law Skills Hub (US)
+- **Advanced Legal Tools & Citation Systems:** CiteSight (US), autocite
+- **Meta-Resources:** Awesome World Law Agent
+
+### Changed
+- Added Ukraine, Turkey, Philippines, and Italy to the Jurisdiction Flags table to support new entries from those jurisdictions.
+
 ## [2026-07-27]
 
 ### Added
