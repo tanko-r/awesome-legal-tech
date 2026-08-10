@@ -6,6 +6,24 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [2026-08-10]
+
+### Added
+- **AI Tools:** rizzo-pii (IT), legal-skills (CN)
+- **Law-Focused LLMs & Fine-Tuned Models:** BigLaw Bench, MLEB
+- **Legal Research:** tw-legal-rag (TW)
+- **Contract Management:** Procurement AI Assistant
+- **Document Management:** RaioPDF
+- **Backend Utilities & Libraries:** TargetParser, Opennyai (IN)
+- **Legal NLP & Datasets:** Pile of Law (US)
+- **Compliance & Regulatory Technology:** Sanctions Screening Benchmark, Awesome Identity Verification
+- **eDiscovery & Litigation Support:** Document Redaction, Phileas
+- **Privacy & Data Protection:** Consent Management Platform
+- **Meta-Resources:** CodeX TechIndex
+
+### Changed
+- Marked `lexradar/lex-radar` as stale (last updated: archived/removed) — the repository now returns a 404 on GitHub.
+
 ## [2026-08-03]
 
 ### Added
