@@ -6,6 +6,25 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [2026-08-17]
+
+### Added
+- **AI Tools:** DocketDrafter Plugins, ShuangLv Legal Skills (CN), Juro (Uzbekistan), Legal Expert Marketplace, Legal SkillHub (CN)
+- **Law-Focused LLMs & Fine-Tuned Models:** AlphaStarLaw (CN), Awesome Legal Benchmarks
+- **Legal Research:** Lex (SFHAJJI), Açık Mevzuat (TR), LexDiff (KR)
+- **Contract Management:** Aakd
+- **Document Management:** Intern
+- **Access to Justice:** Awaz-e-Nisa, Bankruptcy Discharge Screener (US)
+- **Privacy & Data Protection:** stella anonymize
+- **eDiscovery & Litigation Support:** ThreadLight
+- **Legal Analytics & Prediction:** FedCourtsAI (US)
+- **Court & Government Filing Systems:** Fedlex Metadata (CH), legalize-nl (NL)
+- **MCP Servers & AI Agent Tools for Law:** swiss-courts-mcp (CH), Filevine MCP, MyCase MCP, Bill4Time MCP, Actionstep MCP, Smokeball MCP, Rocketmatter MCP, LawRuler MCP, Cosmolex MCP, startup-law-mcp (KR), awesome-matematic-skills-en (EU)
+- **Advanced Legal Tools & Citation Systems:** KrokAI Law
+
+### Changed
+- Marked `daneads/pypatent` as stale (last updated: archived/removed) — the repository now returns a 404 on GitHub.
+
 ## [2026-08-10]
 
 ### Added

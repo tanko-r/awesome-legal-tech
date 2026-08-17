@@ -124,6 +124,11 @@ Tools and models that use AI to assist with legal work, from contract analysis t
 | <img src="https://flagcdn.com/w20/tr.png" width="20" height="15" alt="TR"> **[yapay-zeka-turkce-dilekce-skilleri](https://github.com/esaterbiltavus/yapay-zeka-turkce-dilekce-skilleri)** | Collection of Claude Code skills that teach AI assistants Turkish legal petition-writing frameworks such as IRAC, CREAC, and Toulmin argumentation, producing docx, html, and PDF output. | | MIT | 2026-08-03 |
 | <img src="https://flagcdn.com/w20/it.png" width="20" height="15" alt="IT"> **[rizzo-pii](https://github.com/Rizzo-AI-Academy/rizzo-pii)** | Local-first, reversible tool that anonymizes personally identifiable information in Italian legal text before it is sent to a frontier LLM, built for GDPR- and EU AI Act-conscious workflows. | Python | MIT | 2026-08-10 |
 | <img src="https://flagcdn.com/w20/cn.png" width="20" height="15" alt="CN"> **[legal-skills](https://github.com/cat-xierluo/legal-skills)** | Collection of Claude Agent Skills for Chinese legal practitioners covering litigation analysis, patent analysis, and legal proposal generation, maintained by a lawyer practicing in IP and data/AI disputes. | | Other | 2026-08-10 |
+| **[DocketDrafter Plugins](https://github.com/DocketDrafter/docketdrafter-plugins)** | Open-source legal research skills and plugins for Claude Cowork and Claude Code from DocketDrafter. | Python | BSD-3-Clause | 2026-08-17 |
+| <img src="https://flagcdn.com/w20/cn.png" width="20" height="15" alt="CN"> **[ShuangLv Legal Skills](https://github.com/zj-ai-lab/shuanglv-legal-skills)** | Agent Skills workflow system for Chinese lawyers covering criminal, civil/commercial, contract, due diligence, and legal research practice areas, with built-in adversarial review and human review checkpoints. | Python | Other | 2026-08-17 |
+| **[Juro (Uzbekistan)](https://github.com/MoozUpus/juro)** | AI-native legal tech workspace for Uzbekistan providing source-aware legal information lookup, document drafting, and lawyer hand-off workflows. | TypeScript | No license | 2026-08-17 |
+| **[Legal Expert Marketplace](https://github.com/legal-expert-ai/marketplace)** | Marketplace of ChatGPT and Codex plugins for Romanian legal research, document analysis, and OCR. | PowerShell | Other | 2026-08-17 |
+| <img src="https://flagcdn.com/w20/cn.png" width="20" height="15" alt="CN"> **[Legal SkillHub](https://github.com/CSlawyer1985/legal-skillhub)** | Static-site catalog indexing 2,049 legal Agent Skills with categorization, usage instructions, and deployment links for Chinese legal practitioners. | Python | No license | 2026-08-17 |
 
 ## Law-Focused LLMs & Fine-Tuned Models
 
@@ -150,6 +155,8 @@ Foundation models and fine-tunes purpose-built for the legal domain, from genera
 | <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[@narcolepticchicken Models]([https://github.com/Tizzzzy/Law_LLM](https://huggingface.co/narcolepticchicken))** | A collection of fine-tuned and post-trained models by attorney Aaron Kelly focused on law and contracts. | Other |  | 2026-06-26 |
 | **[redline-llm](https://github.com/MarcusElwin/redline-llm)** | Fine-tuned open-source language model for automated paragraph-level redlining of contracts, aimed at developers building contract-review tooling. | Python | MIT | 2026-07-27 |
 | **[BigLaw Bench](https://github.com/harveyai/biglaw-bench)** | Benchmark framework from Harvey for evaluating how large language models perform on realistic transactional and litigation legal tasks. | | No license | 2026-08-10 |
+| <img src="https://flagcdn.com/w20/cn.png" width="20" height="15" alt="CN"> **[AlphaStarLaw](https://github.com/wjianxz/AlphaStarLaw)** | Chinese legal large language model project documenting a full tuning pipeline — continued pretraining, instruction fine-tuning, and RLHF — with chain-of-thought training aimed at multi-step legal reasoning. | Python | Apache-2.0 | 2026-08-17 |
+| **[Awesome Legal Benchmarks](https://github.com/narcolepticchicken/awesome-legal-benchmarks)** | Source-backed catalog of legal AI benchmarks, datasets, evaluation frameworks, and metrics for researchers assessing legal LLMs. | Python | Other | 2026-08-17 |
 
 ### Legal BERT & Encoder Models
 
@@ -203,6 +210,9 @@ Platforms and tools for legal research, case law discovery, and statutory inform
 | **[legal-research-assistant](https://github.com/karthiksuresh007/legal-research-assistant)** | Retrieval-augmented generation system for analyzing multiple legal documents at once, with conflict detection and citation management for legal researchers. | Python | MIT | 2026-08-03 |
 | <img src="https://flagcdn.com/w20/in.png" width="20" height="15" alt="IN"> **[LitigatAI](https://github.com/spearb0lt/LitigatAI)** | Streamlit workbench bundling ten tools for Indian litigation practice, including Indian Kanoon case research, pleading drafting, judgment summarization, OCR translation, and docket tracking. | Python | No license | 2026-08-03 |
 | <img src="https://flagcdn.com/w20/tw.png" width="20" height="15" alt="TW"> **[tw-legal-rag](https://github.com/aa0101181514/tw-legal-rag)** | Command-line tool for semantic retrieval of Taiwanese court judgments that packages ranked results for external LLMs and verifies citations at the bundle level. | Python | Other | 2026-08-10 |
+| **[Lex (SFHAJJI)](https://github.com/SFHAJJI/lex)** | Point-in-time retrieval system for Luxembourg and EU law that tracks exact article version history and answers what a regulation said on a given past date, with read-only MCP tools. | C# | Apache-2.0 | 2026-08-17 |
+| <img src="https://flagcdn.com/w20/tr.png" width="20" height="15" alt="TR"> **[Açık Mevzuat](https://github.com/onurcan-b/acik-mevzuat)** | Open data repository that automatically fetches Turkish legislation from the Ministry of Justice and tracks statutory amendments as Git history. | Python | Other | 2026-08-17 |
+| <img src="https://flagcdn.com/w20/kr.png" width="20" height="15" alt="KR"> **[LexDiff](https://github.com/chrisryugj/lexdiff)** | Search service answering plain-language questions about Korean statutes with verbatim source citations, including old-versus-new provision comparisons and linked case law and interpretations. | TypeScript | Other | 2026-08-17 |
 
 ## Contract Management
 
@@ -233,6 +243,7 @@ Tools for drafting, reviewing, negotiating, and managing legal contracts.
 | **[openreview-cli](https://github.com/mohamed-benoughidene/openreview-cli)** | Privacy-first command-line tool that reviews contracts against per-client playbooks using local LLMs by default, keeping documents off third-party servers. | Python | AGPL-3.0 | 2026-08-03 |
 | **[ContractIQ](https://github.com/StephaneWamba/ContractIQ)** | Document intelligence platform combining clause extraction and RAG-based chat to help legal teams review contracts and surface risk with cited evidence. | Python | No license | 2026-08-03 |
 | **[Procurement AI Assistant](https://github.com/arunbalajiraju-proc/procurement-ai-assistant)** | Open library of reusable AI agent skills for procurement, sourcing, and contract negotiation workflows. | | MIT | 2026-08-10 |
+| **[Aakd](https://github.com/aaked-app/aakd)** | Self-hostable, open-source contract lifecycle management tool for reviewing routine agreements like MSAs without paying per-contract legal review fees. | TypeScript, Next.js | AGPL-3.0 | 2026-08-17 |
 
 ## Practice Management
 
@@ -287,6 +298,7 @@ Systems for storing, organizing, and retrieving legal documents securely.
 | **[docuchat.app](https://github.com/janderswag/docuchat.app)** | Self-hosted, offline desktop app that lets attorneys chat with their case documents using local LLMs via Ollama, verifying every citation against the source page before displaying it. | Python | MIT | 2026-08-03 |
 | **[mattermark](https://github.com/zgbrenner/mattermark)** | Local-first work-product fingerprinting tool that marks a per-recipient copy of a document with a cryptographically derived identifier and attributes a recovered leak back to a specific recipient, matter, and version. | TypeScript | MIT | 2026-08-03 |
 | **[RaioPDF](https://github.com/Macrify-LLC/raiopdf)** | Free, fully local desktop PDF suite for law firms providing OCR, redaction, Bates numbering, and e-filing preparation without files ever leaving the device. | | GPL-3.0 | 2026-08-10 |
+| **[Intern](https://github.com/zgbrenner/intern)** | Local-first document renaming tool that reads legal documents and identifies what to call them — type, effective date, and parties — citing verbatim evidence for each fact and routing anything unverifiable to human review. | Rust | No license | 2026-08-17 |
 
 ## Backend Utilities & Libraries
 
@@ -380,6 +392,8 @@ Tools and platforms designed to improve access to legal services and justice.
 | <img src="https://flagcdn.com/w20/in.png" width="20" height="15" alt="IN"> **[VoiceFIR](https://github.com/PranavGupta1406/Voice-FIR)** | AI-assisted platform helping citizens dictate First Information Reports in multiple Indian languages, structuring narratives into BNSS/BNS-2023-compliant drafts for police intake. | TypeScript, Next.js | No license | 2026-07-27 |
 | <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[Redo.io — Resentencing Data Initiative](https://github.com/redoio/resentencing_data_initiative)** | Data-science tool built with Stanford Law's Three Strikes Project that screens California prison records to identify people eligible for prosecutor-initiated resentencing, for use by public defenders and prosecutors. | Python | AGPL-3.0 | 2026-08-03 |
 | <img src="https://flagcdn.com/w20/in.png" width="20" height="15" alt="IN"> **[Law Bridge Application](https://github.com/Divyansh1552005/Law_Bridge_Application)** | Full-stack platform connecting users with verified lawyers in India for consultations and video calls, including an AI legal chatbot backed by a RAG pipeline over Indian constitutional law. | JavaScript | GPL-3.0 | 2026-08-03 |
+| **[Awaz-e-Nisa](https://github.com/AsifMarwat/Awaz-e-Nisa)** | Bilingual (English/Urdu) multimodal RAG legal assistant with voice queries and OCR document parsing, built to make legal information accessible to women in Pakistan. | Python | No license | 2026-08-17 |
+| <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[Bankruptcy Discharge Screener](https://github.com/openbankruptcyproject/bankruptcy-discharge-screener)** | Free, open-source toolkit that screens bankruptcy court data across all 94 US federal districts for discharge-bar violations under 11 U.S.C. §1328(f), for use by public interest advocates and researchers. | Python | MIT | 2026-08-17 |
 
 ## Legal NLP & Datasets
 
@@ -495,6 +509,7 @@ Software for electronically stored information (ESI) collection, processing, rev
 | **[ediscovery-export](https://github.com/seanGSISG/ediscovery-export)** | Claude Code plugin and PowerShell engine that runs Microsoft Purview eDiscovery keyword searches across mailboxes and exports matching mail as PST/MSG productions over the Graph API. | PowerShell | No license | 2026-08-03 |
 | **[Document Redaction](https://github.com/seanpedrick-case/doc_redaction)** | GUI and CLI tool for redacting PDF, Word, and spreadsheet files using OCR and machine-learning text detection, for document review and production workflows. | Python | AGPL-3.0 | 2026-08-10 |
 | **[Phileas](https://github.com/philterd/phileas)** | Java engine for finding and redacting PII and PHI in text and PDF documents according to configurable policies, usable in document review and production pipelines. | Java | Apache-2.0 | 2026-08-10 |
+| **[ThreadLight](https://github.com/samspade21/ThreadLight)** | Open-source macOS app for reviewing Slack Enterprise legal-hold exports locally, letting legal teams collect, search, review, and produce Slack evidence without uploading it to a hosted service. | Swift | Apache-2.0 | 2026-08-17 |
 
 ## Legal Analytics & Prediction
 
@@ -509,6 +524,7 @@ Platforms for litigation outcome prediction, judge analytics, legal data visuali
 | *<img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[recidivism-predictions](https://github.com/stanford-policylab/recidivism-predictions)*** | *Stanford Policy Lab replication code for the Science Advances paper comparing human vs. algorithmic accuracy in predicting criminal reoffending. ⚠️ Stale (2020-05)* | *Python* | No license | *2026-03-02* |
 | **[Legal-Text-Analytics](https://github.com/Liquid-Legal-Institute/Legal-Text-Analytics)** | A comprehensive curated list of resources, methods, and tools for legal text analytics covering NER, case outcome prediction, argument mining, summarization, and datasets from multiple jurisdictions. | | CC-BY-SA-4.0 | 2026-03-02 |
 | <img src="https://flagcdn.com/w20/nl.png" width="20" height="15" alt="NL"> **[Case Explorer](https://github.com/maastrichtlawtech/case-explorer-ui)** | Network analysis platform for visualizing and exploring citation networks in Dutch and European court decisions, developed by Maastricht Law & Tech Lab. | TypeScript, React | MIT | 2026-03-02 |
+| <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[FedCourtsAI](https://github.com/ModelMirrorAI/fedcourtsai)** | Agentic AI system that predicts outcomes in US federal court proceedings, including motion rulings and individual judge votes with predicted reasoning. | Python | MIT | 2026-08-17 |
 
 ## IP & Patent Technology
 
@@ -518,7 +534,7 @@ Tools for patent search, trademark monitoring, IP portfolio management, prior ar
 |------|-------------|------------|---------|------------|
 | **[PatZilla](https://github.com/ip-tools/patzilla)** | A modular patent information research platform and data integration toolkit with a modern UI and access to multiple data sources including the European Patent Office. | Python | AGPL-3.0 | 2026-03-02 |
 | ***[PatentInspector](https://github.com/KonstantinosPetrakis/PatentInspector)*** | *An open-source patent analyzing web application built with Django and Vue 3, allowing users to search, filter, and export patent data. ⚠️ Stale (2023-12)* | *Python, Django* | GPL-3.0 | *2026-03-02* |
-| *<img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[pypatent](https://github.com/daneads/pypatent)*** | *A Python package for searching and scraping US Patent and Trademark Office patent data, outputting results as DataFrames or lists. ⚠️ Stale (2020-06)* | *Python* | GPL-3.0 | *2026-03-02* |
+| *<img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[pypatent](https://github.com/daneads/pypatent)*** | *A Python package for searching and scraping US Patent and Trademark Office patent data, outputting results as DataFrames or lists. ⚠️ Stale (archived/removed)* | *Python* | GPL-3.0 | *2026-03-02* |
 | ***[patents-public-data](https://github.com/google/patents-public-data)*** | *Google's official collection of BigQuery datasets and Jupyter notebooks for conducting large-scale statistical analysis of patent data. ⚠️ Stale (2024-06)* | *Python* | Apache-2.0 | *2026-03-02* |
 | **[PatentSBERTa](https://github.com/AI-Growth-Lab/PatentSBERTa)** | A deep NLP hybrid model combining Sentence-BERT and KNN for patent distance measurement and classification, trained on 1.5M+ patents. | Python, PyTorch | MIT | 2026-03-02 |
 | *<img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[hupd](https://github.com/suzgunmirac/hupd)*** | *The Harvard USPTO Patent Dataset containing 4.5 million utility patent applications (2004-2018) with NLP models for patent acceptance prediction, classification, and summarization. ⚠️ Stale (2023-12)* | *Python, PyTorch* | MIT | *2026-03-02* |
@@ -558,6 +574,7 @@ Specialized tools for privacy impact assessments, consent management, DSAR autom
 | <img src="https://flagcdn.com/w20/eu.png" width="20" height="15" alt="EU"> **[GdprApi-Open](https://github.com/HeyBaldur/GdprApi-Open)** | Self-hostable .NET/MongoDB Web API giving developers ready-made endpoints for GDPR data-subject rights, consent, and audit logging in multi-tenant applications. | C# | Other | 2026-08-03 |
 | <img src="https://flagcdn.com/w20/fr.png" width="20" height="15" alt="FR"> **[PIA](https://github.com/LINCnil/pia)** | Desktop and web application published by France's data protection authority (CNIL) that walks organizations through building and documenting GDPR data protection impact assessments. | TypeScript | GPL-3.0 | 2026-08-03 |
 | **[Consent Management Platform](https://github.com/68publishers/consent-management-platform)** | Self-hosted platform for managing GDPR-compliant website cookie consent and the consent widget. | PHP | Other | 2026-08-10 |
+| **[stella anonymize](https://github.com/stella/anonymize)** | Local-first PII detection and anonymization library for text and legal documents, used as the anonymization engine behind the stella legal workspace. | Rust | Apache-2.0 | 2026-08-17 |
 
 ## Legal Workflow Automation
 
@@ -595,6 +612,8 @@ E-filing platforms, court management systems, government legal portals, and lega
 | <img src="https://flagcdn.com/w20/gb.png" width="20" height="15" alt="UK"> **[Find Case Law — Public UI](https://github.com/nationalarchives/ds-caselaw-public-ui)** | Public-facing frontend for the UK National Archives' Find Case Law service, which publishes official court and tribunal judgments as a government legal portal. | Python, Django | MIT | 2026-07-27 |
 | <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[ECFiler](https://github.com/jackson-jpeg/ecfiler)** | AI-assisted filing tool that extracts filing details from uploaded documents and stages validated packages for attorney submission across 207 US federal CM/ECF courts, with local browser automation and mandatory human confirmation gates. | Python, FastAPI | MIT | 2026-08-03 |
 | **[TPT Court](https://github.com/tpt-solutions/tpt-court)** | Self-hostable court case management system with role-based access for judges, clerks, lawyers, and the public, covering hearings, documents, payments, notifications, and public e-filing. | TypeScript, Next.js | MIT | 2026-08-03 |
+| <img src="https://flagcdn.com/w20/ch.png" width="20" height="15" alt="CH"> **[Fedlex Metadata](https://github.com/droid-f/fedlex)** | Consolidated JSON mirror of the Swiss Federal Chancellery's Fedlex publication database — acts, official compilations, treaties, and consultation procedures — updated multiple times daily and tracked via Git history. | | No license | 2026-08-17 |
+| <img src="https://flagcdn.com/w20/nl.png" width="20" height="15" alt="NL"> **[legalize-nl](https://github.com/legalize-nl/legalize-nl)** | Dutch legislation published as version-controlled Markdown files, with roughly 1,800 statutes and each amendment tracked as a separate Git commit. | | No license | 2026-08-17 |
 
 ## Legal Ontologies & Knowledge Graphs
 
@@ -671,6 +690,17 @@ Model Context Protocol servers, AI agent frameworks, and tooling specifically de
 | **[Legal AI Model Router](https://github.com/sboghossian/legal-ai-model-router)** | Bundle of vendor-neutral Claude Code skills that recommend which LLM to use for a given legal task — drafting, extraction, research, review, translation — based on benchmark data. | | AGPL-3.0 | 2026-08-03 |
 | **[LegalContext](https://github.com/protomated/legal-context-ce)** | Open-source Model Context Protocol server that indexes a law firm's Clio document management system with local vector search so AI assistants can answer questions grounded in the firm's own files with citations. | TypeScript | MPL-2.0 | 2026-08-03 |
 | <img src="https://flagcdn.com/w20/pl.png" width="20" height="15" alt="PL"> **[awesome-matematic-skills-pl](https://github.com/matematicsolutions/awesome-matematic-skills-pl)** | Curated hub of Claude Code skills across 8 bundles for Polish and EU legal practice, covering LLM-output verification, Polish/EU case law search, GDPR/RODO operations, and EU AI Act governance. | Python | MIT | 2026-08-03 |
+| <img src="https://flagcdn.com/w20/ch.png" width="20" height="15" alt="CH"> **[swiss-courts-mcp](https://github.com/malkreide/swiss-courts-mcp)** | MCP server providing AI assistants with search over Swiss federal and cantonal court decisions via entscheidsuche.ch, covering the Federal Supreme, Administrative, and Criminal Courts plus all 26 cantonal courts. | Python | MIT | 2026-08-17 |
+| **[Filevine MCP](https://github.com/RosenAdvertising/filevine-mcp)** | MCP server giving AI assistants full API coverage over Filevine, a legal case management platform, covering matters, contacts, tasks, documents, and billing. | Python | MIT | 2026-08-17 |
+| **[MyCase MCP](https://github.com/RosenAdvertising/mycase-mcp)** | MCP server giving Claude and other AI assistants access to a law firm's MyCase practice management account. | Python | MIT | 2026-08-17 |
+| **[Bill4Time MCP](https://github.com/RosenAdvertising/bill4time-mcp)** | MCP server providing API coverage for Bill4Time, a legal billing and time-tracking platform. | Python | MIT | 2026-08-17 |
+| **[Actionstep MCP](https://github.com/RosenAdvertising/actionstep-mcp)** | MCP server providing full API coverage for Actionstep, a law firm practice management platform. | Python | MIT | 2026-08-17 |
+| **[Smokeball MCP](https://github.com/RosenAdvertising/smokeball-mcp)** | MCP server providing full API coverage for Smokeball, a law firm practice management platform. | Python | MIT | 2026-08-17 |
+| **[Rocketmatter MCP](https://github.com/RosenAdvertising/rocketmatter-mcp)** | MCP server providing full API coverage for Rocketmatter, a legal practice management platform. | Python | MIT | 2026-08-17 |
+| **[LawRuler MCP](https://github.com/RosenAdvertising/lawruler-mcp)** | MCP server providing API coverage for the LawRuler legal CRM. | Python | MIT | 2026-08-17 |
+| **[Cosmolex MCP](https://github.com/RosenAdvertising/cosmolex-mcp)** | MCP server providing full API coverage for Cosmolex, a law firm practice management platform. | Python | MIT | 2026-08-17 |
+| <img src="https://flagcdn.com/w20/kr.png" width="20" height="15" alt="KR"> **[startup-law-mcp](https://github.com/Choihello/startup-law-mcp)** | MCP server grounding Claude's answers about Korean startup law in the verbatim text of 50 statutes (8,191 provisions) and K-Startup government support programs, auto-synced from the National Law Information Center API. | Python | No license | 2026-08-17 |
+| <img src="https://flagcdn.com/w20/eu.png" width="20" height="15" alt="EU"> **[awesome-matematic-skills-en](https://github.com/matematicsolutions/awesome-matematic-skills-en)** | English-language hub of method-neutral legal AI skills for Claude Code — verification core, content-quality checks, and EU-level law sources — as a companion to the Polish-jurisdiction skill bundle. | Python | MIT | 2026-08-17 |
 
 ## Legal Education & Communities
 
@@ -709,6 +739,7 @@ Specialized tools for citation analysis, contract comparison, and legal research
 | **[molao](https://github.com/vul-os/molao)** | Decentralized, region-agnostic commons of case law combining a corpus, citation graph, and citator that institutions can mirror and seed without a central operator. | Rust | Apache-2.0 | 2026-07-27 |
 | <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[CiteSight](https://github.com/JaySmith502/CiteSight)** | Self-hosted web app that checks legal citations in briefs and memos against the CourtListener database and flags invalid or questionable ones, aimed at solo practitioners and small firms. | TypeScript, React | MIT | 2026-08-03 |
 | **[autocite](https://github.com/zgbrenner/autocite)** | Tool that turns an AI assistant into a legal-citation specialist for Bluebook formatting, for lawyers and legal engineers drafting citation-heavy documents. | Python | MIT | 2026-08-03 |
+| **[KrokAI Law](https://github.com/igorsaevets/krokai-law)** | Offline tool that verifies every legal quotation in a document against the actual source text on disk and flags mismatches before filing, built for immigration attorneys and others who rely on AI-drafted legal text. | Python | MIT | 2026-08-17 |
 
 ## Notable Proprietary Legal AI Tools
 
