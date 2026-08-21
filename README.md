@@ -243,7 +243,7 @@ Tools for drafting, reviewing, negotiating, and managing legal contracts.
 | **[openreview-cli](https://github.com/mohamed-benoughidene/openreview-cli)** | Privacy-first command-line tool that reviews contracts against per-client playbooks using local LLMs by default, keeping documents off third-party servers. | Python | AGPL-3.0 | 2026-08-03 |
 | **[ContractIQ](https://github.com/StephaneWamba/ContractIQ)** | Document intelligence platform combining clause extraction and RAG-based chat to help legal teams review contracts and surface risk with cited evidence. | Python | No license | 2026-08-03 |
 | **[Procurement AI Assistant](https://github.com/arunbalajiraju-proc/procurement-ai-assistant)** | Open library of reusable AI agent skills for procurement, sourcing, and contract negotiation workflows. | | MIT | 2026-08-10 |
-| **[Aakd](https://github.com/aaked-app/aakd)** | Self-hostable, open-source contract lifecycle management tool for reviewing routine agreements like MSAs without paying per-contract legal review fees. | TypeScript, Next.js | AGPL-3.0 | 2026-08-17 |
+| **[Aakd](https://github.com/aaked-app/aakd)** | Self-hostable contract operations workspace for reviewed, source-linked obligations, owners, deadlines, approvals, and completion evidence. | TypeScript, Next.js | AGPL-3.0 | 2026-08-17 |
 
 ## Practice Management
 
