@@ -40,6 +40,6 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: automated weekly update — new legal tech entries"
-          file_pattern: "README.md CHANGELOG.md"
+          file_pattern: "README.md CHANGELOG.md legal-tech-directory.html"
           commit_user_name: "github-actions[bot]"
           commit_user_email: "github-actions[bot]@users.noreply.github.com"
