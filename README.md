@@ -1,12 +1,12 @@
 # Awesome Legal Apps
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-[![Interactive Directory](https://img.shields.io/badge/Interactive_Directory-▶_Open-6c8ef7?style=flat)](https://raw.githubusercontent.com/tanko-r/awesome-legal-tech/main/legal-tech-directory.html)
+[![Interactive Directory](https://img.shields.io/badge/Interactive_Directory-▶_Open-6c8ef7?style=flat)](https://tanko-r.github.io/awesome-legal-tech/)
 
 > A curated list of awesome legal technology tools, apps, AI models, and resources for legal professionals and technologists where quality of curation beats quantity of links.
 > This repo is automatically updated weekly based on /sync-and-update skill in ~/.claude/skills/.
 
-**Too many entries for a README?** Download [`legal-tech-directory.html`](legal-tech-directory.html) and open it locally for a searchable, filterable, sortable view of all 519+ entries — no server needed.
+**519+ entries and growing** — the README is the source of truth, but the [**Interactive Directory**](https://tanko-r.github.io/awesome-legal-tech/) is the best way to browse it: searchable, filterable by category/jurisdiction/license, and sortable.
 
 ## Jurisdiction Flags
 

@@ -1,0 +1,49 @@
+name: Deploy Interactive Directory to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - README.md
+      - scripts/generate-html.py
+      - .github/workflows/deploy-pages.yml
+  workflow_dispatch:   # Manual trigger
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Regenerate HTML from latest README
+        run: python3 scripts/generate-html.py
+
+      - name: Prepare Pages artifact
+        run: |
+          mkdir _site
+          cp legal-tech-directory.html _site/index.html
+          # Also serve under the original filename for direct links
+          cp legal-tech-directory.html _site/legal-tech-directory.html
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
