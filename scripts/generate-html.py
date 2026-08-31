@@ -4,15 +4,23 @@ Generate legal-tech-directory.html from README.md.
 
 Run from the repo root:
     python3 scripts/generate-html.py
+
+If sentence-transformers is installed, pre-computes semantic embeddings
+for all entries and embeds them in the HTML (uint8-quantized, ~270 KB).
+Otherwise the HTML still works with text + fuzzy search only.
 """
 import re
 import json
 import sys
+import base64
 from pathlib import Path
 
 ROOT = Path(__file__).parent.parent
 README = ROOT / "README.md"
 OUTPUT = ROOT / "legal-tech-directory.html"
+
+EMBED_MODEL = "all-MiniLM-L6-v2"
+EMBED_DIM = 384
 
 
 def parse_entries(content):
@@ -86,7 +94,7 @@ def parse_entries(content):
     return entries
 
 
-def build_html(entries):
+def build_html(entries, emb_b64=None):
     categories = sorted(set(e["categoryMain"] for e in entries))
     licenses = sorted(set(e["license"] for e in entries if e["license"]))
     jurisdictions = sorted(set(j for e in entries for j in e["jurisdictions"]))
@@ -201,7 +209,11 @@ def build_html(entries):
   #search:focus {{ border-color: var(--accent); }}
   #search::placeholder {{ color: var(--text3); }}
   .result-count {{ color: var(--text2); font-size: 13px; white-space: nowrap; }}
-  .semantic-note {{ display: flex; align-items: center; gap: 6px; padding: 6px 12px; background: var(--search-note-bg); border: 1px solid var(--search-note-border); border-radius: 6px; font-size: 12px; color: var(--search-note-text); margin-left: auto; white-space: nowrap; }}
+  .semantic-note {{ display: flex; align-items: center; gap: 6px; padding: 6px 12px; background: var(--search-note-bg); border: 1px solid var(--search-note-border); border-radius: 6px; font-size: 12px; color: var(--search-note-text); margin-left: auto; white-space: nowrap; transition: all .3s; }}
+  .semantic-ready {{ background: var(--foss-bg); border-color: var(--foss-border); color: var(--foss-text); }}
+  .semantic-error {{ opacity: 0.5; }}
+  @keyframes spin {{ to {{ transform: rotate(360deg); }} }}
+  .spin {{ animation: spin 1s linear infinite; }}
 
   .filter-row {{ display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }}
   .filter-label {{ font-size: 12px; color: var(--text3); font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }}
@@ -283,9 +295,9 @@ def build_html(entries):
       <input type="text" id="search" placeholder="Search names, descriptions, tech stacks, jurisdictions…" autocomplete="off" spellcheck="false">
     </div>
     <span class="result-count" id="result-count"></span>
-    <div class="semantic-note">
+    <div class="semantic-note" id="semantic-badge">
       <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
-      Full-text + fuzzy search
+      Initializing…
     </div>
   </div>
   <div class="filter-row">
@@ -339,40 +351,203 @@ def build_html(entries):
 
 <script>
 const DATA = {data_json};
+const EMB_B64 = {f'"{emb_b64}"' if emb_b64 else 'null'};
+const EMB_DIM = {EMBED_DIM};
 
-// ── Search engine (BM25-style inverted index + prefix + substring) ──
+// ═══════════════════════════════════════════════
+// SEARCH ENGINE — text (BM25 + Levenshtein fuzzy) + semantic (embeddings)
+// ═══════════════════════════════════════════════
+
+// ── Levenshtein distance ──
+function levenshtein(a, b) {{
+  if (a.length === 0) return b.length;
+  if (b.length === 0) return a.length;
+  const matrix = [];
+  for (let i = 0; i <= b.length; i++) matrix[i] = [i];
+  for (let j = 0; j <= a.length; j++) matrix[0][j] = j;
+  for (let i = 1; i <= b.length; i++) {{
+    for (let j = 1; j <= a.length; j++) {{
+      const cost = b[i-1] === a[j-1] ? 0 : 1;
+      matrix[i][j] = Math.min(matrix[i-1][j]+1, matrix[i][j-1]+1, matrix[i-1][j-1]+cost);
+    }}
+  }}
+  return matrix[b.length][a.length];
+}}
+
+// ── Text search (BM25 + prefix + fuzzy) ──
 (function() {{
   const STOP = new Set(['the','a','an','and','or','in','on','at','to','for','of','with','by','from','is','are','was','were','be','been','has','have','had','that','this','it','its','as','into','via','per','not','no','can','also','which','their','they','these','those','than','when','where','what','how','who','will','would','could','should','may','might','using','used','use','provides','provide','providing','support','supports','based','built','designed','allows','enabling','enables','make','makes','help','helps']);
   function tok(t) {{ return (t||'').toLowerCase().replace(/[^a-z0-9\\s]/g,' ').split(/\\s+/).filter(w=>w.length>1); }}
   const index = {{}};
+  const allTokens = [];
   DATA.forEach((d,i) => {{
     const words = tok([d.name,d.description,d.techStack,d.categoryMain,d.license].join(' ')).filter(w=>!STOP.has(w));
     words.forEach(w => {{ if(!index[w]) index[w]={{}}; index[w][i]=(index[w][i]||0)+1; }});
   }});
-  window._search = q => {{
+  Object.keys(index).forEach(k => allTokens.push(k));
+
+  window._textSearch = q => {{
     const terms = tok(q).filter(t=>t.length>0);
     if (!terms.length) return null;
     const N = DATA.length, scores = {{}};
     terms.forEach(term => {{
-      // exact
+      // exact token match (BM25)
       if (index[term]) {{
         const df = Object.keys(index[term]).length;
         const idf = Math.log((N-df+0.5)/(df+0.5)+1);
         Object.entries(index[term]).forEach(([i,tf]) => {{ scores[i]=(scores[i]||0)+idf*(tf*2.5)/(tf+1.5); }});
       }}
-      // prefix
-      if (term.length >= 3) Object.keys(index).forEach(k => {{
+      // prefix match
+      if (term.length >= 3) allTokens.forEach(k => {{
         if (k!==term && k.startsWith(term)) {{
-          const df=Object.keys(index[k]).length, idf=Math.log((N-df+0.5)/(df+0.5)+1)*0.6;
+          const df=Object.keys(index[k]).length, idf=Math.log((N-df+0.5)/(df+0.5)+1)*0.5;
           Object.entries(index[k]).forEach(([i,tf]) => {{ scores[i]=(scores[i]||0)+idf*(tf*2.5)/(tf+1.5); }});
         }}
       }});
+      // fuzzy match (Levenshtein distance ≤ 2 for terms ≥ 4 chars)
+      if (term.length >= 4) allTokens.forEach(k => {{
+        if (k !== term && !k.startsWith(term) && Math.abs(k.length - term.length) <= 2) {{
+          const dist = levenshtein(term, k);
+          if (dist <= 2 && dist > 0) {{
+            const df = Object.keys(index[k]).length;
+            const idf = Math.log((N-df+0.5)/(df+0.5)+1) * (0.4 / dist);
+            Object.entries(index[k]).forEach(([i,tf]) => {{ scores[i]=(scores[i]||0)+idf*(tf*2.5)/(tf+1.5); }});
+          }}
+        }}
+      }});
       // substring fallback
-      DATA.forEach((d,i) => {{ if((d.name+' '+d.description).toLowerCase().includes(term)) scores[i]=(scores[i]||0)+0.4; }});
+      DATA.forEach((d,i) => {{ if((d.name+' '+d.description).toLowerCase().includes(term)) scores[i]=(scores[i]||0)+0.3; }});
     }});
-    return new Set(Object.entries(scores).filter(([,s])=>s>0).map(([i])=>parseInt(i)));
+    return scores;
   }};
 }})();
+
+// ── Semantic search (pre-computed embeddings + Transformers.js query encoder) ──
+const _semantic = {{
+  ready: false,
+  loading: false,
+  extractor: null,
+  embeddings: null, // Float32Array[N * DIM]
+}};
+
+// Decode pre-computed uint8 embeddings → Float32Array
+if (EMB_B64) {{
+  const raw = Uint8Array.from(atob(EMB_B64), c => c.charCodeAt(0));
+  const N = DATA.length;
+  _semantic.embeddings = new Float32Array(N * EMB_DIM);
+  for (let i = 0; i < raw.length; i++) {{
+    _semantic.embeddings[i] = raw[i] / 255 * 2 - 1; // uint8 → [-1, 1]
+  }}
+  // Start loading model in background
+  _semantic.loading = true;
+  updateSemanticBadge('loading');
+  import('https://cdn.jsdelivr.net/npm/@huggingface/transformers@3').then(async mod => {{
+    try {{
+      _semantic.extractor = await mod.pipeline('feature-extraction', 'Xenova/all-MiniLM-L6-v2', {{
+        dtype: 'q8',
+        progress_callback: (p) => {{
+          if (p.status === 'progress' && p.progress) {{
+            updateSemanticBadge('loading', Math.round(p.progress));
+          }}
+        }}
+      }});
+      _semantic.ready = true;
+      _semantic.loading = false;
+      updateSemanticBadge('ready');
+      // Re-run search if there's a query
+      if (document.getElementById('search').value.trim()) render();
+    }} catch(e) {{
+      console.warn('Semantic search failed to load:', e);
+      _semantic.loading = false;
+      updateSemanticBadge('error');
+    }}
+  }}).catch(e => {{
+    console.warn('Failed to load Transformers.js:', e);
+    _semantic.loading = false;
+    updateSemanticBadge('error');
+  }});
+}} else {{
+  updateSemanticBadge('unavailable');
+}}
+
+function updateSemanticBadge(status, progress) {{
+  const el = document.getElementById('semantic-badge');
+  if (!el) return;
+  const states = {{
+    'loading':     `<svg class="spin" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg>AI model loading${{progress ? ' ('+progress+'%)' : '…'}}`,
+    'ready':       `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24A2.5 2.5 0 0 1 9.5 2Z"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24A2.5 2.5 0 0 0 14.5 2Z"/></svg>Semantic search active`,
+    'error':       `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6M9 9l6 6"/></svg>AI model unavailable`,
+    'unavailable': `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>Text + fuzzy search`,
+  }};
+  el.innerHTML = states[status] || states['unavailable'];
+  el.className = 'semantic-note semantic-' + status;
+}}
+
+// Embed query and compute cosine similarities
+async function semanticSearch(query) {{
+  if (!_semantic.ready || !_semantic.extractor || !_semantic.embeddings) return null;
+  try {{
+    const output = await _semantic.extractor(query, {{ pooling: 'mean', normalize: true }});
+    const qEmb = output.data; // Float32Array of length EMB_DIM
+    const N = DATA.length;
+    const scores = {{}};
+    for (let i = 0; i < N; i++) {{
+      let dot = 0;
+      const offset = i * EMB_DIM;
+      for (let d = 0; d < EMB_DIM; d++) {{
+        dot += qEmb[d] * _semantic.embeddings[offset + d];
+      }}
+      // dot is cosine similarity (both normalized), range [-1, 1]
+      if (dot > 0.15) scores[i] = dot; // threshold out noise
+    }}
+    return scores;
+  }} catch(e) {{
+    console.warn('Semantic search error:', e);
+    return null;
+  }}
+}}
+
+// Combined search: blend text + semantic scores
+let _lastSemanticQuery = '';
+let _lastSemanticScores = null;
+let _semanticPending = false;
+
+window._search = async function(q) {{
+  if (!q || !q.trim()) return null;
+  const textScores = window._textSearch(q) || {{}};
+
+  // If semantic is ready and query changed, run it
+  if (_semantic.ready && q !== _lastSemanticQuery && !_semanticPending) {{
+    _semanticPending = true;
+    semanticSearch(q).then(semScores => {{
+      _lastSemanticQuery = q;
+      _lastSemanticScores = semScores;
+      _semanticPending = false;
+      // Re-render with semantic results blended in
+      if (document.getElementById('search').value === q) render();
+    }});
+  }}
+
+  // Blend: text scores + cached semantic scores
+  const combined = {{ ...textScores }};
+  if (_lastSemanticScores && q === _lastSemanticQuery) {{
+    // Normalize text scores to [0, 1] range for blending
+    const textMax = Math.max(...Object.values(textScores), 0.001);
+    Object.entries(_lastSemanticScores).forEach(([i, semScore]) => {{
+      const textNorm = (textScores[i] || 0) / textMax;
+      // Blend: 40% text, 60% semantic when both present
+      combined[i] = textNorm * 0.4 + semScore * 0.6;
+    }});
+    // Keep text-only matches too (they might not have semantic hits)
+    Object.entries(textScores).forEach(([i, score]) => {{
+      if (!(i in _lastSemanticScores)) {{
+        combined[i] = (score / textMax) * 0.4;
+      }}
+    }});
+  }}
+
+  return new Set(Object.entries(combined).filter(([,s]) => s > 0).map(([i]) => parseInt(i)));
+}};
 
 // ── Flags ──
 const JUR = {{AR:'Argentina',AT:'Austria',BR:'Brazil',CH:'Switzerland',CN:'China',DE:'Germany',ES:'Spain',EU:'European Union',FR:'France',IN:'India',IT:'Italy',JP:'Japan',KR:'South Korea',NL:'Netherlands',NO:'Norway',PH:'Philippines',PL:'Poland',SG:'Singapore',TR:'Turkey',TW:'Taiwan',UA:'Ukraine',UK:'United Kingdom',US:'United States',ZA:'South Africa'}};
@@ -415,7 +590,17 @@ function render() {{
   const jur = document.getElementById('filter-jurisdiction').value;
   const lic = document.getElementById('filter-license').value;
   const hideStale = document.getElementById('hide-stale').checked;
-  const matches = window._search(q);
+
+  // Kick off async search (will re-render when semantic results arrive)
+  const searchPromise = window._search(q);
+  // For immediate render, use text search synchronously
+  const textScores = q.trim() ? window._textSearch(q) : null;
+  const matches = textScores ? new Set(Object.keys(textScores).map(Number)) : null;
+
+  // If semantic results are cached, merge them in
+  if (_lastSemanticScores && q === _lastSemanticQuery && q.trim()) {{
+    Object.keys(_lastSemanticScores).forEach(i => matches.add(parseInt(i)));
+  }}
 
   let results = DATA
     .map((e,i) => ({{e,i}}))
@@ -502,6 +687,33 @@ render();
 </html>"""
 
 
+def compute_embeddings(entries):
+    """Compute uint8-quantized embeddings. Returns base64 string or None."""
+    try:
+        from sentence_transformers import SentenceTransformer
+        import numpy as np
+    except ImportError:
+        print("  ⚠ sentence-transformers not installed — skipping embeddings")
+        return None
+
+    print(f"  Loading model '{EMBED_MODEL}'…")
+    model = SentenceTransformer(EMBED_MODEL)
+
+    texts = [
+        f"{e['name']}. {e['description']} {e['techStack']} {e['categoryMain']}"
+        for e in entries
+    ]
+    print(f"  Encoding {len(texts)} entries…")
+    embeddings = model.encode(texts, normalize_embeddings=True, show_progress_bar=True)
+
+    # Quantize to uint8: normalized vectors are in [-1, 1] → map to [0, 255]
+    uint8_emb = np.clip(np.round((embeddings + 1) / 2 * 255), 0, 255).astype(np.uint8)
+    b64 = base64.b64encode(uint8_emb.tobytes()).decode("ascii")
+    size_kb = len(b64) / 1024
+    print(f"  → Embeddings: {uint8_emb.shape}, base64 size: {size_kb:.0f} KB")
+    return b64
+
+
 def main():
     print(f"Reading {README}…")
     content = README.read_text(encoding="utf-8")
@@ -510,8 +722,11 @@ def main():
     entries = parse_entries(content)
     print(f"  → {len(entries)} entries found")
 
+    print("Computing embeddings…")
+    emb_b64 = compute_embeddings(entries)
+
     print("Building HTML…")
-    html = build_html(entries)
+    html = build_html(entries, emb_b64)
 
     OUTPUT.write_text(html, encoding="utf-8")
     print(f"  → Written to {OUTPUT} ({len(html):,} bytes)")

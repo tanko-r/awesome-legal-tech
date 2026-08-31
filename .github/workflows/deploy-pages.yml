@@ -29,7 +29,17 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Regenerate HTML from latest README
+      - name: Set up Python and install dependencies
+        run: |
+          pip install --quiet sentence-transformers
+
+      - name: Cache Hugging Face model
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: hf-all-MiniLM-L6-v2
+
+      - name: Regenerate HTML with semantic embeddings
         run: python3 scripts/generate-html.py
 
       - name: Prepare Pages artifact
