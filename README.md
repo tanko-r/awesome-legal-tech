@@ -424,6 +424,7 @@ Academic datasets, models, and tools for legal natural language processing resea
 | **[cocolex](https://github.com/ylkhayat/cocolex)** | Decoding strategy combining LLM generation with confidence-guided copying from retrieved sources to improve factual accuracy in legal text generation, released as research code for an ACL 2025 paper. | Python | MIT | 2026-08-03 |
 | **[LegalArgumentsLLM](https://github.com/KarlaDSJ/LegalArgumentsLLM)** | Research code exploring whether LLMs can help annotate legal texts by identifying premises and claims in European Court of Human Rights judgments. | Jupyter Notebook | No license | 2026-08-03 |
 | **[ALEA Legal Benchmark](https://github.com/alea-institute/alea-legal-benchmark)** | Open benchmarking framework from the ALEA Institute for generating and replicating legal-domain evaluation datasets, covering document and clause classification tasks for researchers assessing legal AI systems. | Python | MIT | 2026-08-03 |
+| **[contract-review-eval-harness](https://github.com/sebastianfoerste/contract-review-eval-harness)** | Evaluation harness that scores AI contract review against human-authored gold answers — clause coverage, risk severity, citation grounding, and fabricated-citation counts — across synthetic NDA, SaaS, and Art. 28 GDPR data processing agreements. Includes an adversarial minimal-pair campaign and input-bound release certificates for legal engineers assessing review quality before reliance. | Python | MIT | 2026-08-31 |
 
 ### Public Datasets
 
