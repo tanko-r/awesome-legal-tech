@@ -209,11 +209,20 @@ def build_html(entries, emb_b64=None):
   #search:focus {{ border-color: var(--accent); }}
   #search::placeholder {{ color: var(--text3); }}
   .result-count {{ color: var(--text2); font-size: 13px; white-space: nowrap; }}
-  .semantic-note {{ display: flex; align-items: center; gap: 6px; padding: 6px 12px; background: var(--search-note-bg); border: 1px solid var(--search-note-border); border-radius: 6px; font-size: 12px; color: var(--search-note-text); margin-left: auto; white-space: nowrap; transition: all .3s; }}
-  .semantic-ready {{ background: var(--foss-bg); border-color: var(--foss-border); color: var(--foss-text); }}
-  .semantic-error {{ opacity: 0.5; }}
+  .semantic-toggle {{ display: flex; align-items: center; gap: 8px; padding: 5px 12px; background: var(--surface2); border: 1px solid var(--border); border-radius: 20px; font-size: 12px; color: var(--text2); cursor: pointer; margin-left: auto; white-space: nowrap; transition: all .2s; }}
+  .semantic-toggle:hover {{ border-color: var(--accent); color: var(--accent); }}
+  .semantic-toggle.active {{ background: var(--foss-bg); border-color: var(--foss-border); color: var(--foss-text); }}
+  .semantic-toggle.loading {{ border-color: var(--search-note-border); color: var(--search-note-text); }}
+  .semantic-toggle.error {{ opacity: 0.5; cursor: not-allowed; }}
+  .semantic-toggle.unavailable {{ display: none; }}
+  .semantic-toggle-track {{ position: relative; width: 28px; height: 16px; background: var(--border); border-radius: 8px; transition: background .2s; flex-shrink: 0; }}
+  .semantic-toggle.active .semantic-toggle-track {{ background: var(--foss-border); }}
+  .semantic-toggle.loading .semantic-toggle-track {{ background: var(--search-note-border); }}
+  .semantic-toggle-thumb {{ position: absolute; top: 2px; left: 2px; width: 12px; height: 12px; background: var(--text3); border-radius: 50%; transition: all .2s; }}
+  .semantic-toggle.active .semantic-toggle-thumb {{ left: 14px; background: var(--foss-text); }}
+  .semantic-toggle.loading .semantic-toggle-thumb {{ left: 14px; background: var(--search-note-text); }}
   @keyframes spin {{ to {{ transform: rotate(360deg); }} }}
-  .spin {{ animation: spin 1s linear infinite; }}
+  .spin {{ animation: spin 1s linear infinite; display: inline-block; }}
 
   .filter-row {{ display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }}
   .filter-label {{ font-size: 12px; color: var(--text3); font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }}
@@ -295,10 +304,12 @@ def build_html(entries, emb_b64=None):
       <input type="text" id="search" placeholder="Search names, descriptions, tech stacks, jurisdictions…" autocomplete="off" spellcheck="false">
     </div>
     <span class="result-count" id="result-count"></span>
-    <div class="semantic-note" id="semantic-badge">
-      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
-      Initializing…
-    </div>
+    <button class="semantic-toggle" id="semantic-toggle" onclick="toggleSemantic()" title="Toggle AI semantic search">
+      <span class="semantic-toggle-track" id="semantic-track">
+        <span class="semantic-toggle-thumb"></span>
+      </span>
+      <span id="semantic-label">AI Search</span>
+    </button>
   </div>
   <div class="filter-row">
     <span class="filter-label">Filter:</span>
@@ -426,62 +437,97 @@ function levenshtein(a, b) {{
 const _semantic = {{
   ready: false,
   loading: false,
+  enabled: false,  // user toggle — off by default
   extractor: null,
-  embeddings: null, // Float32Array[N * DIM]
+  embeddings: null,
+  available: !!EMB_B64,  // true if embeddings are present in the build
 }};
 
-// Decode pre-computed uint8 embeddings → Float32Array
+// Decode pre-computed embeddings (but don't load model yet)
 if (EMB_B64) {{
   const raw = Uint8Array.from(atob(EMB_B64), c => c.charCodeAt(0));
   const N = DATA.length;
   _semantic.embeddings = new Float32Array(N * EMB_DIM);
   for (let i = 0; i < raw.length; i++) {{
-    _semantic.embeddings[i] = raw[i] / 255 * 2 - 1; // uint8 → [-1, 1]
+    _semantic.embeddings[i] = raw[i] / 255 * 2 - 1;
   }}
-  // Start loading model in background
+}}
+
+function updateToggleUI() {{
+  const btn = document.getElementById('semantic-toggle');
+  const label = document.getElementById('semantic-label');
+  if (!btn) return;
+  if (!_semantic.available) {{ btn.className = 'semantic-toggle unavailable'; return; }}
+  if (_semantic.loading) {{
+    btn.className = 'semantic-toggle loading';
+    // label updated by progress callback
+  }} else if (_semantic.enabled && _semantic.ready) {{
+    btn.className = 'semantic-toggle active';
+    label.textContent = 'AI Search';
+  }} else if (_semantic.enabled && !_semantic.ready) {{
+    btn.className = 'semantic-toggle';
+    label.textContent = 'AI Search';
+  }} else {{
+    btn.className = 'semantic-toggle';
+    label.textContent = 'AI Search';
+  }}
+}}
+
+function loadSemanticModel() {{
+  if (_semantic.ready || _semantic.loading) return;
   _semantic.loading = true;
-  updateSemanticBadge('loading');
+  const label = document.getElementById('semantic-label');
+  label.textContent = 'Loading model…';
+  updateToggleUI();
   import('https://cdn.jsdelivr.net/npm/@huggingface/transformers@3').then(async mod => {{
     try {{
       _semantic.extractor = await mod.pipeline('feature-extraction', 'Xenova/all-MiniLM-L6-v2', {{
         dtype: 'q8',
         progress_callback: (p) => {{
           if (p.status === 'progress' && p.progress) {{
-            updateSemanticBadge('loading', Math.round(p.progress));
+            label.textContent = 'Loading model (' + Math.round(p.progress) + '%)';
           }}
         }}
       }});
       _semantic.ready = true;
       _semantic.loading = false;
-      updateSemanticBadge('ready');
-      // Re-run search if there's a query
+      label.textContent = 'AI Search';
+      updateToggleUI();
       if (document.getElementById('search').value.trim()) render();
     }} catch(e) {{
       console.warn('Semantic search failed to load:', e);
       _semantic.loading = false;
-      updateSemanticBadge('error');
+      _semantic.enabled = false;
+      const btn = document.getElementById('semantic-toggle');
+      btn.className = 'semantic-toggle error';
+      label.textContent = 'AI unavailable';
     }}
   }}).catch(e => {{
     console.warn('Failed to load Transformers.js:', e);
     _semantic.loading = false;
-    updateSemanticBadge('error');
+    _semantic.enabled = false;
+    const btn = document.getElementById('semantic-toggle');
+    btn.className = 'semantic-toggle error';
+    document.getElementById('semantic-label').textContent = 'AI unavailable';
   }});
-}} else {{
-  updateSemanticBadge('unavailable');
 }}
 
-function updateSemanticBadge(status, progress) {{
-  const el = document.getElementById('semantic-badge');
-  if (!el) return;
-  const states = {{
-    'loading':     `<svg class="spin" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg>AI model loading${{progress ? ' ('+progress+'%)' : '…'}}`,
-    'ready':       `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24A2.5 2.5 0 0 1 9.5 2Z"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24A2.5 2.5 0 0 0 14.5 2Z"/></svg>Semantic search active`,
-    'error':       `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6M9 9l6 6"/></svg>AI model unavailable`,
-    'unavailable': `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>Text + fuzzy search`,
-  }};
-  el.innerHTML = states[status] || states['unavailable'];
-  el.className = 'semantic-note semantic-' + status;
+function toggleSemantic() {{
+  if (!_semantic.available || _semantic.loading) return;
+  _semantic.enabled = !_semantic.enabled;
+  if (_semantic.enabled && !_semantic.ready) {{
+    loadSemanticModel();
+  }}
+  updateToggleUI();
+  // Clear cached semantic results when toggling off
+  if (!_semantic.enabled) {{
+    _lastSemanticQuery = '';
+    _lastSemanticScores = null;
+  }}
+  render();
 }}
+
+updateToggleUI();
 
 // Embed query and compute cosine similarities
 async function semanticSearch(query) {{
@@ -516,8 +562,8 @@ window._search = async function(q) {{
   if (!q || !q.trim()) return null;
   const textScores = window._textSearch(q) || {{}};
 
-  // If semantic is ready and query changed, run it
-  if (_semantic.ready && q !== _lastSemanticQuery && !_semanticPending) {{
+  // If semantic is enabled, ready, and query changed, run it
+  if (_semantic.enabled && _semantic.ready && q !== _lastSemanticQuery && !_semanticPending) {{
     _semanticPending = true;
     semanticSearch(q).then(semScores => {{
       _lastSemanticQuery = q;
@@ -528,9 +574,9 @@ window._search = async function(q) {{
     }});
   }}
 
-  // Blend: text scores + cached semantic scores
+  // Blend: text scores + cached semantic scores (only when semantic is enabled)
   const combined = {{ ...textScores }};
-  if (_lastSemanticScores && q === _lastSemanticQuery) {{
+  if (_semantic.enabled && _lastSemanticScores && q === _lastSemanticQuery) {{
     // Normalize text scores to [0, 1] range for blending
     const textMax = Math.max(...Object.values(textScores), 0.001);
     Object.entries(_lastSemanticScores).forEach(([i, semScore]) => {{
@@ -597,8 +643,8 @@ function render() {{
   const textScores = q.trim() ? window._textSearch(q) : null;
   const matches = textScores ? new Set(Object.keys(textScores).map(Number)) : null;
 
-  // If semantic results are cached, merge them in
-  if (_lastSemanticScores && q === _lastSemanticQuery && q.trim()) {{
+  // If semantic is enabled and results are cached, merge them in
+  if (_semantic.enabled && _lastSemanticScores && q === _lastSemanticQuery && q.trim()) {{
     Object.keys(_lastSemanticScores).forEach(i => matches.add(parseInt(i)));
   }}
 
