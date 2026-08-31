@@ -6,6 +6,22 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [2026-08-31]
+
+### Added
+- **AI Tools:** Claude Legal (Kromer Group), legal-case-workflow (CN), BetterCallClaude (CH), Themis Skills
+- **Law-Focused LLMs & Fine-Tuned Models:** LeBSE
+- **Legal Research:** Legal-RAG, CN Law Hub (CN)
+- **Document Management:** kysigned
+- **Backend Utilities & Libraries:** humanize-pl (PL)
+- **Access to Justice:** Family Court Strategist, claude-legal (codearranger) (US)
+- **Legal NLP & Datasets:** JuDDGES
+- **Compliance & Regulatory Technology:** ai-legal-compliance-assistant (US), r14n, FinLang
+
+### Changed
+- Marked `AndrewZhe/lawyer-llama` as stale (last updated: 2024-08).
+- Marked `legalize-nl/legalize-nl` as stale (last updated: archived/removed) — the repository now returns a 404 on GitHub.
+
 ## [2026-08-17]
 
 ### Added
