@@ -5,31 +5,81 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Awesome Legal Tech — Interactive Directory</title>
 <style>
+  /* ── Light mode (default) ── */
   :root {
+    --bg: #f8f9fb;
+    --surface: #ffffff;
+    --surface2: #f0f2f5;
+    --border: #d8dce6;
+    --accent: #4f6df5;
+    --accent-hover: #3b57d9;
+    --text: #1a1d27;
+    --text2: #475569;
+    --text3: #64748b;
+    --stale-bg: #fef3c7;
+    --stale-text: #92400e;
+    --foss-bg: #ecfdf5;
+    --foss-border: #6ee7b7;
+    --foss-text: #065f46;
+    --nonfoss-bg: #f5f3ff;
+    --nonfoss-border: #c4b5fd;
+    --nonfoss-text: #5b21b6;
+    --hl-bg: #fef08a;
+    --hl-text: #713f12;
+    --search-note-bg: #eef2ff;
+    --search-note-border: #c7d2fe;
+    --search-note-text: #4338ca;
+    --header-bg: linear-gradient(135deg, #ffffff 0%, #f8f9fb 100%);
+    --radius: 8px;
+  }
+
+  /* ── Dark mode ── */
+  [data-theme="dark"] {
     --bg: #0f1117;
     --surface: #1a1d27;
     --surface2: #22263a;
     --border: #2d3150;
     --accent: #6c8ef7;
+    --accent-hover: #8da8ff;
     --text: #e2e8f0;
     --text2: #94a3b8;
     --text3: #64748b;
-    --stale: #78350f;
+    --stale-bg: #78350f;
     --stale-text: #fbbf24;
-    --radius: 8px;
+    --foss-bg: #052e16;
+    --foss-border: #166534;
+    --foss-text: #4ade80;
+    --nonfoss-bg: #2e1065;
+    --nonfoss-border: #7c3aed;
+    --nonfoss-text: #c4b5fd;
+    --hl-bg: #3b4219;
+    --hl-text: #facc15;
+    --search-note-bg: #1e1b4b;
+    --search-note-border: #3730a3;
+    --search-note-text: #a5b4fc;
+    --header-bg: linear-gradient(135deg, #1a1d27 0%, #0f1117 100%);
   }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 14px; line-height: 1.5; min-height: 100vh; }
 
-  header { background: linear-gradient(135deg, #1a1d27 0%, #0f1117 100%); border-bottom: 1px solid var(--border); padding: 24px 32px; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 14px; line-height: 1.5; min-height: 100vh; transition: background .2s, color .2s; }
+
+  header { background: var(--header-bg); border-bottom: 1px solid var(--border); padding: 24px 32px; }
   header h1 { font-size: 28px; font-weight: 700; letter-spacing: -0.5px; }
   header h1 span { color: var(--accent); }
   header p { color: var(--text2); margin-top: 4px; font-size: 14px; }
-  .header-meta { display: flex; gap: 16px; margin-top: 12px; flex-wrap: wrap; }
+  .header-row { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
+  .header-meta { display: flex; gap: 16px; margin-top: 12px; flex-wrap: wrap; align-items: center; }
   .meta-badge { background: var(--surface2); border: 1px solid var(--border); border-radius: 20px; padding: 4px 12px; font-size: 12px; color: var(--text2); }
   .meta-badge b { color: var(--accent); }
-  .gh-link { margin-left: auto; display: flex; align-items: center; gap: 6px; color: var(--text3); font-size: 12px; text-decoration: none; padding: 4px 12px; border: 1px solid var(--border); border-radius: 20px; transition: color .15s, border-color .15s; }
+  .header-actions { display: flex; gap: 8px; align-items: center; flex-shrink: 0; }
+  .gh-link { display: flex; align-items: center; gap: 6px; color: var(--text3); font-size: 12px; text-decoration: none; padding: 6px 12px; border: 1px solid var(--border); border-radius: 20px; transition: color .15s, border-color .15s; background: var(--surface2); }
   .gh-link:hover { color: var(--accent); border-color: var(--accent); }
+  .theme-toggle { display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; border: 1px solid var(--border); background: var(--surface2); cursor: pointer; color: var(--text2); transition: all .15s; }
+  .theme-toggle:hover { color: var(--accent); border-color: var(--accent); }
+  .theme-toggle svg { width: 18px; height: 18px; }
+  .theme-toggle .icon-moon { display: none; }
+  [data-theme="dark"] .theme-toggle .icon-sun { display: none; }
+  [data-theme="dark"] .theme-toggle .icon-moon { display: block; }
 
   .controls { background: var(--surface); border-bottom: 1px solid var(--border); padding: 16px 32px; display: flex; flex-direction: column; gap: 12px; position: sticky; top: 0; z-index: 100; }
   .search-row { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
@@ -39,7 +89,7 @@
   #search:focus { border-color: var(--accent); }
   #search::placeholder { color: var(--text3); }
   .result-count { color: var(--text2); font-size: 13px; white-space: nowrap; }
-  .semantic-note { display: flex; align-items: center; gap: 6px; padding: 6px 12px; background: #1e1b4b; border: 1px solid #3730a3; border-radius: 6px; font-size: 12px; color: #a5b4fc; margin-left: auto; white-space: nowrap; }
+  .semantic-note { display: flex; align-items: center; gap: 6px; padding: 6px 12px; background: var(--search-note-bg); border: 1px solid var(--search-note-border); border-radius: 6px; font-size: 12px; color: var(--search-note-text); margin-left: auto; white-space: nowrap; }
 
   .filter-row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
   .filter-label { font-size: 12px; color: var(--text3); font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
@@ -58,14 +108,14 @@
   thead th { background: var(--surface); border-bottom: 2px solid var(--border); padding: 10px 14px; text-align: left; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; color: var(--text3); cursor: pointer; white-space: nowrap; user-select: none; }
   thead th:hover { color: var(--accent); }
   tbody tr { border-bottom: 1px solid var(--border); transition: background .1s; }
-  tbody tr:hover { background: var(--surface); }
+  tbody tr:hover { background: var(--surface2); }
   tbody tr.stale { opacity: 0.6; }
   td { padding: 11px 14px; vertical-align: top; }
 
   .entry-name { font-weight: 600; color: var(--text); text-decoration: none; transition: color .15s; display: flex; align-items: flex-start; gap: 6px; }
   .entry-name:hover { color: var(--accent); }
   .entry-name svg { flex-shrink: 0; margin-top: 2px; opacity: 0.4; }
-  .stale-badge { display: inline-flex; align-items: center; gap: 3px; background: var(--stale); color: var(--stale-text); border-radius: 4px; padding: 1px 6px; font-size: 10px; font-weight: 600; margin-top: 4px; }
+  .stale-badge { display: inline-flex; align-items: center; gap: 3px; background: var(--stale-bg); color: var(--stale-text); border-radius: 4px; padding: 1px 6px; font-size: 10px; font-weight: 600; margin-top: 4px; }
   .desc { font-size: 13px; color: var(--text2); max-width: 400px; }
   .cat-pill { background: var(--surface2); border-radius: 4px; padding: 2px 7px; font-size: 12px; color: var(--text3); white-space: nowrap; }
   .subcat { font-size: 11px; color: var(--text3); display: block; margin-top: 3px; }
@@ -73,10 +123,10 @@
   .flag-img { border-radius: 2px; }
   .tech { font-size: 12px; color: var(--text3); max-width: 160px; }
   .license-badge { display: inline-block; background: var(--surface2); border: 1px solid var(--border); border-radius: 4px; padding: 1px 7px; font-size: 11px; color: var(--text3); white-space: nowrap; }
-  .license-badge.foss { border-color: #166534; color: #4ade80; background: #052e16; }
-  .license-badge.nonfoss { border-color: #7c3aed; color: #c4b5fd; background: #2e1065; }
+  .license-badge.foss { border-color: var(--foss-border); color: var(--foss-text); background: var(--foss-bg); }
+  .license-badge.nonfoss { border-color: var(--nonfoss-border); color: var(--nonfoss-text); background: var(--nonfoss-bg); }
   .date { font-size: 12px; color: var(--text3); white-space: nowrap; }
-  .hl { background: #3b4219; color: #facc15; border-radius: 2px; padding: 0 1px; }
+  .hl { background: var(--hl-bg); color: var(--hl-text); border-radius: 2px; padding: 0 1px; }
 
   .empty-state { text-align: center; padding: 80px 20px; color: var(--text3); }
   .empty-state svg { width: 48px; height: 48px; margin: 0 auto 16px; opacity: 0.3; display: block; }
@@ -91,16 +141,26 @@
 <body>
 
 <header>
-  <h1>Awesome <span>Legal Tech</span></h1>
-  <p>A curated directory of legal technology tools, AI models, and resources</p>
+  <div class="header-row">
+    <div>
+      <h1>Awesome <span>Legal Tech</span></h1>
+      <p>A curated directory of legal technology tools, AI models, and resources</p>
+    </div>
+    <div class="header-actions">
+      <button class="theme-toggle" onclick="toggleTheme()" title="Toggle dark mode" aria-label="Toggle dark mode">
+        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <a class="gh-link" href="https://github.com/tanko-r/awesome-legal-tech" target="_blank" rel="noopener">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.529 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.268 2.75 1.026A9.578 9.578 0 0 1 12 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.026 2.747-1.026.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.579.688.481C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+        GitHub
+      </a>
+    </div>
+  </div>
   <div class="header-meta">
-    <div class="meta-badge">⚡ <b id="entry-count">534</b> entries</div>
+    <div class="meta-badge"><b id="entry-count">534</b> entries</div>
     <div class="meta-badge"><b>23</b> categories</div>
     <div class="meta-badge"><b>24</b> jurisdictions</div>
-    <a class="gh-link" href="https://github.com/tanko-r/awesome-legal-tech" target="_blank" rel="noopener">
-      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.529 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.268 2.75 1.026A9.578 9.578 0 0 1 12 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.026 2.747-1.026.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.579.688.481C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
-      View on GitHub
-    </a>
   </div>
 </header>
 
@@ -366,6 +426,26 @@ function render() {
 
 document.getElementById('search').addEventListener('input', (() => { let t; return () => { clearTimeout(t); t=setTimeout(render,120); }; })());
 ['filter-category','filter-jurisdiction','filter-license','hide-stale'].forEach(id => document.getElementById(id).addEventListener('change', render));
+
+// ── Theme toggle ──
+function toggleTheme() {
+  const html = document.documentElement;
+  const isDark = html.getAttribute('data-theme') === 'dark';
+  if (isDark) {
+    html.removeAttribute('data-theme');
+    localStorage.setItem('theme', 'light');
+  } else {
+    html.setAttribute('data-theme', 'dark');
+    localStorage.setItem('theme', 'dark');
+  }
+}
+// Restore saved preference (default: light)
+(function() {
+  const saved = localStorage.getItem('theme');
+  if (saved === 'dark') {
+    document.documentElement.setAttribute('data-theme', 'dark');
+  }
+})();
 
 render();
 </script>
