@@ -505,6 +505,7 @@ Tools for regulatory compliance, sanctions screening, policy monitoring, and aut
 | <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[ai-legal-compliance-assistant](https://github.com/Ramseygithub/ai-legal-compliance-assistant)** | AI-powered regulatory compliance assistant that ingests PDF and HTML regulations and answers questions about New York alcohol beverage pricing law using RAG and knowledge-graph reasoning. | Python | No license | 2026-08-31 |
 | **[r14n](https://github.com/squillo/r14n)** | Regulatory Localization Pack specification and Rust engine that resolves jurisdiction-specific compliance controls with fail-closed defaults and legal-review provenance tracking. | Rust | Other | 2026-08-31 |
 | **[FinLang](https://github.com/FinLang-Ltd/finlang)** | Deterministic, auditable financial rules engine for building explainable compliance logic in regulated environments. | Python | AGPL-3.0 | 2026-08-31 |
+| <img src="https://flagcdn.com/w20/eu.png" width="20" height="15" alt="EU"> **[MiCAR Whitepaper Linter](https://github.com/sebastianfoerste/micar-whitepaper-linter)** | Deterministic linter for crypto-asset white papers under MiCAR (EU) 2023/1114, mapping Annex I-III disclosure duties to rules with pinpoint citations; ships a GitHub Action for CI gating and an in-browser playground. | Python | MIT | 2026-08-31 |
 
 
 ## eDiscovery & Litigation Support
