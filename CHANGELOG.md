@@ -6,6 +6,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [2026-09-07]
+
+### Added
+- **Access to Justice:** Startup Equity Survival Guide (CN)
+- **Compliance & Regulatory Technology:** ZwiadBrain (US)
+
+### Changed
+- Marked `houfu/prompt-engineering-lawyers` as stale (last updated: 2024-09).
+
 ## [2026-08-31]
 
 ### Added

@@ -6,7 +6,7 @@
 > A curated list of awesome legal technology tools, apps, AI models, and resources for legal professionals and technologists where quality of curation beats quantity of links.
 > This repo is automatically updated weekly based on /sync-and-update skill in ~/.claude/skills/.
 
-**534+ entries and growing** — the README is the source of truth, but the [**Interactive Directory**](https://tanko-r.github.io/awesome-legal-tech/) is the best way to browse it: searchable, filterable by category/jurisdiction/license, and sortable.
+**536+ entries and growing** — the README is the source of truth, but the [**Interactive Directory**](https://tanko-r.github.io/awesome-legal-tech/) is the best way to browse it: searchable, filterable by category/jurisdiction/license, and sortable.
 
 ## Jurisdiction Flags
 
@@ -408,6 +408,7 @@ Tools and platforms designed to improve access to legal services and justice.
 | <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[Bankruptcy Discharge Screener](https://github.com/openbankruptcyproject/bankruptcy-discharge-screener)** | Free, open-source toolkit that screens bankruptcy court data across all 94 US federal districts for discharge-bar violations under 11 U.S.C. §1328(f), for use by public interest advocates and researchers. | Python | MIT | 2026-08-17 |
 | **[Family Court Strategist](https://github.com/odin33g/family-court-strategist)** | Free, open-source toolkit — an Obsidian vault template plus a Claude AI plugin — that helps self-represented parents organize evidence and strategy for family court proceedings. | | MIT | 2026-08-31 |
 | <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[claude-legal (codearranger)](https://github.com/codearranger/claude-legal)** | Claude Code drafting plugins for pro se and civil-practice litigants, generating pleadings, motions, and orders across US state and federal law. | Python | Other | 2026-08-31 |
+| <img src="https://flagcdn.com/w20/cn.png" width="20" height="15" alt="CN"> **[Startup Equity Survival Guide](https://github.com/huanghe/startup-equity-guide)** | Self-help guide for Chinese startup employees on stock-option risk, covering real dispute case studies, a handbook for finding a lawyer, and a dataset of court judgments on equity disputes. | | Other | 2026-09-07 |
 
 ## Legal NLP & Datasets
 
@@ -505,6 +506,7 @@ Tools for regulatory compliance, sanctions screening, policy monitoring, and aut
 | <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[ai-legal-compliance-assistant](https://github.com/Ramseygithub/ai-legal-compliance-assistant)** | AI-powered regulatory compliance assistant that ingests PDF and HTML regulations and answers questions about New York alcohol beverage pricing law using RAG and knowledge-graph reasoning. | Python | No license | 2026-08-31 |
 | **[r14n](https://github.com/squillo/r14n)** | Regulatory Localization Pack specification and Rust engine that resolves jurisdiction-specific compliance controls with fail-closed defaults and legal-review provenance tracking. | Rust | Other | 2026-08-31 |
 | **[FinLang](https://github.com/FinLang-Ltd/finlang)** | Deterministic, auditable financial rules engine for building explainable compliance logic in regulated environments. | Python | AGPL-3.0 | 2026-08-31 |
+| <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[ZwiadBrain](https://github.com/rafal-fryc/ZwiadBrain)** | Git-backed Markdown wiki tracking US federal and state legislation and enforcement actions in AI, privacy, and cybersecurity law, with every entry grounded in a cited source page. | Python | No license | 2026-09-07 |
 
 
 ## eDiscovery & Litigation Support
@@ -748,7 +750,7 @@ Specialized tools for citation analysis, contract comparison, and legal research
 | **[Contract Playbook AI](https://github.com/yuch85/contract-playbook-ai)** | Generates contract review playbooks in minutes by extracting negotiation rules from reference contracts with rich-text editing and Track Changes compatibility. | TypeScript | Other | 2026-03-03 |
 | **[ChartAI](https://github.com/jamietso/ChartAI)** | Automatically extracts and visualizes corporate structures from legal documents using computer vision and React Flow interactive diagrams. | Python, TypeScript, React | MIT | 2026-03-03 |
 | <img src="https://flagcdn.com/w20/sg.png" width="20" height="15" alt="SG"> **[sgcite](https://github.com/yuch85/sgcite)** | Command-line tool verifying Singapore case law citations and detecting hallucinated authorities by cross-referencing the official eLitigation database. | Python | MIT | 2026-03-03 |
-| **[prompt-engineering-lawyers](https://github.com/houfu/prompt-engineering-lawyers)** | Open-source Streamlit course teaching prompt engineering techniques for legal professionals with ChatGPT, Claude, and other LLMs. | Python | Other | 2026-03-03 |
+| ***[prompt-engineering-lawyers](https://github.com/houfu/prompt-engineering-lawyers)*** | *Open-source Streamlit course teaching prompt engineering techniques for legal professionals with ChatGPT, Claude, and other LLMs. ⚠️ Stale (2024-09)* | *Python* | Other | *2026-03-03* |
 | **[Adeu](https://github.com/dealfluence/adeu)** | Agentic DOCX redlining engine that enables AI agents and LLMs to inject native Track Changes and comments into Word documents without corrupting formatting, with a Model Context Protocol server and Python SDK. | Python | MIT | 2026-03-25 |
 | <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[CiteBench](https://github.com/LawEngine/cite-bench)** | Blind benchmark for legal citation verification using four-label classification over Illinois and federal primary law, designed to evaluate AI systems for citation accuracy and hallucination detection. | Python | Apache-2.0 | 2026-06-11 |
 | **[Circuitus](https://github.com/zgbrenner/circuitus)** | Browser-based legal research environment with a document reader, annotation system, and practice library using legal-grade typography, running entirely client-side with no server dependency. | | GPL-3.0 | 2026-06-15 |
