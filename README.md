@@ -6,7 +6,7 @@
 > A curated list of awesome legal technology tools, apps, AI models, and resources for legal professionals and technologists where quality of curation beats quantity of links.
 > This repo is automatically updated weekly based on /sync-and-update skill in ~/.claude/skills/.
 
-**536+ entries and growing** — the README is the source of truth, but the [**Interactive Directory**](https://tanko-r.github.io/awesome-legal-tech/) is the best way to browse it: searchable, filterable by category/jurisdiction/license, and sortable.
+**540+ entries and growing** — the README is the source of truth, but the [**Interactive Directory**](https://tanko-r.github.io/awesome-legal-tech/) is the best way to browse it: searchable, filterable by category/jurisdiction/license, and sortable.
 
 ## Jurisdiction Flags
 
@@ -501,6 +501,7 @@ Tools for regulatory compliance, sanctions screening, policy monitoring, and aut
 | <img src="https://flagcdn.com/w20/pl.png" width="20" height="15" alt="PL"> **[DU](https://github.com/janisz/DU)** | Bot that posts newly published acts from Poland's official Dziennik Ustaw law gazette to social media so developers and lawyers can track new legislation as it appears. | Go | AGPL-3.0 | 2026-08-03 |
 | <img src="https://flagcdn.com/w20/eu.png" width="20" height="15" alt="EU"> **[kakunin-core](https://github.com/kakunin-ai/kakunin-core)** | Identity and compliance platform for AI agents that issues X.509 certificates, scores behavioral risk, and produces audit trails aligned with EU regulations like MiCA and the EU AI Act. | TypeScript | AGPL-3.0 | 2026-08-03 |
 | <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[EvoAML](https://github.com/RongLiu-AML/EvoAML)** | Open-source anti-money-laundering framework combining graph networks and temporal analysis to detect laundering patterns and support compliance with the US Bank Secrecy Act and AMLA 2020 requirements. | Python | MIT | 2026-08-03 |
+| **[FINOS Open RegTech SIG](https://github.com/finos/open-regtech-sig)** | FINOS Regulation Innovation Special Interest Group coordinating open-source solutions for regulatory and compliance issues in financial services, hosting reference implementations and community demos. | | Apache-2.0 | 2026-09-14 |
 | **[Sanctions Screening Benchmark](https://github.com/Divine16/Sanctions-screening-benchmark)** | Reproducible benchmark measuring sanctions name-screening recall across 18 name-variation classes, including transliteration and OCR-degradation attacks, for developers building AML/KYC screening tools. | | MIT | 2026-08-10 |
 | **[Awesome Identity Verification](https://github.com/FinAuth-SDK/awesome-identity-verification)** | Curated list of identity verification, KYC, and AML APIs, open-source tools, standards, and regulations for developers building compliance workflows. | | MIT | 2026-08-10 |
 | <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[ai-legal-compliance-assistant](https://github.com/Ramseygithub/ai-legal-compliance-assistant)** | AI-powered regulatory compliance assistant that ingests PDF and HTML regulations and answers questions about New York alcohol beverage pricing law using RAG and knowledge-graph reasoning. | Python | No license | 2026-08-31 |
@@ -721,6 +722,8 @@ Model Context Protocol servers, AI agent frameworks, and tooling specifically de
 | **[Cosmolex MCP](https://github.com/RosenAdvertising/cosmolex-mcp)** | MCP server providing full API coverage for Cosmolex, a law firm practice management platform. | Python | MIT | 2026-08-17 |
 | <img src="https://flagcdn.com/w20/kr.png" width="20" height="15" alt="KR"> **[startup-law-mcp](https://github.com/Choihello/startup-law-mcp)** | MCP server grounding Claude's answers about Korean startup law in the verbatim text of 50 statutes (8,191 provisions) and K-Startup government support programs, auto-synced from the National Law Information Center API. | Python | No license | 2026-08-17 |
 | <img src="https://flagcdn.com/w20/eu.png" width="20" height="15" alt="EU"> **[awesome-matematic-skills-en](https://github.com/matematicsolutions/awesome-matematic-skills-en)** | English-language hub of method-neutral legal AI skills for Claude Code — verification core, content-quality checks, and EU-level law sources — as a companion to the Polish-jurisdiction skill bundle. | Python | MIT | 2026-08-17 |
+| <img src="https://flagcdn.com/w20/gb.png" width="20" height="15" alt="UK"> **[openlaw-mcp](https://github.com/damankaur-dev/openlaw-mcp)** | Free, open-source MCP server exposing UK and EU open law — judgments, statutes, regulations, and regulator notices — to host LLMs, fetching real text with full provenance and licence attribution from sources like Find Case Law, legislation.gov.uk, EUR-Lex, and HUDOC. | TypeScript | Apache-2.0 | 2026-09-14 |
+| <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[LexCerta](https://github.com/rubixhacker/LexCerta)** | MCP server providing tools for checking supported US case citations and quoted opinion text against CourtListener, distinguishing supporting evidence from source-scoped misses or unavailable checks. | TypeScript | No license | 2026-09-14 |
 
 ## Legal Education & Communities
 
@@ -760,6 +763,7 @@ Specialized tools for citation analysis, contract comparison, and legal research
 | <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[CiteSight](https://github.com/JaySmith502/CiteSight)** | Self-hosted web app that checks legal citations in briefs and memos against the CourtListener database and flags invalid or questionable ones, aimed at solo practitioners and small firms. | TypeScript, React | MIT | 2026-08-03 |
 | **[autocite](https://github.com/zgbrenner/autocite)** | Tool that turns an AI assistant into a legal-citation specialist for Bluebook formatting, for lawyers and legal engineers drafting citation-heavy documents. | Python | MIT | 2026-08-03 |
 | **[KrokAI Law](https://github.com/igorsaevets/krokai-law)** | Offline tool that verifies every legal quotation in a document against the actual source text on disk and flags mismatches before filing, built for immigration attorneys and others who rely on AI-drafted legal text. | Python | MIT | 2026-08-17 |
+| **[bluebook (Zotero CSL style)](https://github.com/danepps/bluebook)** | Improved Zotero Citation Style Language (CSL) style for rendering Bluebook-format legal citations in law review articles, also usable with other CSL-compatible processors like Pandoc. | | CC-BY-SA-4.0 | 2026-09-14 |
 
 ## Notable Proprietary Legal AI Tools
 

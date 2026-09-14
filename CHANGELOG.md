@@ -6,6 +6,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [2026-09-14]
+
+### Added
+- **Compliance & Regulatory Technology:** FINOS Open RegTech SIG
+- **MCP Servers & AI Agent Tools for Law:** openlaw-mcp (UK/EU), LexCerta (US)
+- **Advanced Legal Tools & Citation Systems:** bluebook (Zotero CSL style)
+
 ## [2026-09-07]
 
 ### Added
