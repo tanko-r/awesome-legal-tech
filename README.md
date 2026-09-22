@@ -508,6 +508,7 @@ Tools for regulatory compliance, sanctions screening, policy monitoring, and aut
 | **[r14n](https://github.com/squillo/r14n)** | Regulatory Localization Pack specification and Rust engine that resolves jurisdiction-specific compliance controls with fail-closed defaults and legal-review provenance tracking. | Rust | Other | 2026-08-31 |
 | **[FinLang](https://github.com/FinLang-Ltd/finlang)** | Deterministic, auditable financial rules engine for building explainable compliance logic in regulated environments. | Python | AGPL-3.0 | 2026-08-31 |
 | <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[ZwiadBrain](https://github.com/rafal-fryc/ZwiadBrain)** | Git-backed Markdown wiki tracking US federal and state legislation and enforcement actions in AI, privacy, and cybersecurity law, with every entry grounded in a cited source page. | Python | No license | 2026-09-07 |
+| **[Screening Decisions Profile](https://github.com/Allowly-AI/screening-decisions-profile)** | Draft open profile for employment-screening decision receipts, defining review and correction links, PII-free context rules, signature verification, and Python and JavaScript validators. | Python, JavaScript | Apache-2.0 / CC-BY-4.0 | 2026-09-22 |
 
 
 ## eDiscovery & Litigation Support
