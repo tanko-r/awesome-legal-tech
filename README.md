@@ -224,6 +224,8 @@ Platforms and tools for legal research, case law discovery, and statutory inform
 | **[Legal-RAG](https://github.com/Fan-Luo/Legal-RAG)** | Law-grounded, graph-aware retrieval-augmented generation system combining statute-centric hybrid retrieval with task-aware routing for legal question answering. | Python | Other | 2026-08-31 |
 | <img src="https://flagcdn.com/w20/cn.png" width="20" height="15" alt="CN"> **[CN Law Hub](https://github.com/ZongziForu/cn-law-hub)** | AI agent skill that retrieves and verifies Chinese statutes and regulations directly from ten official government sources for use with Claude Code, Codex, and similar agents. | Python | Other | 2026-08-31 |
 
+| <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[VerdictWiki](https://verdictwiki.com/)** | Independent reference database of 97 major lawsuits (mass torts, class actions, landmark verdicts) across 11 countries — docket numbers, plaintiff counts over time, and settlement/verdict figures sourced to public court records and regulatory sources. | | Other | 2026-09-27 |
+
 ## Contract Management
 
 Tools for drafting, reviewing, negotiating, and managing legal contracts.
