@@ -6,6 +6,19 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [2026-10-05]
+
+### Added
+- **AI Tools:** QWED-Legal, LQ-Architect
+- **Legal Research:** VisuaLex (IT), NanoJuris (BR)
+- **Legal NLP & Datasets:** giurisprudenza-db (IT), JLaw-CiteGraph (JP)
+- **Legal Analytics & Prediction:** LegalForecast-MTD (US)
+- **MCP Servers & AI Agent Tools for Law:** china-law-mcp (CN), Nyaya (IN)
+
+### Changed
+- Marked `socialfoundations/lawma` as stale (last updated: 2024-09)
+- Marked as stale (archived/removed): `zgbrenner/agentcounselhub`, `zgbrenner/whereas`, `zgbrenner/Glyph`, `zgbrenner/mattermark`, `zgbrenner/intern`, `zgbrenner/agnostic-skills-for-legal`, `zgbrenner/autocite`, `LegalQuants/lq-plugin`
+
 ## [2026-09-14]
 
 ### Added
