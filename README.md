@@ -138,6 +138,7 @@ Tools and models that use AI to assist with legal work, from contract analysis t
 | **[Themis Skills](https://github.com/Themis-Legal-Framework/themis-skills)** | Jurisdiction-agnostic AI skill stack for drafting civil litigation pleadings, with overlay packs for local caption formats, terminology, and pleading rules. | | MIT | 2026-08-31 |
 | **[QWED-Legal](https://github.com/QWED-AI/qwed-legal)** | Python library of deterministic verification guards that check dates, amounts, and structured constraints in LLM-generated legal output before it is relied on, for developers building legal AI. | Python | Apache-2.0 | 2026-10-05 |
 | **[LQ-Architect](https://github.com/LegalQuants/LQ-Architect)** | Build discipline for AI systems that gates agent builds behind three human sign-off gates and a regression net that re-arms when code, prompts, skills, or the model change. | Python | MIT | 2026-10-05 |
+| <img src="https://flagcdn.com/w20/tw.png" width="20" height="15" alt="TW"> **[Contract Compliance Agent](https://github.com/falltwo/Contract-compliance-agent)** | First-pass contract review agent for Taiwanese law that flags risky clauses in Traditional Chinese contracts, suggests revisions, and cites the statutes behind each finding, for in-house legal teams doing an initial review before a lawyer signs off. | Python, FastAPI, Vue | MIT | 2026-10-11 |
 
 ## Law-Focused LLMs & Fine-Tuned Models
 
