@@ -6,6 +6,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [2026-10-26]
+
+### Added
+- **AI Tools:** Legal AI Skills, LQ Plugin OSS
+- **Legal Research:** Find Case Law Docs (UK)
+- **Legal NLP & Datasets:** SG-LegalCite (SG)
+- **Privacy & Data Protection:** CookieConsent
+- **MCP Servers & AI Agent Tools for Law:** uk-legal-mcp (UK), indian-legal-mcp (IN), swiss-legal-mcp-public (CH), RegAI Legal MCP (TW), legalserver-mcp (US), fynk MCP Server
+
+### Changed
+- Marked `Tizzzzy/Law_LLM` as stale (last updated: 2024-10)
+
 ## [2026-10-19]
 
 ### Added
