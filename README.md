@@ -237,6 +237,8 @@ Platforms and tools for legal research, case law discovery, and statutory inform
 | <img src="https://flagcdn.com/w20/it.png" width="20" height="15" alt="IT"> **[VisuaLex](https://github.com/capazme/VisuaLexAPI)** | Web application with an async Python API and React frontend for searching and studying Italian and EU legal texts from Normattiva, EUR-Lex, and Brocardi as interactive knowledge graphs. | Python, React | MIT | 2026-10-05 |
 | <img src="https://flagcdn.com/w20/br.png" width="20" height="15" alt="BR"> **[NanoJuris](https://github.com/ndtj/nanojuris)** | Python toolkit offering a single interface to query, normalize, and track public jurisprudence data from Brazilian courts. | Python | MIT | 2026-10-05 |
 
+| <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[VerdictWiki](https://verdictwiki.com/)** | Independent reference database of 97 major lawsuits (mass torts, class actions, landmark verdicts) across 11 countries — docket numbers, plaintiff counts over time, and settlement/verdict figures sourced to public court records and regulatory sources. | | Other | 2026-09-27 |
+
 ## Contract Management
 
 Tools for drafting, reviewing, negotiating, and managing legal contracts.
