@@ -38,6 +38,9 @@ Entries marked with a flag icon are designed for or specific to that jurisdictio
 | <img src="https://flagcdn.com/w20/tr.png" width="20" height="15" alt="TR"> | Turkey |
 | <img src="https://flagcdn.com/w20/ph.png" width="20" height="15" alt="PH"> | Philippines |
 | <img src="https://flagcdn.com/w20/it.png" width="20" height="15" alt="IT"> | Italy |
+| <img src="https://flagcdn.com/w20/bd.png" width="20" height="15" alt="BD"> | Bangladesh |
+| <img src="https://flagcdn.com/w20/pk.png" width="20" height="15" alt="PK"> | Pakistan |
+| <img src="https://flagcdn.com/w20/vn.png" width="20" height="15" alt="VN"> | Vietnam |
 
 ## Contents
 
@@ -81,7 +84,7 @@ Tools and models that use AI to assist with legal work, from contract analysis t
 | **[LawBotics](https://github.com/hasnaintypes/lawbotics)** | AI-powered legal contract analysis platform combining fine-tuned LLaMA models with modern web technologies to automate document review and clause extraction, identifying 41+ types of legal clauses and integrating with the CUAD dataset. | Python, PyTorch | No license | 2026-03-02 |
 | *<img src="https://flagcdn.com/w20/br.png" width="20" height="15" alt="BR"> **[LegalNLP](https://github.com/felipemaiapolo/legalnlp)*** | *Natural language processing methods and pre-trained models (BERT, Word2Vec, Doc2Vec, FastText) specifically designed for the Brazilian legal language, enabling legal document classification and semantic analysis. ⚠️ Stale (2023-06)* | *Python, PyTorch* | MIT | *2026-03-02* |
 | <img src="https://flagcdn.com/w20/in.png" width="20" height="15" alt="IN"> **[MILDSum](https://github.com/Law-AI/mildsum)** | Benchmark dataset and tools for multilingual legal document summarization, featuring 3,122 Indian court judgments with English and Hindi summaries drafted by legal practitioners. | Python | No license | 2026-03-02 |
-| <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[OLAW](https://github.com/harvard-lil/olaw)** | Open Legal AI Workbench from Harvard Law School Library for building retrieval-augmented generation (RAG) applications in legal research, providing a customizable chatbot framework that integrates legal APIs and documents. | Python | MIT | 2026-03-02 |
+| *<img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[OLAW](https://github.com/harvard-lil/olaw)*** | *Open Legal AI Workbench from Harvard Law School Library for building retrieval-augmented generation (RAG) applications in legal research, providing a customizable chatbot framework that integrates legal APIs and documents. ⚠️ Stale (2024-10)* | *Python* | MIT | *2026-03-02* |
 | <img src="https://flagcdn.com/w20/in.png" width="20" height="15" alt="IN"> **[LawGlance](https://github.com/lawglance/lawglance)** | Free, open-source RAG-based AI legal assistant for document analysis and legal question answering, enabling users to query their legal documents using natural language. | Python | Apache-2.0 | 2026-03-02 |
 | **[Legal ML Datasets](https://github.com/neelguha/legal-ml-datasets)** | Curated collection of datasets and machine learning tasks for legal text processing, including contract understanding, clause classification, and legal document analysis benchmarks. | | No license | 2026-03-02 |
 | ***[Awesome LegalAI Resources](https://github.com/CSHaitao/Awesome-LegalAI-Resources)*** | *Comprehensive collection of legal AI datasets, tools, websites, and resources to facilitate development of intelligent legal technology systems. ⚠️ Stale (2023-07)* | | MIT | *2026-03-02* |
@@ -199,6 +202,8 @@ Platforms and tools for legal research, case law discovery, and statutory inform
 
 | Name | Description | Tech Stack | License | Date Added |
 |------|-------------|------------|---------|------------|
+| **[CaseCite](https://github.com/thomasunise/casecite)** | Self-hosted legal RAG platform for case law research and firm document analysis, using your own AI provider keys. | Python | Apache-2.0 | 2026-11-02 |
+| <img src="https://flagcdn.com/w20/bd.png" width="20" height="15" alt="BD"> **[Nyayota](https://github.com/afnan0356/nyayota)** | Educational statutory research and navigation platform for Bangladesh law and selected international legal materials. | TypeScript, Next.js | MIT | 2026-11-02 |
 | <img src="https://flagcdn.com/w20/gb.png" width="20" height="15" alt="UK"> **[Find Case Law Docs](https://github.com/nationalarchives/ds-find-caselaw-docs)** | High-level documentation for the UK National Archives Find Case Law service, covering its architecture and components. | Python | MIT | 2026-10-26 |
 | <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[CourtListener](https://github.com/freelawproject/courtlistener)** | Fully-searchable archive of US court opinions, orders, and judge data with coverage spanning decades of American case law, used by legal professionals, researchers, and the general public. | Python, Django | Other | 2026-03-02 |
 | <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[Juriscraper](https://github.com/freelawproject/juriscraper)** | Automated API for scraping American court websites to extract case metadata and opinions, enabling developers and legal research tools to collect court data programmatically from multiple jurisdictions. | Python | BSD-2-Clause | 2026-03-02 |
@@ -429,6 +434,7 @@ Academic datasets, models, and tools for legal natural language processing resea
 
 | Name | Description | Tech Stack | License | Date Added |
 |------|-------------|------------|---------|------------|
+| <img src="https://flagcdn.com/w20/pk.png" width="20" height="15" alt="PK"> **[PAKGOV-RAG](https://github.com/salikhussain71-code/PAKGOV-RAG-project)** | Research project on bilingual Urdu-English retrieval-augmented generation for Pakistani government and legal documents, with OCR, hybrid retrieval, citation grounding and evaluation. | Python | MIT | 2026-11-02 |
 | <img src="https://flagcdn.com/w20/sg.png" width="20" height="15" alt="SG"> **[SG-LegalCite](https://github.com/ShannonLeeYuehErn/SG-LegalCite)** | A principle-augmented benchmark for legal citation retrieval in Singapore law. | Python | MIT | 2026-10-26 |
 | **[Legal ML Datasets](https://github.com/neelguha/legal-ml-datasets)** | Curated collection of datasets and machine learning tasks for legal text processing, including contract understanding and clause classification. | | No license | 2026-03-02 |
 | **[Awesome Legal NLP](https://github.com/maastrichtlawtech/awesome-legal-nlp)** | Curated collection aggregating 180+ legal NLP datasets, models, research papers, and implementation guidance. | | MIT | 2026-03-02 |
@@ -479,6 +485,7 @@ Tools for regulatory compliance, sanctions screening, policy monitoring, and aut
 
 | Name | Description | Tech Stack | License | Date Added |
 |------|-------------|------------|---------|------------|
+| <img src="https://flagcdn.com/w20/vn.png" width="20" height="15" alt="VN"> **[vn-law-check](https://github.com/mhfed/vn-law-check)** | Agent skill that audits website and mobile app code against Vietnamese data protection, e-commerce, cybersecurity and AI laws, reporting the affected file, line and legal provision. | Shell | Other | 2026-11-02 |
 | **[OpenSanctions](https://github.com/opensanctions/opensanctions)** | An open database of international sanctions data, persons of interest, and politically exposed persons (PEPs) for KYC/AML compliance screening. | Python | MIT | 2026-03-02 |
 | **[Watchman](https://github.com/moov-io/watchman)** | A high-performance AML/CTF/KYC sanctions screening tool written in Go that searches against OFAC and other global watchlists via an HTTP API. | Go | Apache-2.0 | 2026-03-02 |
 | ***[Comply](https://github.com/strongdm/comply)*** | *A compliance automation framework focused on SOC2 that generates auditor-friendly policy documents from Markdown and integrates with ticketing systems. ⚠️ Stale (2022-07)* | *Go* | Apache-2.0 | *2026-03-02* |

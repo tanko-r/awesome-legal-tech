@@ -6,6 +6,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [2026-11-02]
+
+### Added
+- **Legal Research:** CaseCite, Nyayota (BD)
+- **Legal NLP & Datasets:** PAKGOV-RAG (PK)
+- **Compliance & Regulatory Technology:** vn-law-check (VN)
+
+### Changed
+- Marked `harvard-lil/olaw` as stale (last updated: 2024-10)
+- Added BD, PK, VN to Jurisdiction Flags
+
 ## [2026-10-26]
 
 ### Added
