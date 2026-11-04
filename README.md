@@ -773,6 +773,7 @@ Model Context Protocol servers, AI agent frameworks, and tooling specifically de
 | <img src="https://flagcdn.com/w20/fr.png" width="20" height="15" alt="FR"> **[justicelibre](https://github.com/Dahliyaal/justicelibre)** | MCP server, REST API, and web search for French and European case law, covering national courts, the ECHR, and the CJEU. | Python | MIT | 2026-10-12 |
 | <img src="https://flagcdn.com/w20/ca.png" width="20" height="15" alt="CA"> **[canlii-mcp](https://github.com/Vaquill-AI/canlii-mcp)** | MCP server that lets AI assistants query the CanLII Canadian legal database for cases and legislation. | TypeScript | MIT | 2026-10-12 |
 | <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[Court Rules MCP](https://www.courtrules.app/mcp)** | Hosted MCP server that gives AI agents and legal tech developers judge-level US court filing rules (page limits, formatting, courtesy copies, pre-motion requirements), court holiday calendars, and privacy enforcement actions, with each rule citing the court document it came from. | TypeScript, Next.js | Not FOSS | 2026-09-28 |
+| <img src="https://flagcdn.com/w20/ca.png" width="20" height="15" alt="CA"> **[Fonciq](https://mcp.fonciq.ca)** | Remote MCP server and API giving AI assistants and developers access to Québec Land Registry (Registre foncier) data, for real-estate and legal professionals. Independent, not government-affiliated. | Remote MCP (HTTP) | Not FOSS | 2026-11-04 |
 
 ## Legal Education & Communities
 
