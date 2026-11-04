@@ -41,4 +41,9 @@ jobs:
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          claude_args: "--max-turns 30"
+          # The default sandbox blocks git fetch/merge, so list the commands Claude may use
+          # to resolve conflicts and merge pull requests.
+          claude_args: |
+            --max-turns 30
+            --allowedTools "Bash(git fetch:*),Bash(git merge:*),Bash(git checkout:*),Bash(git switch:*),Bash(git add:*),Bash(git commit:*),Bash(git push:*),Bash(git status:*),Bash(git diff:*),Bash(git log:*),Bash(git branch:*),Bash(git config:*),Bash(git remote:*),Bash(gh pr view:*),Bash(gh pr diff:*),Bash(gh pr list:*),Bash(gh pr merge:*),Bash(gh pr comment:*),Bash(curl:*)"
+            --append-system-prompt "This repo is a curated list. Contributors open pull requests from forks, and the GITHUB_TOKEN cannot push to a fork branch. To resolve a conflict and merge a pull request: (1) fetch the PR head with 'git fetch origin pull/<N>/head:pr<N>'; (2) on main, run 'git merge --no-ff pr<N>'; (3) resolve README.md conflicts by keeping BOTH sides, because conflicts are usually two rows added at the end of one table; remove all conflict markers; (4) commit with the message 'Merge pull request #<N> from <author>/<branch>'; (5) push to main with 'git push origin main'. GitHub then marks the pull request as merged. Before merging, check that the entry link works and follows contributing.md. Only merge when the repo owner asked for a merge."
