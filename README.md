@@ -332,6 +332,7 @@ Systems for storing, organizing, and retrieving legal documents securely.
 | **[RaioPDF](https://github.com/Macrify-LLC/raiopdf)** | Free, fully local desktop PDF suite for law firms providing OCR, redaction, Bates numbering, and e-filing preparation without files ever leaving the device. | | GPL-3.0 | 2026-08-10 |
 | ***[Intern](https://github.com/zgbrenner/intern)*** | *Local-first document renaming tool that reads legal documents and identifies what to call them — type, effective date, and parties — citing verbatim evidence for each fact and routing anything unverifiable to human review. ⚠️ Stale (archived/removed)* | *Rust* | No license | *2026-08-17* |
 | **[kysigned](https://github.com/kychee-com/kysigned)** | Self-verifying e-signature template that seals signatures with DKIM email proofs so signed documents stay verifiable offline without a central signing authority. | TypeScript | Apache-2.0 | 2026-08-31 |
+| **[Resecta](https://github.com/Merlin1A/resecta)** | iPhone app for redacting PDFs on the device before they are filed or shared: marked regions are overwritten in the page pixels, and the exported file is re-opened and checked for text that remains. For legal staff and others who handle exhibits and records containing personal information. | Swift, SwiftUI | Apache-2.0 | 2026-11-05 |
 
 ## Backend Utilities & Libraries
 
