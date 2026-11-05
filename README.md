@@ -352,6 +352,7 @@ Programming libraries, SDKs, and utilities for building legal tech applications.
 | **[Docxodus](https://github.com/JSv4/Docxodus)** | Office XML redline engine built on the OpenXML SDK that generates tracked-change DOCX comparisons, providing C# support for programmatic legal document redlining. | C# | MIT | 2026-04-06 |
 | <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[Doctor](https://github.com/freelawproject/doctor)** | Free Law Project's horizontally-scalable microservice for OCR text extraction, PDF thumbnailing, and audio format conversion, used to process the documents behind CourtListener at scale. | Python, Django | BSD-2-Clause | 2026-08-03 |
 | **[TargetParser](https://github.com/rafal-fryc/TargetParser)** | Anti-hallucination PDF extraction toolkit where an LLM identifies relevant line numbers while Python deterministically extracts and verifies the underlying text, reducing hallucinated quotes in document review pipelines. | Python | No license | 2026-08-10 |
+| **[sealed-pdf-verify](https://github.com/minutenotary/sealed-pdf-verify)** | Offline verifier for sealed PDFs (detached ECDSA P-256 signature, RFC 3161 timestamp, hash-chain ledger), as a library, CLI and browser page, for developers and legal intake teams who need to confirm a document has not changed since it was sealed. | TypeScript | MIT | 2026-11-05 |
 
 ### Legal NLP & Text Processing
 
