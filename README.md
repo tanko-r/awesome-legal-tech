@@ -41,6 +41,8 @@ Entries marked with a flag icon are designed for or specific to that jurisdictio
 | <img src="https://flagcdn.com/w20/bd.png" width="20" height="15" alt="BD"> | Bangladesh |
 | <img src="https://flagcdn.com/w20/pk.png" width="20" height="15" alt="PK"> | Pakistan |
 | <img src="https://flagcdn.com/w20/vn.png" width="20" height="15" alt="VN"> | Vietnam |
+| <img src="https://flagcdn.com/w20/au.png" width="20" height="15" alt="AU"> | Australia |
+| <img src="https://flagcdn.com/w20/ng.png" width="20" height="15" alt="NG"> | Nigeria |
 
 ## Contents
 
@@ -205,7 +207,7 @@ Platforms and tools for legal research, case law discovery, and statutory inform
 | Name | Description | Tech Stack | License | Date Added |
 |------|-------------|------------|---------|------------|
 | **[CaseCite](https://github.com/thomasunise/casecite)** | Self-hosted legal RAG platform for case law research and firm document analysis, using your own AI provider keys. | Python | Apache-2.0 | 2026-11-02 |
-| <img src="https://flagcdn.com/w20/bd.png" width="20" height="15" alt="BD"> **[Nyayota](https://github.com/afnan0356/nyayota)** | Educational statutory research and navigation platform for Bangladesh law and selected international legal materials. | TypeScript, Next.js | MIT | 2026-11-02 |
+| *<img src="https://flagcdn.com/w20/bd.png" width="20" height="15" alt="BD"> **[Nyayota](https://github.com/afnan0356/nyayota)*** | *Educational statutory research and navigation platform for Bangladesh law and selected international legal materials. ⚠️ Stale (archived/removed)* | *TypeScript, Next.js* | MIT | *2026-11-02* |
 | <img src="https://flagcdn.com/w20/gb.png" width="20" height="15" alt="UK"> **[Find Case Law Docs](https://github.com/nationalarchives/ds-find-caselaw-docs)** | High-level documentation for the UK National Archives Find Case Law service, covering its architecture and components. | Python | MIT | 2026-10-26 |
 | <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[CourtListener](https://github.com/freelawproject/courtlistener)** | Fully-searchable archive of US court opinions, orders, and judge data with coverage spanning decades of American case law, used by legal professionals, researchers, and the general public. | Python, Django | Other | 2026-03-02 |
 | <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[Juriscraper](https://github.com/freelawproject/juriscraper)** | Automated API for scraping American court websites to extract case metadata and opinions, enabling developers and legal research tools to collect court data programmatically from multiple jurisdictions. | Python | BSD-2-Clause | 2026-03-02 |
@@ -245,6 +247,9 @@ Platforms and tools for legal research, case law discovery, and statutory inform
 | <img src="https://flagcdn.com/w20/br.png" width="20" height="15" alt="BR"> **[NanoJuris](https://github.com/ndtj/nanojuris)** | Python toolkit offering a single interface to query, normalize, and track public jurisprudence data from Brazilian courts. | Python | MIT | 2026-10-05 |
 
 | <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[VerdictWiki](https://verdictwiki.com/)** | Independent reference database of 97 major lawsuits (mass torts, class actions, landmark verdicts) across 11 countries — docket numbers, plaintiff counts over time, and settlement/verdict figures sourced to public court records and regulatory sources. | | Other | 2026-09-27 |
+| <img src="https://flagcdn.com/w20/au.png" width="20" height="15" alt="AU"> **[jurisd](https://github.com/russellbrenner/jurisd)** | A local-first research and drafting workbench for Australian and New Zealand law that traces claims to primary legislation and case law sources. | TypeScript | Apache-2.0 | 2026-11-16 |
+| **[Git for Global Law](https://github.com/lexifina/global-law)** | A set of git repositories holding national legislation and case law as dated commit histories so any provision can be viewed as of any date. | HTML | CC0-1.0 | 2026-11-16 |
+| **[LawThinker](https://github.com/RUC-NLPIR/LawThinker-agent)** | A research legal agent that performs deep retrieval over legal sources and verifies the procedural compliance of its reasoning steps. | Python | MIT | 2026-11-16 |
 
 ## Contract Management
 
@@ -488,6 +493,7 @@ Academic datasets, models, and tools for legal natural language processing resea
 | <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[Pile of Law](https://huggingface.co/datasets/pile-of-law/pile-of-law)** | Roughly 256GB corpus of US legal and administrative text — court opinions, contracts, statutes, and agency guidance — for pretraining and studying legal language models. | | CC-BY-NC-SA-4.0 | 2026-08-10 |
 | <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[Lawyer Advertising Rules by State](https://probativegrowth.com/resources/lawyer-advertising-rules-by-state/)** | Open table of each US state's and DC's lawyer-advertising rules (ad filing, fees, required statements, solicitation, call-recording consent), with every value marked by source quality, versioned on Zenodo (DOI 10.5281/zenodo.23645751) and also served by a read-only MCP server. | | CC-BY-4.0 | 2026-10-25 |
 | <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[US Traffic Ticket Court & Payment Portal Data](https://github.com/odebo/us-traffic-ticket-data)** | Official court names, payment portals, fine schedules, points rules and traffic-school rules for 185 US cities across 21 states. Court and payment URLs are taken from the courts and city governments themselves, not from a commercial directory. Ships as CSV, JSON and JSONL. | | CC0-1.0 | 2026-10-15 |
+| <img src="https://flagcdn.com/w20/ng.png" width="20" height="15" alt="NG"> **[Nigerian Law Corpus](https://github.com/s4nniyusuf/nigerian-legal-corpus)** | A corpus of Nigerian legal texts including the 1999 Constitution, selected Acts and Lagos tenancy law, structured for retrieval, RAG and legal NLP. |  | CC-BY-4.0 | 2026-11-16 |
 
 ## Compliance & Regulatory Technology
 
@@ -629,7 +635,7 @@ Specialized tools for privacy impact assessments, consent management, DSAR autom
 | **[Privacy Skill](https://github.com/rafal-fryc/Privacy-Skill)** | Claude skill for privacy professionals providing structured reference material and routing logic covering GDPR, CCPA, HIPAA, COPPA, FERPA, and the EU AI Act. | | No license | 2026-07-06 |
 | **[cloakpii](https://github.com/Hellotravisss/cloakpii)** | Python CLI that masks PII with AES-256-GCM encryption and generates PIPL/PDPA/GDPR compliance reports for cross-border data transfers. | Python | MIT | 2026-07-20 |
 | **[c15t](https://github.com/c15t/c15t)** | Developer-first, open-source consent management and cookie-banner engine that runs client-side or at the edge to enforce and audit GDPR/CCPA consent choices. | TypeScript | Apache-2.0 | 2026-07-27 |
-| **[DSAR](https://github.com/inthhq/dsar)** | Open-source engine and SDK for programmatically receiving, tracking, and fulfilling Data Subject Access Requests under GDPR and similar privacy laws. | TypeScript | Apache-2.0 | 2026-07-27 |
+| ***[DSAR](https://github.com/inthhq/dsar)*** | *Open-source engine and SDK for programmatically receiving, tracking, and fulfilling Data Subject Access Requests under GDPR and similar privacy laws. ⚠️ Stale (archived/removed)* | *TypeScript* | Apache-2.0 | *2026-07-27* |
 | <img src="https://flagcdn.com/w20/eu.png" width="20" height="15" alt="EU"> **[GdprApi-Open](https://github.com/HeyBaldur/GdprApi-Open)** | Self-hostable .NET/MongoDB Web API giving developers ready-made endpoints for GDPR data-subject rights, consent, and audit logging in multi-tenant applications. | C# | Other | 2026-08-03 |
 | <img src="https://flagcdn.com/w20/fr.png" width="20" height="15" alt="FR"> **[PIA](https://github.com/LINCnil/pia)** | Desktop and web application published by France's data protection authority (CNIL) that walks organizations through building and documenting GDPR data protection impact assessments. | TypeScript | GPL-3.0 | 2026-08-03 |
 | **[Consent Management Platform](https://github.com/68publishers/consent-management-platform)** | Self-hosted platform for managing GDPR-compliant website cookie consent and the consent widget. | PHP | Other | 2026-08-10 |
@@ -778,6 +784,7 @@ Model Context Protocol servers, AI agent frameworks, and tooling specifically de
 | <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[Court Rules MCP](https://www.courtrules.app/mcp)** | Hosted MCP server that gives AI agents and legal tech developers judge-level US court filing rules (page limits, formatting, courtesy copies, pre-motion requirements), court holiday calendars, and privacy enforcement actions, with each rule citing the court document it came from. | TypeScript, Next.js | Not FOSS | 2026-09-28 |
 | <img src="https://flagcdn.com/w20/ca.png" width="20" height="15" alt="CA"> **[Fonciq](https://mcp.fonciq.ca)** | Remote MCP server and API giving AI assistants and developers access to Québec Land Registry (Registre foncier) data, for real-estate and legal professionals. Independent, not government-affiliated. | Remote MCP (HTTP) | Not FOSS | 2026-11-04 |
 | <img src="https://flagcdn.com/w20/gb.png" width="20" height="15" alt="UK"> **[CaseNode](https://github.com/casenode-ai/casenode)** | A Claude Code plugin and hosted MCP server for UK case law research, covering 290k+ judgments with a citation graph, citation validation and treatment tracing; a free API key is available at [casenode.ai](https://casenode.ai). | Markdown | MIT | 2026-11-08 |
+| **[legalize-mcp](https://github.com/matematicsolutions/legalize-mcp)** | A read-only, self-hostable MCP server over a law-as-git corpus of legislation from 32 jurisdictions as versioned Markdown with ELI-style citations. | Python | Apache-2.0 | 2026-11-16 |
 
 ## Legal Education & Communities
 

@@ -6,6 +6,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [2026-11-16]
+
+### Added
+- **Legal Research:** jurisd (AU), Git for Global Law, LawThinker
+- **Legal NLP & Datasets:** Nigerian Law Corpus (NG)
+- **MCP Servers & AI Agent Tools for Law:** legalize-mcp
+
+### Changed
+- Marked `afnan0356/nyayota` as stale (last updated: archived/removed)
+- Marked `inthhq/dsar` as stale (last updated: archived/removed)
+- Added AU, NG to Jurisdiction Flags
+
 ## [2026-11-02]
 
 ### Added
