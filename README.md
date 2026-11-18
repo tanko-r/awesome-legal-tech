@@ -641,6 +641,7 @@ Specialized tools for privacy impact assessments, consent management, DSAR autom
 | **[Consent Management Platform](https://github.com/68publishers/consent-management-platform)** | Self-hosted platform for managing GDPR-compliant website cookie consent and the consent widget. | PHP | Other | 2026-08-10 |
 | **[stella anonymize](https://github.com/stella/anonymize)** | Local-first PII detection and anonymization library for text and legal documents, used as the anonymization engine behind the stella legal workspace. | Rust | Apache-2.0 | 2026-08-17 |
 | <img src="https://flagcdn.com/w20/eu.png" width="20" height="15" alt="EU"> **[tarteaucitron.js](https://github.com/AmauriC/tarteaucitron.js)** | JavaScript cookie consent manager for GDPR compliance with per-service controls and Google Consent Mode v2 support, for website operators. | JavaScript | MIT | 2026-10-12 |
+| <img src="https://flagcdn.com/w20/fr.png" width="20" height="15" alt="FR"> **[RAGbase Shield](https://github.com/ragbase/ragbase-shield)** | Local, reversible tool that replaces names, addresses and bank details in French client files with codes before a lawyer sends them to Claude, and puts the real names back on the lawyer's computer in the final document. | Python | Apache-2.0 | 2026-11-18 |
 
 ## Legal Workflow Automation
 
