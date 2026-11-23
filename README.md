@@ -549,6 +549,7 @@ Tools for regulatory compliance, sanctions screening, policy monitoring, and aut
 | <img src="https://flagcdn.com/w20/eu.png" width="20" height="15" alt="EU"> **[MiCAR Whitepaper Linter](https://github.com/sebastianfoerste/micar-whitepaper-linter)** | Deterministic linter for crypto-asset white papers under MiCAR (EU) 2023/1114, mapping Annex I-III disclosure duties to rules with pinpoint citations; ships a GitHub Action for CI gating and an in-browser playground. | Python | MIT | 2026-08-31 |
 | <img src="https://flagcdn.com/w20/us.png" width="20" height="15" alt="US"> **[ZwiadBrain](https://github.com/rafal-fryc/ZwiadBrain)** | Git-backed Markdown wiki tracking US federal and state legislation and enforcement actions in AI, privacy, and cybersecurity law, with every entry grounded in a cited source page. | Python | No license | 2026-09-07 |
 | **[Cavil](https://github.com/openSUSE/cavil)** | Legal review and SBOM system that scans software packages for licenses using lawyer-curated patterns and produces SPDX-format reports for open source license compliance teams. | Perl | GPL-2.0 | 2026-10-19 |
+| **[Firecrawl Alexandria](https://alexandria.firecrawl.dev/providers/firecrawl-gov-index)** | Public-records and legal sources for AI agents (OpenSanctions, OFAC, GLEIF, SEC EDGAR, USPTO, GovInfo, EUR-Lex, the Federal Register and many more) through one API, MCP or CLI, for legal tech developers building research and compliance tools. | API, MCP, CLI | Not FOSS | 2026-11-23 |
 
 
 ## eDiscovery & Litigation Support
