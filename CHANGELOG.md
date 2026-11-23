@@ -6,6 +6,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [2026-11-23]
+
+### Added
+- **MCP Servers & AI Agent Tools for Law:** china-law-mcp (CN)
+
+### Changed
+- Marked `Law-AI/mildsum` as stale (last updated: 2024-11)
+- Marked `AI-Growth-Lab/PatentSBERTa` as stale (last updated: 2024-11)
+- Marked `odin33g/family-court-strategist` as stale (last updated: archived/removed)
+- Marked `jackson-jpeg/ecfiler` as stale (last updated: archived/removed)
+
 ## [2026-11-16]
 
 ### Added
