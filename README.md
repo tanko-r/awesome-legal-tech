@@ -786,6 +786,7 @@ Model Context Protocol servers, AI agent frameworks, and tooling specifically de
 | <img src="https://flagcdn.com/w20/ca.png" width="20" height="15" alt="CA"> **[Fonciq](https://mcp.fonciq.ca)** | Remote MCP server and API giving AI assistants and developers access to Québec Land Registry (Registre foncier) data, for real-estate and legal professionals. Independent, not government-affiliated. | Remote MCP (HTTP) | Not FOSS | 2026-11-04 |
 | <img src="https://flagcdn.com/w20/gb.png" width="20" height="15" alt="UK"> **[CaseNode](https://github.com/casenode-ai/casenode)** | A Claude Code plugin and hosted MCP server for UK case law research, covering 290k+ judgments with a citation graph, citation validation and treatment tracing; a free API key is available at [casenode.ai](https://casenode.ai). | Markdown | MIT | 2026-11-08 |
 | **[legalize-mcp](https://github.com/matematicsolutions/legalize-mcp)** | A read-only, self-hostable MCP server over a law-as-git corpus of legislation from 32 jurisdictions as versioned Markdown with ELI-style citations. | Python | Apache-2.0 | 2026-11-16 |
+| **[Pandex](https://github.com/pandex-io/pandex-mcp)** | Hosted MCP server and REST API giving AI agents official legislation and case law from the EU, UK, Germany, France, Spain, the Netherlands, Austria, Switzerland and more, fetched from the official sources, with every past version of each law and citations linked to the exact passage; free tier without a key. | Python | MIT | 2026-11-27 |
 
 ## Legal Education & Communities
 
